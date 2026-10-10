@@ -6,7 +6,7 @@ import { USER } from "@/features/portfolio/data/user"
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.NEXT_PUBLIC_APP_URL || "https://ompatil1906.vercel.app",
+  url: process.env.NEXT_PUBLIC_APP_URL || "https://heyompatil.me",
   ogImage: USER.ogImage,
   description:
     "Om Patil is an AI & Data Science engineer building GenAI and agentic systems — multi-agent research workflows, RAG, LLM triage models, and full-stack AI products. Explore featured projects, research, and experience.",
@@ -50,5 +50,5 @@ export const SOURCE_CODE_GITHUB_URL = "https://github.com/ompatil1906/Portfolio"
 export const SPONSORSHIP_URL = "https://github.com/sponsors/ompatil1906"
 
 export const UTM_PARAMS = {
-  utm_source: "ompatil1906.vercel.app",
+  utm_source: "heyompatil.me",
 }

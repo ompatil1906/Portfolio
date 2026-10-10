@@ -1,6 +1,6 @@
+import { SpotlightLogo } from "@/registry/components/spotlight-logo"
 import { USER } from "@/features/portfolio/data/user"
 
-import { ChanhDaiMarkIsometric } from "./chanhdai-mark-isometric"
 import { FlipSentences } from "./flip-sentences"
 import { HandwrittenArrow, HandwrittenNote } from "./handwritten-note"
 import { PronounceMyName } from "./pronounce-my-name"
@@ -10,7 +10,9 @@ export function ProfileHeader() {
   return (
     <div className="screen-line-bottom grid grid-cols-[auto_1fr] grid-rows-[1fr_auto] overflow-y-clip border-x screen-line-bottom-border after:z-1">
       <figure className="relative col-span-2 p-2 sm:col-span-1 sm:col-start-2 sm:p-4">
-        <ChanhDaiMarkIsometric />
+        <div className="mx-auto w-full max-w-72">
+          <SpotlightLogo />
+        </div>
 
         {/* w-36 needs ~1088px before the gutter can hold it without clipping,
             and the mark ignores coarse pointers, so nothing to annotate there. */}

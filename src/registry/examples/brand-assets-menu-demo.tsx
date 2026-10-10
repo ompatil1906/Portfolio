@@ -11,7 +11,7 @@ export default function BrandAssetsMenuDemo() {
         logomark={<OPMark />}
         logomarkSVG={LOGOMARK_SVG}
         logotypeSVG={LOGOTYPE_SVG}
-        brandGuidelinesURL="https://ompatil1906.vercel.app/components/brand-assets-menu"
+        brandGuidelinesURL="https://heyompatil.me/components/brand-assets-menu"
         brandAssetsURL="https://assets.chanhdai.com/chanhdai-brand.zip"
       >
         <Link href="/" aria-label="Home" className="inline-flex cursor-pointer">

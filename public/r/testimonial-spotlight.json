@@ -5,7 +5,7 @@
   "author": "Om Patil <patilom1906@gmail.com>",
   "description": "Testimonial card with spotlight effect on hover.",
   "registryDependencies": [
-    "https://ompatil1906.vercel.app/r/testimonial.json"
+    "https://heyompatil.me/r/testimonial.json"
   ],
   "files": [
     {
@@ -15,7 +15,7 @@
       "target": "@components/testimonial-spotlight.tsx"
     }
   ],
-  "docs": "https://ompatil1906.vercel.app/components/testimonial-spotlight",
+  "docs": "https://heyompatil.me/components/testimonial-spotlight",
   "categories": [
     "marketing"
   ],

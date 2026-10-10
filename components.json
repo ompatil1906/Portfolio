@@ -22,7 +22,7 @@
     "hooks": "@/hooks"
   },
   "registries": {
-    "@ompatil": "https://ompatil1906.vercel.app/r/{name}.json",
+    "@ompatil": "https://heyompatil.me/r/{name}.json",
     "@shadcncraft": {
       "url": "https://shadcncraft.com/r/{style}/{name}",
       "headers": {

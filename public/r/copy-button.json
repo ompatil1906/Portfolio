@@ -12,7 +12,7 @@
   ],
   "registryDependencies": [
     "button",
-    "https://ompatil1906.vercel.app/r/icon-swap.json"
+    "https://heyompatil.me/r/icon-swap.json"
   ],
   "files": [
     {
@@ -28,7 +28,7 @@
       "target": "@hooks/use-copy-to-clipboard.ts"
     }
   ],
-  "docs": "https://ompatil1906.vercel.app/components/copy-button",
+  "docs": "https://heyompatil.me/components/copy-button",
   "categories": [
     "utilities"
   ],

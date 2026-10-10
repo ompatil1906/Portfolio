@@ -8,10 +8,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://ompatil1906.vercel.app/r/github-contribution-list.json",
-    "https://ompatil1906.vercel.app/r/github-repo-list.json",
-    "https://ompatil1906.vercel.app/r/get-github-data.json",
-    "https://ompatil1906.vercel.app/r/style.json"
+    "https://heyompatil.me/r/github-contribution-list.json",
+    "https://heyompatil.me/r/github-repo-list.json",
+    "https://heyompatil.me/r/get-github-data.json",
+    "https://heyompatil.me/r/style.json"
   ],
   "files": [
     {

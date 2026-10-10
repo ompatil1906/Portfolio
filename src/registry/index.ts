@@ -9,7 +9,7 @@ import { styles } from "./styles/_registry"
 
 export const registry = {
   name: "ompatil",
-  homepage: "https://ompatil1906.vercel.app/components",
+  homepage: "https://heyompatil.me/components",
   items: [
     ...lib,
     ...hook,

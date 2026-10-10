@@ -12,8 +12,8 @@
   "registryDependencies": [
     "collapsible",
     "separator",
-    "https://ompatil1906.vercel.app/r/chevrons-up-down-icon.json",
-    "https://ompatil1906.vercel.app/r/typography.json"
+    "https://heyompatil.me/r/chevrons-up-down-icon.json",
+    "https://heyompatil.me/r/typography.json"
   ],
   "files": [
     {
@@ -23,7 +23,7 @@
       "target": "@components/work-experience.tsx"
     }
   ],
-  "docs": "https://ompatil1906.vercel.app/components/work-experience-component",
+  "docs": "https://heyompatil.me/components/work-experience-component",
   "categories": [
     "marketing"
   ],

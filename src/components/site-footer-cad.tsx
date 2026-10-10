@@ -28,11 +28,11 @@ const INSPIRED_BY = [
 ]
 
 const OPENPANEL_URL =
-  "https://openpanel.dev?utm_source=ompatil1906.vercel.app&utm_medium=referral&utm_campaign=footer"
+  "https://openpanel.dev?utm_source=heyompatil.me&utm_medium=referral&utm_campaign=footer"
 
 // Not derived from `SITE_INFO.url`: that follows `NEXT_PUBLIC_APP_URL` and
 // would read `ompatil.localhost` in dev.
-const SITE_TITLE = "ompatil1906.vercel.app"
+const SITE_TITLE = "heyompatil.me"
 
 const SITE_SUBTITLE = packageJson.description
 

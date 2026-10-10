@@ -20,7 +20,7 @@ export const USER: User = {
   address: "Pune, Maharashtra, India",
   phoneNumberB64: "KzkxNzQzNjA4Mzc5MA==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   emailB64: "cGF0aWxvbTE5MDZAZ21haWwuY29t", // patilom1906@gmail.com
-  website: "https://ompatil1906.vercel.app",
+  website: "https://heyompatil.me",
   jobTitle: "AI Engineer, GenAI & Agentic Systems",
   jobs: [
     {

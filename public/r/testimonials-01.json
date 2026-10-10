@@ -6,7 +6,7 @@
   "description": "A testimonials section with dual marquees.",
   "registryDependencies": [
     "https://www.kibo-ui.com/r/marquee.json",
-    "https://ompatil1906.vercel.app/r/testimonial-spotlight.json"
+    "https://heyompatil.me/r/testimonial-spotlight.json"
   ],
   "files": [
     {

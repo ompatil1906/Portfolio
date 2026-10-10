@@ -11,8 +11,8 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://ompatil1906.vercel.app/r/icon-swap.json",
-    "https://ompatil1906.vercel.app/r/copy-button.json"
+    "https://heyompatil.me/r/icon-swap.json",
+    "https://heyompatil.me/r/copy-button.json"
   ],
   "files": [
     {
@@ -42,7 +42,7 @@
       "code-foreground": "oklch(0.985 0 0)"
     }
   },
-  "docs": "https://ompatil1906.vercel.app/components/code-block-command",
+  "docs": "https://heyompatil.me/components/code-block-command",
   "categories": [
     "data-display"
   ],

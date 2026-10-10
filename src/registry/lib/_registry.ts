@@ -14,7 +14,7 @@ export const lib: Registry["items"] = [
       },
     ],
     categories: ["utilities"],
-    docs: "https://ompatil1906.vercel.app/components/haptic",
+    docs: "https://heyompatil.me/components/haptic",
   },
   {
     name: "get-github-data",

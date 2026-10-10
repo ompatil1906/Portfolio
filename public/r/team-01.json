@@ -5,7 +5,7 @@
   "author": "Om Patil <patilom1906@gmail.com>",
   "description": "A team section with glowing cards.",
   "registryDependencies": [
-    "https://ompatil1906.vercel.app/r/glow-card-grid.json"
+    "https://heyompatil.me/r/glow-card-grid.json"
   ],
   "files": [
     {

@@ -10,7 +10,7 @@
   "registryDependencies": [
     "tooltip",
     "spinner",
-    "https://ompatil1906.vercel.app/r/contribution-graph.json"
+    "https://heyompatil.me/r/contribution-graph.json"
   ],
   "files": [
     {
@@ -31,7 +31,7 @@
       "@apply underline decoration-current/30 decoration-1 underline-offset-3 transition-colors hover:decoration-current": {}
     }
   },
-  "docs": "https://ompatil1906.vercel.app/components/github-contributions",
+  "docs": "https://heyompatil.me/components/github-contributions",
   "categories": [
     "data-display"
   ],

@@ -8,7 +8,7 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "https://ompatil1906.vercel.app/r/get-github-data.json"
+    "https://heyompatil.me/r/get-github-data.json"
   ],
   "files": [
     {
@@ -18,7 +18,7 @@
       "target": "@components/github-repo-list.tsx"
     }
   ],
-  "docs": "https://ompatil1906.vercel.app/components/github-repo-list",
+  "docs": "https://heyompatil.me/components/github-repo-list",
   "categories": [
     "data-display"
   ],

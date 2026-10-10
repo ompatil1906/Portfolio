@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "ompatil",
-  "homepage": "https://ompatil1906.vercel.app/components",
+  "homepage": "https://heyompatil.me/components",
   "items": [
     {
       "name": "haptic",
@@ -14,7 +14,7 @@
           "target": "@lib/haptic.ts"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/haptic",
+      "docs": "https://heyompatil.me/components/haptic",
       "categories": [
         "utilities"
       ],
@@ -115,7 +115,7 @@
           "target": "@components/theme-switcher.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/theme-switcher",
+      "docs": "https://heyompatil.me/components/theme-switcher",
       "categories": [
         "controls"
       ],
@@ -136,7 +136,7 @@
           "target": "@components/text-flip.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/text-flip",
+      "docs": "https://heyompatil.me/components/text-flip",
       "categories": [
         "text-effects"
       ],
@@ -157,7 +157,7 @@
           "target": "@components/apple-hello-effect-english.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/apple-hello-effect",
+      "docs": "https://heyompatil.me/components/apple-hello-effect",
       "categories": [
         "text-effects"
       ],
@@ -178,7 +178,7 @@
           "target": "@components/apple-hello-effect-hindi.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/apple-hello-effect",
+      "docs": "https://heyompatil.me/components/apple-hello-effect",
       "categories": [
         "text-effects"
       ],
@@ -199,7 +199,7 @@
           "target": "@components/apple-hello-effect-spanish.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/apple-hello-effect",
+      "docs": "https://heyompatil.me/components/apple-hello-effect",
       "categories": [
         "text-effects"
       ],
@@ -220,7 +220,7 @@
           "target": "@components/apple-hello-effect-vietnamese.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/apple-hello-effect",
+      "docs": "https://heyompatil.me/components/apple-hello-effect",
       "categories": [
         "text-effects"
       ],
@@ -242,7 +242,7 @@
           "target": "@components/swipe-actions.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/swipe-actions",
+      "docs": "https://heyompatil.me/components/swipe-actions",
       "categories": [
         "controls"
       ],
@@ -263,7 +263,7 @@
           "target": "@components/wheel-picker.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/react-wheel-picker",
+      "docs": "https://heyompatil.me/components/react-wheel-picker",
       "categories": [
         "controls"
       ],
@@ -283,7 +283,7 @@
           "target": "@components/chevrons-up-down-icon.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/chevrons-up-down-icon",
+      "docs": "https://heyompatil.me/components/chevrons-up-down-icon",
       "categories": [
         "effects"
       ],
@@ -337,8 +337,8 @@
       "registryDependencies": [
         "collapsible",
         "separator",
-        "https://ompatil1906.vercel.app/r/chevrons-up-down-icon.json",
-        "https://ompatil1906.vercel.app/r/typography.json"
+        "https://heyompatil.me/r/chevrons-up-down-icon.json",
+        "https://heyompatil.me/r/typography.json"
       ],
       "files": [
         {
@@ -347,7 +347,7 @@
           "target": "@components/work-experience.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/work-experience-component",
+      "docs": "https://heyompatil.me/components/work-experience-component",
       "categories": [
         "marketing"
       ],
@@ -368,7 +368,7 @@
           "target": "@components/shimmering-text.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/shimmering-text",
+      "docs": "https://heyompatil.me/components/shimmering-text",
       "categories": [
         "text-effects"
       ],
@@ -383,7 +383,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/shimmering-text.json"
+        "https://heyompatil.me/r/shimmering-text.json"
       ],
       "files": [
         {
@@ -392,7 +392,7 @@
           "target": "@components/slide-to-unlock.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/slide-to-unlock",
+      "docs": "https://heyompatil.me/components/slide-to-unlock",
       "categories": [
         "controls"
       ],
@@ -405,9 +405,9 @@
       "description": "Scrolling marquee to showcase user testimonials.",
       "registryDependencies": [
         "@kibo-ui/marquee",
-        "https://ompatil1906.vercel.app/r/testimonial.json"
+        "https://heyompatil.me/r/testimonial.json"
       ],
-      "docs": "https://ompatil1906.vercel.app/components/testimonials-marquee",
+      "docs": "https://heyompatil.me/components/testimonials-marquee",
       "categories": [
         "marketing"
       ],
@@ -426,7 +426,7 @@
           "target": "@components/testimonial.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/testimonial",
+      "docs": "https://heyompatil.me/components/testimonial",
       "categories": [
         "marketing"
       ],
@@ -448,7 +448,7 @@
           "target": "@components/github-stars.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/github-stars",
+      "docs": "https://heyompatil.me/components/github-stars",
       "categories": [
         "data-display"
       ],
@@ -540,7 +540,7 @@
           "animation-fill-mode": "both"
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/scroll-fade-effect",
+      "docs": "https://heyompatil.me/components/scroll-fade-effect",
       "categories": [
         "effects"
       ],
@@ -564,7 +564,7 @@
           "target": "@components/consent-manager.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/consent-manager",
+      "docs": "https://heyompatil.me/components/consent-manager",
       "categories": [
         "utilities"
       ],
@@ -583,7 +583,7 @@
       ],
       "registryDependencies": [
         "button",
-        "https://ompatil1906.vercel.app/r/icon-swap.json"
+        "https://heyompatil.me/r/icon-swap.json"
       ],
       "files": [
         {
@@ -597,7 +597,7 @@
           "target": "@hooks/use-copy-to-clipboard.ts"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/copy-button",
+      "docs": "https://heyompatil.me/components/copy-button",
       "categories": [
         "utilities"
       ],
@@ -615,8 +615,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/icon-swap.json",
-        "https://ompatil1906.vercel.app/r/copy-button.json"
+        "https://heyompatil.me/r/icon-swap.json",
+        "https://heyompatil.me/r/copy-button.json"
       ],
       "files": [
         {
@@ -644,7 +644,7 @@
           "code-foreground": "oklch(0.985 0 0)"
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/code-block-command",
+      "docs": "https://heyompatil.me/components/code-block-command",
       "categories": [
         "data-display"
       ],
@@ -656,7 +656,7 @@
       "title": "Testimonial Spotlight",
       "description": "Testimonial card with spotlight effect on hover.",
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/testimonial.json"
+        "https://heyompatil.me/r/testimonial.json"
       ],
       "files": [
         {
@@ -665,7 +665,7 @@
           "target": "@components/testimonial-spotlight.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/testimonial-spotlight",
+      "docs": "https://heyompatil.me/components/testimonial-spotlight",
       "categories": [
         "marketing"
       ],
@@ -683,7 +683,7 @@
           "target": "@components/glow-card-grid.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/glow-card-grid",
+      "docs": "https://heyompatil.me/components/glow-card-grid",
       "categories": [
         "effects"
       ],
@@ -701,7 +701,7 @@
           "target": "@components/middle-truncation.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/middle-truncation",
+      "docs": "https://heyompatil.me/components/middle-truncation",
       "categories": [
         "typography"
       ],
@@ -735,7 +735,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/twemoji",
+      "docs": "https://heyompatil.me/components/twemoji",
       "categories": [
         "typography"
       ],
@@ -750,7 +750,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/use-controllable-state.json"
+        "https://heyompatil.me/r/use-controllable-state.json"
       ],
       "files": [
         {
@@ -759,7 +759,7 @@
           "target": "@components/elastic-slider.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/elastic-slider",
+      "docs": "https://heyompatil.me/components/elastic-slider",
       "categories": [
         "controls"
       ],
@@ -797,7 +797,7 @@
       "registryDependencies": [
         "tooltip",
         "spinner",
-        "https://ompatil1906.vercel.app/r/contribution-graph.json"
+        "https://heyompatil.me/r/contribution-graph.json"
       ],
       "files": [
         {
@@ -816,7 +816,7 @@
           "@apply underline decoration-current/30 decoration-1 underline-offset-3 transition-colors hover:decoration-current": {}
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/github-contributions",
+      "docs": "https://heyompatil.me/components/github-contributions",
       "categories": [
         "data-display"
       ],
@@ -838,7 +838,7 @@
           "target": "@components/toc-minimap.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/toc-minimap",
+      "docs": "https://heyompatil.me/components/toc-minimap",
       "categories": [
         "navigation"
       ],
@@ -859,7 +859,7 @@
           "target": "@components/fluid-gradient-text.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/fluid-gradient-text",
+      "docs": "https://heyompatil.me/components/fluid-gradient-text",
       "categories": [
         "text-effects"
       ],
@@ -885,7 +885,7 @@
           "target": "@components/brand-assets-menu.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/brand-assets-menu",
+      "docs": "https://heyompatil.me/components/brand-assets-menu",
       "categories": [
         "menus"
       ],
@@ -906,7 +906,7 @@
           "target": "@components/icon-swap.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/icon-swap",
+      "docs": "https://heyompatil.me/components/icon-swap",
       "categories": [
         "effects"
       ],
@@ -924,7 +924,7 @@
           "target": "@components/dot-grid-spotlight.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/dot-grid-spotlight",
+      "docs": "https://heyompatil.me/components/dot-grid-spotlight",
       "categories": [
         "effects"
       ],
@@ -954,7 +954,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/spinning-circular-text",
+      "docs": "https://heyompatil.me/components/spinning-circular-text",
       "categories": [
         "text-effects"
       ],
@@ -975,7 +975,7 @@
           "target": "@components/mobius-loop-icon.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/mobius-loop-icon",
+      "docs": "https://heyompatil.me/components/mobius-loop-icon",
       "categories": [
         "effects"
       ],
@@ -996,7 +996,7 @@
           "target": "@components/logos-carousel.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/logos-carousel",
+      "docs": "https://heyompatil.me/components/logos-carousel",
       "categories": [
         "marketing"
       ],
@@ -1017,7 +1017,7 @@
           "target": "@components/logos-flip.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/logos-flip",
+      "docs": "https://heyompatil.me/components/logos-flip",
       "categories": [
         "marketing"
       ],
@@ -1035,7 +1035,7 @@
           "target": "@components/testimonial-2.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/testimonial-2",
+      "docs": "https://heyompatil.me/components/testimonial-2",
       "categories": [
         "marketing"
       ],
@@ -1056,7 +1056,7 @@
           "target": "@components/line-nav.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/line-nav",
+      "docs": "https://heyompatil.me/components/line-nav",
       "categories": [
         "navigation"
       ],
@@ -1082,7 +1082,7 @@
           "target": "@components/share-menu.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/share-menu",
+      "docs": "https://heyompatil.me/components/share-menu",
       "categories": [
         "menus"
       ],
@@ -1106,7 +1106,7 @@
           "target": "@components/spotlight-logo.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/spotlight-logo",
+      "docs": "https://heyompatil.me/components/spotlight-logo",
       "categories": [
         "effects"
       ],
@@ -1124,7 +1124,7 @@
           "target": "@components/timescale.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/timescale",
+      "docs": "https://heyompatil.me/components/timescale",
       "categories": [
         "data-display"
       ],
@@ -1141,7 +1141,7 @@
       ],
       "registryDependencies": [
         "button",
-        "https://ompatil1906.vercel.app/r/use-controllable-state.json"
+        "https://heyompatil.me/r/use-controllable-state.json"
       ],
       "files": [
         {
@@ -1165,7 +1165,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/status-button",
+      "docs": "https://heyompatil.me/components/status-button",
       "categories": [
         "controls"
       ],
@@ -1195,7 +1195,7 @@
           "@apply text-xs text-muted-foreground/80 opacity-100": {}
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/carbon-ads",
+      "docs": "https://heyompatil.me/components/carbon-ads",
       "categories": [
         "utilities"
       ],
@@ -1216,7 +1216,7 @@
           "target": "@components/apple-carousel.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/apple-carousel",
+      "docs": "https://heyompatil.me/components/apple-carousel",
       "categories": [
         "marketing"
       ],
@@ -1237,7 +1237,7 @@
           "target": "@components/jpg-card-holder.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/jpg-card-holder",
+      "docs": "https://heyompatil.me/components/jpg-card-holder",
       "categories": [
         "illustrations"
       ],
@@ -1252,7 +1252,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/get-github-data.json"
+        "https://heyompatil.me/r/get-github-data.json"
       ],
       "files": [
         {
@@ -1261,7 +1261,7 @@
           "target": "@components/github-repo-list.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/github-repo-list",
+      "docs": "https://heyompatil.me/components/github-repo-list",
       "categories": [
         "data-display"
       ],
@@ -1276,7 +1276,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/get-github-data.json"
+        "https://heyompatil.me/r/get-github-data.json"
       ],
       "files": [
         {
@@ -1285,7 +1285,7 @@
           "target": "@components/github-contribution-list.tsx"
         }
       ],
-      "docs": "https://ompatil1906.vercel.app/components/github-contribution-list",
+      "docs": "https://heyompatil.me/components/github-contribution-list",
       "categories": [
         "data-display"
       ],
@@ -1333,7 +1333,7 @@
       ],
       "registryDependencies": [
         "button",
-        "https://ompatil1906.vercel.app/r/style.json"
+        "https://heyompatil.me/r/style.json"
       ],
       "files": [
         {
@@ -1398,7 +1398,7 @@
       ],
       "registryDependencies": [
         "button",
-        "https://ompatil1906.vercel.app/r/style.json"
+        "https://heyompatil.me/r/style.json"
       ],
       "files": [
         {
@@ -1427,7 +1427,7 @@
       "description": "A testimonials section with dual marquees.",
       "registryDependencies": [
         "https://www.kibo-ui.com/r/marquee.json",
-        "https://ompatil1906.vercel.app/r/testimonial-spotlight.json"
+        "https://heyompatil.me/r/testimonial-spotlight.json"
       ],
       "files": [
         {
@@ -1457,8 +1457,8 @@
       "description": "A testimonials section with a lined layout.",
       "registryDependencies": [
         "https://www.kibo-ui.com/r/marquee.json",
-        "https://ompatil1906.vercel.app/r/style.json",
-        "https://ompatil1906.vercel.app/r/testimonial.json"
+        "https://heyompatil.me/r/style.json",
+        "https://heyompatil.me/r/testimonial.json"
       ],
       "files": [
         {
@@ -1490,8 +1490,8 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/style.json",
-        "https://ompatil1906.vercel.app/r/work-experience.json"
+        "https://heyompatil.me/r/style.json",
+        "https://heyompatil.me/r/work-experience.json"
       ],
       "files": [
         {
@@ -1514,7 +1514,7 @@
       "title": "Team 01",
       "description": "A team section with glowing cards.",
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/glow-card-grid.json"
+        "https://heyompatil.me/r/glow-card-grid.json"
       ],
       "files": [
         {
@@ -1543,7 +1543,7 @@
       ],
       "registryDependencies": [
         "@bklit/line-chart",
-        "https://ompatil1906.vercel.app/r/style.json"
+        "https://heyompatil.me/r/style.json"
       ],
       "files": [
         {
@@ -1575,7 +1575,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/style.json"
+        "https://heyompatil.me/r/style.json"
       ],
       "files": [
         {
@@ -1599,7 +1599,7 @@
       "title": "Social Proof 01",
       "description": "A social proof section with a logos carousel.",
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/logos-carousel.json"
+        "https://heyompatil.me/r/logos-carousel.json"
       ],
       "files": [
         {
@@ -1727,10 +1727,10 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/github-contribution-list.json",
-        "https://ompatil1906.vercel.app/r/github-repo-list.json",
-        "https://ompatil1906.vercel.app/r/get-github-data.json",
-        "https://ompatil1906.vercel.app/r/style.json"
+        "https://heyompatil.me/r/github-contribution-list.json",
+        "https://heyompatil.me/r/github-repo-list.json",
+        "https://heyompatil.me/r/get-github-data.json",
+        "https://heyompatil.me/r/style.json"
       ],
       "files": [
         {
@@ -1756,7 +1756,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "https://ompatil1906.vercel.app/r/style.json"
+        "https://heyompatil.me/r/style.json"
       ],
       "files": [
         {
@@ -1822,7 +1822,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],
@@ -1859,7 +1859,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],
@@ -1896,7 +1896,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],
@@ -1937,7 +1937,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],
@@ -1977,7 +1977,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],
@@ -2029,7 +2029,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],
@@ -2068,7 +2068,7 @@
           }
         }
       },
-      "docs": "https://ompatil1906.vercel.app/components/theme-toggle-effect",
+      "docs": "https://heyompatil.me/components/theme-toggle-effect",
       "categories": [
         "effects"
       ],

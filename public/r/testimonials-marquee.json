@@ -6,10 +6,10 @@
   "description": "Scrolling marquee to showcase user testimonials.",
   "registryDependencies": [
     "@kibo-ui/marquee",
-    "https://ompatil1906.vercel.app/r/testimonial.json"
+    "https://heyompatil.me/r/testimonial.json"
   ],
   "files": [],
-  "docs": "https://ompatil1906.vercel.app/components/testimonials-marquee",
+  "docs": "https://heyompatil.me/components/testimonials-marquee",
   "categories": [
     "marketing"
   ],

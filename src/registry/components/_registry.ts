@@ -17,7 +17,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["controls"],
-    docs: "https://ompatil1906.vercel.app/components/theme-switcher",
+    docs: "https://heyompatil.me/components/theme-switcher",
   },
   {
     name: "text-flip",
@@ -34,7 +34,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/text-flip",
+    docs: "https://heyompatil.me/components/text-flip",
   },
   {
     name: "apple-hello-effect",
@@ -50,7 +50,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/apple-hello-effect",
+    docs: "https://heyompatil.me/components/apple-hello-effect",
   },
   {
     name: "apple-hello-effect-hindi",
@@ -66,7 +66,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/apple-hello-effect",
+    docs: "https://heyompatil.me/components/apple-hello-effect",
   },
   {
     name: "apple-hello-effect-spanish",
@@ -82,7 +82,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/apple-hello-effect",
+    docs: "https://heyompatil.me/components/apple-hello-effect",
   },
   {
     name: "apple-hello-effect-vietnamese",
@@ -98,7 +98,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/apple-hello-effect",
+    docs: "https://heyompatil.me/components/apple-hello-effect",
   },
   {
     name: "swipe-actions",
@@ -115,7 +115,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["controls"],
-    docs: "https://ompatil1906.vercel.app/components/swipe-actions",
+    docs: "https://heyompatil.me/components/swipe-actions",
   },
   {
     name: "wheel-picker",
@@ -132,7 +132,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["controls"],
-    docs: "https://ompatil1906.vercel.app/components/react-wheel-picker",
+    docs: "https://heyompatil.me/components/react-wheel-picker",
   },
   {
     name: "chevrons-up-down-icon",
@@ -148,7 +148,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/chevrons-up-down-icon",
+    docs: "https://heyompatil.me/components/chevrons-up-down-icon",
   },
   {
     name: "typography",
@@ -206,7 +206,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/work-experience-component",
+    docs: "https://heyompatil.me/components/work-experience-component",
   },
   {
     name: "shimmering-text",
@@ -222,7 +222,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/shimmering-text",
+    docs: "https://heyompatil.me/components/shimmering-text",
   },
   {
     name: "slide-to-unlock",
@@ -240,7 +240,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["controls"],
-    docs: "https://ompatil1906.vercel.app/components/slide-to-unlock",
+    docs: "https://heyompatil.me/components/slide-to-unlock",
   },
   {
     name: "testimonials-marquee",
@@ -252,7 +252,7 @@ export const components: Registry["items"] = [
       getRegistryItemUrl("testimonial"),
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/testimonials-marquee",
+    docs: "https://heyompatil.me/components/testimonials-marquee",
   },
   {
     name: "testimonial",
@@ -268,7 +268,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/testimonial",
+    docs: "https://heyompatil.me/components/testimonial",
   },
   {
     name: "github-stars",
@@ -285,7 +285,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["data-display"],
-    docs: "https://ompatil1906.vercel.app/components/github-stars",
+    docs: "https://heyompatil.me/components/github-stars",
   },
   {
     name: "scroll-fade-effect",
@@ -383,7 +383,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/scroll-fade-effect",
+    docs: "https://heyompatil.me/components/scroll-fade-effect",
   },
   {
     name: "consent-manager",
@@ -401,7 +401,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["utilities"],
-    docs: "https://ompatil1906.vercel.app/components/consent-manager",
+    docs: "https://heyompatil.me/components/consent-manager",
   },
   {
     name: "copy-button",
@@ -429,7 +429,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["utilities"],
-    docs: "https://ompatil1906.vercel.app/components/copy-button",
+    docs: "https://heyompatil.me/components/copy-button",
   },
   {
     name: "code-block-command",
@@ -469,7 +469,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["data-display"],
-    docs: "https://ompatil1906.vercel.app/components/code-block-command",
+    docs: "https://heyompatil.me/components/code-block-command",
   },
   {
     name: "testimonial-spotlight",
@@ -485,7 +485,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/testimonial-spotlight",
+    docs: "https://heyompatil.me/components/testimonial-spotlight",
   },
   {
     name: "glow-card-grid",
@@ -500,7 +500,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/glow-card-grid",
+    docs: "https://heyompatil.me/components/glow-card-grid",
   },
   {
     name: "middle-truncation",
@@ -515,7 +515,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["typography"],
-    docs: "https://ompatil1906.vercel.app/components/middle-truncation",
+    docs: "https://heyompatil.me/components/middle-truncation",
   },
   {
     name: "twemoji",
@@ -546,7 +546,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["typography"],
-    docs: "https://ompatil1906.vercel.app/components/twemoji",
+    docs: "https://heyompatil.me/components/twemoji",
   },
   {
     name: "elastic-slider",
@@ -564,7 +564,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["controls"],
-    docs: "https://ompatil1906.vercel.app/components/elastic-slider",
+    docs: "https://heyompatil.me/components/elastic-slider",
   },
   {
     name: "contribution-graph",
@@ -614,7 +614,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["data-display"],
-    docs: "https://ompatil1906.vercel.app/components/github-contributions",
+    docs: "https://heyompatil.me/components/github-contributions",
   },
   {
     name: "toc-minimap",
@@ -631,7 +631,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["navigation"],
-    docs: "https://ompatil1906.vercel.app/components/toc-minimap",
+    docs: "https://heyompatil.me/components/toc-minimap",
   },
   {
     name: "fluid-gradient-text",
@@ -648,7 +648,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/fluid-gradient-text",
+    docs: "https://heyompatil.me/components/fluid-gradient-text",
   },
   {
     name: "brand-assets-menu",
@@ -665,7 +665,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["menus"],
-    docs: "https://ompatil1906.vercel.app/components/brand-assets-menu",
+    docs: "https://heyompatil.me/components/brand-assets-menu",
   },
   {
     name: "icon-swap",
@@ -681,7 +681,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/icon-swap",
+    docs: "https://heyompatil.me/components/icon-swap",
   },
   {
     name: "dot-grid-spotlight",
@@ -697,7 +697,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/dot-grid-spotlight",
+    docs: "https://heyompatil.me/components/dot-grid-spotlight",
   },
   {
     name: "spinning-circular-text",
@@ -726,7 +726,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["text-effects"],
-    docs: "https://ompatil1906.vercel.app/components/spinning-circular-text",
+    docs: "https://heyompatil.me/components/spinning-circular-text",
   },
   {
     name: "mobius-loop-icon",
@@ -743,7 +743,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/mobius-loop-icon",
+    docs: "https://heyompatil.me/components/mobius-loop-icon",
   },
   {
     name: "logos-carousel",
@@ -759,7 +759,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/logos-carousel",
+    docs: "https://heyompatil.me/components/logos-carousel",
   },
   {
     name: "logos-flip",
@@ -776,7 +776,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/logos-flip",
+    docs: "https://heyompatil.me/components/logos-flip",
   },
   {
     name: "testimonial-2",
@@ -792,7 +792,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/testimonial-2",
+    docs: "https://heyompatil.me/components/testimonial-2",
   },
   {
     name: "line-nav",
@@ -809,7 +809,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["navigation"],
-    docs: "https://ompatil1906.vercel.app/components/line-nav",
+    docs: "https://heyompatil.me/components/line-nav",
   },
   {
     name: "share-menu",
@@ -827,7 +827,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["menus"],
-    docs: "https://ompatil1906.vercel.app/components/share-menu",
+    docs: "https://heyompatil.me/components/share-menu",
   },
   {
     name: "spotlight-logo",
@@ -845,7 +845,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["effects"],
-    docs: "https://ompatil1906.vercel.app/components/spotlight-logo",
+    docs: "https://heyompatil.me/components/spotlight-logo",
   },
   {
     name: "timescale",
@@ -861,7 +861,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["data-display"],
-    docs: "https://ompatil1906.vercel.app/components/timescale",
+    docs: "https://heyompatil.me/components/timescale",
   },
   {
     name: "status-button",
@@ -898,7 +898,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["controls"],
-    docs: "https://ompatil1906.vercel.app/components/status-button",
+    docs: "https://heyompatil.me/components/status-button",
   },
   {
     name: "carbon-ads",
@@ -927,7 +927,7 @@ export const components: Registry["items"] = [
       },
     },
     categories: ["utilities"],
-    docs: "https://ompatil1906.vercel.app/components/carbon-ads",
+    docs: "https://heyompatil.me/components/carbon-ads",
   },
   {
     name: "apple-carousel",
@@ -944,7 +944,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["marketing"],
-    docs: "https://ompatil1906.vercel.app/components/apple-carousel",
+    docs: "https://heyompatil.me/components/apple-carousel",
   },
   {
     name: "jpg-card-holder",
@@ -961,7 +961,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["illustrations"],
-    docs: "https://ompatil1906.vercel.app/components/jpg-card-holder",
+    docs: "https://heyompatil.me/components/jpg-card-holder",
   },
   {
     name: "github-repo-list",
@@ -979,7 +979,7 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["data-display"],
-    docs: "https://ompatil1906.vercel.app/components/github-repo-list",
+    docs: "https://heyompatil.me/components/github-repo-list",
   },
   {
     name: "github-contribution-list",
@@ -997,6 +997,6 @@ export const components: Registry["items"] = [
       },
     ],
     categories: ["data-display"],
-    docs: "https://ompatil1906.vercel.app/components/github-contribution-list",
+    docs: "https://heyompatil.me/components/github-contribution-list",
   },
 ]

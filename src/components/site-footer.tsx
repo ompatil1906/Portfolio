@@ -58,7 +58,7 @@ export function SiteFooter() {
                 <li>
                   <a
                     className="link-underline"
-                    href="https://openpanel.dev?utm_source=ompatil1906.vercel.app&utm_medium=referral&utm_campaign=footer"
+                    href="https://openpanel.dev?utm_source=heyompatil.me&utm_medium=referral&utm_campaign=footer"
                     target="_blank"
                     rel="noopener"
                   >

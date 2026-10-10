@@ -8,7 +8,7 @@
     "motion"
   ],
   "registryDependencies": [
-    "https://ompatil1906.vercel.app/r/use-controllable-state.json"
+    "https://heyompatil.me/r/use-controllable-state.json"
   ],
   "files": [
     {
@@ -18,7 +18,7 @@
       "target": "@components/elastic-slider.tsx"
     }
   ],
-  "docs": "https://ompatil1906.vercel.app/components/elastic-slider",
+  "docs": "https://heyompatil.me/components/elastic-slider",
   "categories": [
     "controls"
   ],

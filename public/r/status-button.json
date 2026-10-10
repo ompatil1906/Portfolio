@@ -10,7 +10,7 @@
   ],
   "registryDependencies": [
     "button",
-    "https://ompatil1906.vercel.app/r/use-controllable-state.json"
+    "https://heyompatil.me/r/use-controllable-state.json"
   ],
   "files": [
     {
@@ -35,7 +35,7 @@
       }
     }
   },
-  "docs": "https://ompatil1906.vercel.app/components/status-button",
+  "docs": "https://heyompatil.me/components/status-button",
   "categories": [
     "controls"
   ],

@@ -5,7 +5,7 @@ import { getBookmarkExternalHref } from "./bookmark-link"
 describe("getBookmarkExternalHref", () => {
   it("appends utm_source", () => {
     expect(getBookmarkExternalHref("https://example.com/page")).toBe(
-      "https://example.com/page?utm_source=ompatil1906.vercel.app"
+      "https://example.com/page?utm_source=heyompatil.me"
     )
   })
 
@@ -13,9 +13,9 @@ describe("getBookmarkExternalHref", () => {
     const href = getBookmarkExternalHref("https://example.com?atp=ncdai")
 
     expect(href).toContain("atp=ncdai")
-    expect(href).toContain("utm_source=ompatil1906.vercel.app")
+    expect(href).toContain("utm_source=heyompatil.me")
     expect(href.indexOf("atp=ncdai")).toBeLessThan(
-      href.indexOf("utm_source=ompatil1906.vercel.app")
+      href.indexOf("utm_source=heyompatil.me")
     )
   })
 
@@ -25,7 +25,7 @@ describe("getBookmarkExternalHref", () => {
 
   it("normalizes bare origins with a trailing slash", () => {
     expect(getBookmarkExternalHref("https://animations.dev")).toBe(
-      "https://animations.dev/?utm_source=ompatil1906.vercel.app"
+      "https://animations.dev/?utm_source=heyompatil.me"
     )
   })
 })

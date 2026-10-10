@@ -83,7 +83,7 @@ export const Index: Record<string, any> = {`
     {
       $schema: "https://ui.shadcn.com/schema/registry.json",
       name: "ompatil",
-      homepage: "https://ompatil1906.vercel.app/components",
+      homepage: "https://heyompatil.me/components",
       items: publishedItems.map((item) => {
         return {
           ...item,
