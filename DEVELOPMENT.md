@@ -81,7 +81,7 @@ This project utilizes **shadcn Registry**, which allows you to manage and distri
 
 ### Using registry in other React projects
 
-If you're working on a different React project and want to reuse the custom components from this repository, visit [chanhdai.com/components](https://ompatil1906.vercel.app/components) for installation instructions and component documentation.
+If you're working on a different React project and want to reuse the custom components from this repository, visit [ompatil1906.vercel.app/components](https://ompatil1906.vercel.app/components) for installation instructions and component documentation.
 
 > Note: These components are compatible with [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4) and [React 19](https://react.dev/blog/2024/12/05/react-19).
 

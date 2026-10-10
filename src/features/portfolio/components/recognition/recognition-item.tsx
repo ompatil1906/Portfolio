@@ -168,10 +168,14 @@ function CredentialRow({ entry }: { entry: CredentialRecognition }) {
 
       <div className="flex-1 space-y-1 border-l border-dashed border-line p-4">
         <h3 className="leading-snug font-medium text-balance">
-          <a href={credential.credentialURL} target="_blank" rel="noopener">
-            <span className="absolute inset-0" aria-hidden />
-            {credential.title}
-          </a>
+          {credential.credentialURL ? (
+            <a href={credential.credentialURL} target="_blank" rel="noopener">
+              <span className="absolute inset-0" aria-hidden />
+              {credential.title}
+            </a>
+          ) : (
+            credential.title
+          )}
         </h3>
 
         <dl className="flex flex-wrap items-center gap-x-2 text-sm text-muted-foreground">
@@ -191,7 +195,9 @@ function CredentialRow({ entry }: { entry: CredentialRecognition }) {
         </dl>
       </div>
 
-      <ArrowUpRightIcon className="size-4 text-muted-foreground" />
+      {credential.credentialURL && (
+        <ArrowUpRightIcon className="size-4 text-muted-foreground" />
+      )}
     </div>
   )
 }

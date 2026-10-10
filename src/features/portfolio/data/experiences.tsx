@@ -6,32 +6,33 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "asklumenai",
     companyName: "AskLumenAI",
+    companyWebsite: "https://asklumenai.com",
     companyIcon: <BriefcaseBusinessIcon strokeWidth={1.8} />,
     location: "Pune, India",
     locationType: "Remote",
     positions: [
       {
         id: "1",
-        title: "Founding AI/ML Engineer",
+        title: "Director, Product, Strategy & Technology",
         employmentPeriod: {
           start: "2025",
         },
         employmentType: "Full-time",
         icon: <CodeXmlIcon />,
-        description: `- Building the core AI/ML platform from the ground up, from LLM orchestration to production deployment.
-- Designing and shipping RAG pipelines, agentic workflows, and evaluation harnesses.
-- Owning model integration, prompt engineering, and the data layer end to end.`,
+        description: `- Lead product, strategy, and technology for an AI-powered learning and research assistant.
+- Designed multi-agent research workflows that plan, retrieve, and synthesize findings across sources.
+- Built a research/personalization layer and rolling memory so responses adapt to each user over time.
+- Integrated academic sources (arXiv, Crossref, Semantic Scholar, OpenAlex) with citation formats like APA, IEEE, Harvard, BibTeX, and RIS.
+- Own the full stack end to end, from LLM orchestration and retrieval to the shipped product surface.`,
         skills: [
           "Python",
-          "PyTorch",
           "LLMs",
-          "RAG",
           "Agentic AI",
-          "LangChain",
+          "RAG",
+          "LangGraph",
           "FastAPI",
           "PostgreSQL",
-          "Docker",
-          "AWS",
+          "Full-stack",
         ],
         isExpanded: true,
       },
@@ -41,7 +42,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "viksithub",
     companyName: "ViksitHub",
-    companyWebsite: "https://viksithub-coming-soon.vercel.app",
+    companyWebsite: "https://github.com/ompatil1906/viksithub-coming-soon",
     companyIcon: <BriefcaseBusinessIcon strokeWidth={1.8} />,
     location: "Pune, India",
     locationType: "Remote",

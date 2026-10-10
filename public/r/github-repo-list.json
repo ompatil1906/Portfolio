@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "github-repo-list",
+  "title": "GitHub Repo List",
+  "author": "Om Patil <patilom1906@gmail.com>",
+  "description": "List GitHub repositories with language, fork origin, and star counts.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://ompatil1906.vercel.app/r/get-github-data.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/components/github-repo-list/github-repo-list.tsx",
+      "content": "import { StarIcon } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\nimport type { GitHubRepo } from \"@/registry/lib/get-github-data/github-data\"\n\nexport type GitHubRepoListProps = React.ComponentProps<\"ul\"> & {\n  repos: GitHubRepo[]\n}\n\nexport function GitHubRepoList({\n  repos,\n  className,\n  ...props\n}: GitHubRepoListProps) {\n  if (repos.length === 0) {\n    return (\n      <p className={cn(\"p-4 text-sm text-muted-foreground\", className)}>\n        No repositories.\n      </p>\n    )\n  }\n\n  return (\n    <ul className={cn(\"divide-y divide-line\", className)} {...props}>\n      {repos.map((repo) => (\n        <li\n          key={repo.id}\n          className=\"relative flex items-center gap-4 p-4 transition-colors hover:bg-accent-muted\"\n        >\n          <div className=\"min-w-0 flex-1\">\n            <h3 className=\"truncate leading-snug font-medium\">\n              <a\n                className=\"absolute inset-0\"\n                href={repo.url}\n                target=\"_blank\"\n                rel=\"noopener\"\n                aria-label={`Open ${repo.fullName} on GitHub`}\n              >\n                <span className=\"sr-only\">{repo.fullName}</span>\n              </a>\n              {repo.name}\n            </h3>\n\n            {repo.upstream && (\n              <p className=\"truncate text-sm text-muted-foreground\">\n                fork of {repo.upstream}\n              </p>\n            )}\n\n            {repo.description && (\n              <p className=\"mt-0.5 line-clamp-1 text-sm text-muted-foreground\">\n                {repo.description}\n              </p>\n            )}\n          </div>\n\n          {repo.language && (\n            <span className=\"hidden shrink-0 text-sm text-muted-foreground sm:block\">\n              {repo.language}\n            </span>\n          )}\n\n          <span className=\"flex shrink-0 items-center gap-1 text-sm text-muted-foreground tabular-nums\">\n            <StarIcon className=\"size-3.5\" aria-hidden />\n            {new Intl.NumberFormat(\"en-US\", {\n              notation: \"compact\",\n              compactDisplay: \"short\",\n            }).format(repo.stars)}\n          </span>\n        </li>\n      ))}\n    </ul>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/github-repo-list.tsx"
+    }
+  ],
+  "docs": "https://ompatil1906.vercel.app/components/github-repo-list",
+  "categories": [
+    "data-display"
+  ],
+  "type": "registry:component"
+}

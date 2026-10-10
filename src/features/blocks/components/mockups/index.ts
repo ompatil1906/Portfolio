@@ -5,8 +5,10 @@ import { Hero01Mockup } from "./hero-01"
 import { Login01Mockup } from "./login-01"
 import { Metrics01Mockup } from "./metrics-01"
 import { NotFound01Mockup } from "./not-found-01"
+import { OpenSource01Mockup } from "./open-source-01"
 import { SocialLinks01Mockup } from "./social-links-01"
 import { SocialProof01Mockup } from "./social-proof-01"
+import { Support01Mockup } from "./support-01"
 import { Team01Mockup } from "./team-01"
 import { Testimonials01Mockup } from "./testimonials-01"
 import { Testimonials02Mockup } from "./testimonials-02"
@@ -24,4 +26,6 @@ export const BLOCK_MOCKUPS: Record<string, React.ComponentType> = {
   "social-links-01": SocialLinks01Mockup,
   "social-proof-01": SocialProof01Mockup,
   "not-found-01": NotFound01Mockup,
+  "open-source-01": OpenSource01Mockup,
+  "support-01": Support01Mockup,
 }

@@ -758,4 +758,32 @@ export const examples: Registry["items"] = [
       previewClassName: "flex min-h-svh items-center justify-center",
     },
   },
+  {
+    name: "github-repo-list-demo",
+    type: "registry:example",
+    registryDependencies: [getRegistryItemUrl("github-repo-list")],
+    files: [
+      {
+        path: "examples/github-repo-list-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+    meta: {
+      previewClassName: "flex min-h-svh items-center justify-center",
+    },
+  },
+  {
+    name: "github-contribution-list-demo",
+    type: "registry:example",
+    registryDependencies: [getRegistryItemUrl("github-contribution-list")],
+    files: [
+      {
+        path: "examples/github-contribution-list-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+    meta: {
+      previewClassName: "flex min-h-svh items-center justify-center",
+    },
+  },
 ]

@@ -1,3 +1,5 @@
+import { Boxes, Flame, Link2, Smile, Workflow, Zap } from "lucide-react"
+
 import {
   BunIcon,
   GitHubIcon,
@@ -16,14 +18,14 @@ export const TECH_STACK: TechStack[] = [
     title: "TypeScript",
     href: "https://www.typescriptlang.org",
     icon: <TsIcon />,
-    categories: ["Language"],
+    categories: ["Languages"],
   },
   {
     key: "js",
     title: "JavaScript",
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     icon: <JsIcon />,
-    categories: ["Language"],
+    categories: ["Languages"],
   },
   {
     key: "python",
@@ -37,7 +39,49 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Language"],
+    categories: ["Languages"],
+  },
+  {
+    key: "pytorch",
+    title: "PyTorch",
+    href: "https://pytorch.org",
+    icon: <Flame />,
+    categories: ["AI/ML & GenAI"],
+  },
+  {
+    key: "scikit-learn",
+    title: "scikit-learn",
+    href: "https://scikit-learn.org",
+    icon: <Boxes />,
+    categories: ["AI/ML & GenAI"],
+  },
+  {
+    key: "huggingface",
+    title: "Hugging Face",
+    href: "https://huggingface.co",
+    icon: <Smile />,
+    categories: ["AI/ML & GenAI"],
+  },
+  {
+    key: "langchain",
+    title: "LangChain",
+    href: "https://www.langchain.com",
+    icon: <Link2 />,
+    categories: ["Agent Frameworks"],
+  },
+  {
+    key: "langgraph",
+    title: "LangGraph",
+    href: "https://www.langchain.com/langgraph",
+    icon: <Workflow />,
+    categories: ["Agent Frameworks"],
+  },
+  {
+    key: "fastapi",
+    title: "FastAPI",
+    href: "https://fastapi.tiangolo.com",
+    icon: <Zap />,
+    categories: ["Backend"],
   },
   {
     key: "react",
@@ -184,14 +228,14 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Backend & Database"],
+    categories: ["Backend"],
   },
   {
     key: "bun",
     title: "Bun",
     href: "https://bun.sh",
     icon: <BunIcon />,
-    categories: ["Backend & Database"],
+    categories: ["Backend"],
   },
   {
     key: "postgresql",
@@ -205,7 +249,7 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Backend & Database"],
+    categories: ["Databases"],
   },
   {
     key: "mongodb",
@@ -219,7 +263,7 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Backend & Database"],
+    categories: ["Databases"],
   },
   {
     key: "redis",
@@ -233,7 +277,7 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Backend & Database"],
+    categories: ["Databases"],
   },
   {
     key: "nginx",
@@ -247,7 +291,7 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Backend & Database"],
+    categories: ["Backend"],
   },
   {
     key: "claude",
@@ -261,7 +305,7 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Workflow & AI"],
+    categories: ["AI/ML & GenAI"],
   },
   {
     key: "cursor",
@@ -275,7 +319,7 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Workflow & AI"],
+    categories: ["DevOps & Tools"],
   },
   {
     key: "gemini",
@@ -289,14 +333,14 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Workflow & AI"],
+    categories: ["AI/ML & GenAI"],
   },
   {
     key: "chatgpt",
     title: "ChatGPT",
     href: "https://chatgpt.com",
     icon: <OpenAIIcon />,
-    categories: ["Workflow & AI"],
+    categories: ["AI/ML & GenAI"],
   },
   {
     key: "git",
@@ -310,14 +354,14 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Workflow & AI"],
+    categories: ["DevOps & Tools"],
   },
   {
     key: "github",
     title: "GitHub",
     href: "https://github.com",
     icon: <GitHubIcon />,
-    categories: ["Workflow & AI"],
+    categories: ["DevOps & Tools"],
   },
   {
     key: "docker",
@@ -331,14 +375,14 @@ export const TECH_STACK: TechStack[] = [
         />
       </svg>
     ),
-    categories: ["Workflow & AI"],
+    categories: ["DevOps & Tools"],
   },
   {
     key: "vercel",
     title: "Vercel",
     href: "https://vercel.com",
     icon: <VercelIcon />,
-    categories: ["Workflow & AI"],
+    categories: ["DevOps & Tools"],
   },
   {
     key: "openpanel",

@@ -8,7 +8,9 @@ import type {
 } from "@/registry/components/apple-carousel"
 import type { AppleHelloEffectEnglish } from "@/registry/components/apple-hello-effect/apple-hello-effect-english"
 import type { CopyButton } from "@/registry/components/copy-button"
+import type { GitHubContributionList } from "@/registry/components/github-contribution-list"
 import type { GitHubContributions } from "@/registry/components/github-contributions"
+import type { GitHubRepoList } from "@/registry/components/github-repo-list"
 import type {
   GlowCard,
   GlowCardGrid,
@@ -113,6 +115,12 @@ export type MiddleTruncationProps = Omit<
 
 export type GitHubContributionsProps = ComponentProps<
   typeof GitHubContributions
+>
+
+export type GitHubRepoListProps = ComponentProps<typeof GitHubRepoList>
+
+export type GitHubContributionListProps = ComponentProps<
+  typeof GitHubContributionList
 >
 
 export type SpinningCircularTextProps = Omit<

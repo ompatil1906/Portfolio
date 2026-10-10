@@ -3,17 +3,12 @@ import type { MetadataRoute } from "next"
 import { blockCategories } from "@/config/registry"
 import { SITE_INFO } from "@/config/site"
 import { getAllBlockStaticParams } from "@/lib/blocks"
-import { getBlogPosts, getComponentDocs } from "@/features/doc/data/documents"
+import { getComponentDocs } from "@/features/doc/data/documents"
 
 export const revalidate = false
 export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = getBlogPosts().map((post) => ({
-    url: `${SITE_INFO.url}/blog/${post.slug}`,
-    lastModified: new Date(post.metadata.updatedAt).toISOString(),
-  }))
-
   const components = getComponentDocs().map((post) => ({
     url: `${SITE_INFO.url}/components/${post.slug}`,
     lastModified: new Date(post.metadata.updatedAt).toISOString(),
@@ -33,7 +28,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const routes = [
     "",
-    "/blog",
     "/components",
     "/components/showcase",
     "/blocks",
@@ -44,5 +38,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date().toISOString(),
   }))
 
-  return [...routes, ...posts, ...components, ...blockCategoryPages, ...blocks]
+  return [...routes, ...components, ...blockCategoryPages, ...blocks]
 }

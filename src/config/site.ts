@@ -8,7 +8,8 @@ export const SITE_INFO = {
   name: USER.displayName,
   url: process.env.NEXT_PUBLIC_APP_URL || "https://ompatil1906.vercel.app",
   ogImage: USER.ogImage,
-  description: USER.bio,
+  description:
+    "Om Patil is an AI & Data Science engineer building GenAI and agentic systems — multi-agent research workflows, RAG, LLM triage models, and full-stack AI products. Explore featured projects, research, and experience.",
   keywords: USER.keywords,
 }
 
@@ -30,10 +31,6 @@ export const MAIN_NAV: NavItem<Route>[] = [
   {
     title: "Blocks",
     href: "/blocks",
-  },
-  {
-    title: "Blog",
-    href: "/blog",
   },
 ]
 

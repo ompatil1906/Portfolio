@@ -319,7 +319,7 @@ This project is proudly supported by:
   </tbody>
 </table>
 
-> Found this project useful? [Sponsor me](https://github.com/sponsors/ncdai) to help with support and maintenance.
+> Found this project useful? [Sponsor me](https://github.com/sponsors/ompatil1906) to help with support and maintenance.
 
 ## Stats
 

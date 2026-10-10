@@ -22,6 +22,47 @@
       "author": "Om Patil <patilom1906@gmail.com>"
     },
     {
+      "name": "get-github-data",
+      "title": "Get GitHub Data",
+      "description": "Fetch a GitHub user's repositories and authored pull requests, with caching and rate-limit handling.",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/registry/lib/get-github-data/github-data.ts",
+          "type": "registry:lib",
+          "target": "@lib/get-github-data/github-data.ts"
+        },
+        {
+          "path": "src/registry/lib/get-github-data/get-cached-github-data.ts",
+          "type": "registry:lib",
+          "target": "@lib/get-github-data/get-cached-github-data.ts"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "type": "registry:lib",
+      "author": "Om Patil <patilom1906@gmail.com>"
+    },
+    {
+      "name": "get-openpanel-overview",
+      "title": "Get OpenPanel Overview",
+      "description": "Fetch OpenPanel analytics overview metrics and their period-over-period changes, with caching.",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "src/registry/lib/openpanel/get-openpanel-overview.ts",
+          "type": "registry:lib",
+          "target": "@lib/openpanel/get-openpanel-overview.ts"
+        }
+      ],
+      "categories": [
+        "data-display"
+      ],
+      "type": "registry:lib",
+      "author": "Om Patil <patilom1906@gmail.com>"
+    },
+    {
       "name": "use-sound",
       "title": "useSound",
       "description": "Hook for playing sound effects with volume, playback rate, and interrupt controls.",
@@ -1204,6 +1245,54 @@
       "author": "Om Patil <patilom1906@gmail.com>"
     },
     {
+      "name": "github-repo-list",
+      "title": "GitHub Repo List",
+      "description": "List GitHub repositories with language, fork origin, and star counts.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://ompatil1906.vercel.app/r/get-github-data.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/components/github-repo-list/github-repo-list.tsx",
+          "type": "registry:component",
+          "target": "@components/github-repo-list.tsx"
+        }
+      ],
+      "docs": "https://ompatil1906.vercel.app/components/github-repo-list",
+      "categories": [
+        "data-display"
+      ],
+      "type": "registry:component",
+      "author": "Om Patil <patilom1906@gmail.com>"
+    },
+    {
+      "name": "github-contribution-list",
+      "title": "GitHub Contribution List",
+      "description": "List authored pull requests with merged, open, and closed states.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://ompatil1906.vercel.app/r/get-github-data.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/components/github-contribution-list/github-contribution-list.tsx",
+          "type": "registry:component",
+          "target": "@components/github-contribution-list.tsx"
+        }
+      ],
+      "docs": "https://ompatil1906.vercel.app/components/github-contribution-list",
+      "categories": [
+        "data-display"
+      ],
+      "type": "registry:component",
+      "author": "Om Patil <patilom1906@gmail.com>"
+    },
+    {
       "name": "login-01",
       "title": "Login 01",
       "description": "A simple login form.",
@@ -1626,6 +1715,61 @@
       },
       "categories": [
         "application"
+      ],
+      "type": "registry:block",
+      "author": "Om Patil <patilom1906@gmail.com>"
+    },
+    {
+      "name": "open-source-01",
+      "title": "Open Source 01",
+      "description": "An open source section with authored pull requests and repositories.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://ompatil1906.vercel.app/r/github-contribution-list.json",
+        "https://ompatil1906.vercel.app/r/github-repo-list.json",
+        "https://ompatil1906.vercel.app/r/get-github-data.json",
+        "https://ompatil1906.vercel.app/r/style.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/blocks/open-source-01/open-source-01.tsx",
+          "type": "registry:component",
+          "target": "@components/open-source-01.tsx"
+        }
+      ],
+      "meta": {
+        "createdAt": "2026-08-20"
+      },
+      "categories": [
+        "marketing"
+      ],
+      "type": "registry:block",
+      "author": "Om Patil <patilom1906@gmail.com>"
+    },
+    {
+      "name": "support-01",
+      "title": "Support 01",
+      "description": "A support call-to-action with sponsor and star actions.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "https://ompatil1906.vercel.app/r/style.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/blocks/support-01/support-01.tsx",
+          "type": "registry:component",
+          "target": "@components/support-01.tsx"
+        }
+      ],
+      "meta": {
+        "createdAt": "2026-08-20"
+      },
+      "categories": [
+        "marketing"
       ],
       "type": "registry:block",
       "author": "Om Patil <patilom1906@gmail.com>"

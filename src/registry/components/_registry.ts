@@ -963,4 +963,40 @@ export const components: Registry["items"] = [
     categories: ["illustrations"],
     docs: "https://ompatil1906.vercel.app/components/jpg-card-holder",
   },
+  {
+    name: "github-repo-list",
+    type: "registry:component",
+    title: "GitHub Repo List",
+    description:
+      "List GitHub repositories with language, fork origin, and star counts.",
+    dependencies: ["lucide-react"],
+    registryDependencies: [getRegistryItemUrl("get-github-data")],
+    files: [
+      {
+        path: "components/github-repo-list/github-repo-list.tsx",
+        type: "registry:component",
+        target: "@components/github-repo-list.tsx",
+      },
+    ],
+    categories: ["data-display"],
+    docs: "https://ompatil1906.vercel.app/components/github-repo-list",
+  },
+  {
+    name: "github-contribution-list",
+    type: "registry:component",
+    title: "GitHub Contribution List",
+    description:
+      "List authored pull requests with merged, open, and closed states.",
+    dependencies: ["lucide-react"],
+    registryDependencies: [getRegistryItemUrl("get-github-data")],
+    files: [
+      {
+        path: "components/github-contribution-list/github-contribution-list.tsx",
+        type: "registry:component",
+        target: "@components/github-contribution-list.tsx",
+      },
+    ],
+    categories: ["data-display"],
+    docs: "https://ompatil1906.vercel.app/components/github-contribution-list",
+  },
 ]

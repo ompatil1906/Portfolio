@@ -340,4 +340,48 @@ export const blocks: Registry["items"] = [
       createdAt: "2026-08-09",
     },
   },
+  {
+    name: "open-source-01",
+    title: "Open Source 01",
+    description:
+      "An open source section with authored pull requests and repositories.",
+    type: "registry:block",
+    dependencies: ["lucide-react"],
+    registryDependencies: [
+      getRegistryItemUrl("github-contribution-list"),
+      getRegistryItemUrl("github-repo-list"),
+      getRegistryItemUrl("get-github-data"),
+      getRegistryItemUrl("style"),
+    ],
+    files: [
+      {
+        path: "blocks/open-source-01/open-source-01.tsx",
+        type: "registry:component",
+        target: "@components/open-source-01.tsx",
+      },
+    ],
+    categories: ["marketing"],
+    meta: {
+      createdAt: "2026-08-20",
+    },
+  },
+  {
+    name: "support-01",
+    title: "Support 01",
+    description: "A support call-to-action with sponsor and star actions.",
+    type: "registry:block",
+    dependencies: ["lucide-react"],
+    registryDependencies: [getRegistryItemUrl("style")],
+    files: [
+      {
+        path: "blocks/support-01/support-01.tsx",
+        type: "registry:component",
+        target: "@components/support-01.tsx",
+      },
+    ],
+    categories: ["marketing"],
+    meta: {
+      createdAt: "2026-08-20",
+    },
+  },
 ]

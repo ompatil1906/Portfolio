@@ -3,7 +3,7 @@ import { z } from "zod"
 export const DOC_FEEDBACK_MESSAGE_MAX_LENGTH = 1000
 
 export const docFeedbackSchema = z.object({
-  category: z.enum(["components", "blog"]),
+  category: z.enum(["components"]),
   // Doc slugs come from MDX filenames, which are kebab-case.
   slug: z
     .string()

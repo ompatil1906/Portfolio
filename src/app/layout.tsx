@@ -10,6 +10,7 @@ import { JSON_LD_ID, personJsonLd } from "@/config/json-ld"
 import { META_THEME_COLORS, SITE_INFO, X_HANDLE } from "@/config/site"
 import { fontVariables } from "@/lib/fonts"
 import { JsonLdScript } from "@/lib/json-ld"
+import { Analytics } from "@/components/analytics"
 import { Providers } from "@/components/providers"
 import { USER } from "@/features/portfolio/data/user"
 
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_INFO.url),
   title: {
     template: `%s – ${SITE_INFO.name}`,
-    default: `${USER.displayName} – ${USER.jobTitle}`,
+    default: `${USER.displayName} | ${USER.jobTitle}`,
   },
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
@@ -151,6 +152,8 @@ export default function RootLayout({
         <Providers>
           <NuqsAdapter>{children}</NuqsAdapter>
         </Providers>
+
+        <Analytics />
       </body>
     </html>
   )

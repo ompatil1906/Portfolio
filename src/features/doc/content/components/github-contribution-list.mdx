@@ -1,0 +1,84 @@
+---
+title: GitHub Contribution List
+description: List authored pull requests with merged, open, and closed states.
+createdAt: 2026-08-20
+updatedAt: 2026-08-20
+---
+
+<ComponentPreview
+  name="github-contribution-list-demo"
+  openInV0Url="https://ompatil1906.vercel.app/r/github-contribution-list.json"
+/>
+
+## Features
+
+- Renders each pull request with its title, target repository, and state.
+- Colors and icons distinguish merged, open, and closed states.
+- Links every row to the pull request on GitHub.
+- Presentational and prop-driven, so it works with data from any source.
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @ompatil/github-contribution-list
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="github-contribution-list"
+  title="components/github-contribution-list.tsx"
+/>
+
+<ComponentSource
+  src="src/registry/lib/get-github-data/github-data.ts"
+  title="lib/get-github-data/github-data.ts"
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+<ComponentSource name="github-contribution-list-demo" collapsible="false" />
+
+## API reference
+
+### GitHubContributionList
+
+<AutoTypeTable
+  path="src/features/doc/content/props.ts"
+  name="GitHubContributionListProps"
+/>
+
+## Data
+
+Pair the list with the `get-github-data` library to fetch authored pull requests. The mapper drops pull requests against repositories the viewer owns, so only outside contributions are shown:
+
+```tsx
+import { getCachedGithubData } from "@/lib/get-github-data/get-cached-github-data"
+import { GitHubContributionList } from "@/components/github-contribution-list"
+
+export async function Contributions() {
+  const data = await getCachedGithubData("vercel")
+
+  return <GitHubContributionList contributions={data?.contributions ?? []} />
+}
+```

@@ -1,0 +1,84 @@
+---
+title: GitHub Repo List
+description: List GitHub repositories with language, fork origin, and star counts.
+createdAt: 2026-08-20
+updatedAt: 2026-08-20
+---
+
+<ComponentPreview
+  name="github-repo-list-demo"
+  openInV0Url="https://ompatil1906.vercel.app/r/github-repo-list.json"
+/>
+
+## Features
+
+- Renders a repository name, description, primary language, and star count.
+- Marks forks with their upstream repository.
+- Formats star counts compactly and links every row to GitHub.
+- Presentational and prop-driven, so it works with data from any source.
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @ompatil/github-repo-list
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="github-repo-list"
+  title="components/github-repo-list.tsx"
+/>
+
+<ComponentSource
+  src="src/registry/lib/get-github-data/github-data.ts"
+  title="lib/get-github-data/github-data.ts"
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+<ComponentSource name="github-repo-list-demo" collapsible="false" />
+
+## API reference
+
+### GitHubRepoList
+
+<AutoTypeTable
+  path="src/features/doc/content/props.ts"
+  name="GitHubRepoListProps"
+/>
+
+## Data
+
+Pair the list with the [`get-github-data`](https://ompatil1906.vercel.app/components/get-github-data) library to fetch live repositories:
+
+```tsx
+import { getCachedGithubData } from "@/lib/get-github-data/get-cached-github-data"
+import { GitHubRepoList } from "@/components/github-repo-list"
+
+export async function Repositories() {
+  const data = await getCachedGithubData("vercel")
+
+  return <GitHubRepoList repos={data?.owned ?? []} />
+}
+```

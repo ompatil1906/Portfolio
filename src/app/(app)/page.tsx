@@ -1,6 +1,6 @@
 import { Suspense } from "react"
 import type { Metadata } from "next"
-import type { ProfilePage, WithContext } from "schema-dts"
+import type { ItemList, ProfilePage, WithContext } from "schema-dts"
 
 import { CARBON_ADS } from "@/config/ads"
 import { JSON_LD_ID } from "@/config/json-ld"
@@ -8,22 +8,30 @@ import { JsonLdScript } from "@/lib/json-ld"
 import { absoluteUrl, cn } from "@/lib/utils"
 import { FloatingCarbonAds } from "@/components/floating-carbon-ads"
 import { Blocks } from "@/features/portfolio/components/blocks"
-import { Blog } from "@/features/portfolio/components/blog"
 import { Components } from "@/features/portfolio/components/components"
+import { Contact } from "@/features/portfolio/components/contact"
 import { Education } from "@/features/portfolio/components/education"
 import { Experiences } from "@/features/portfolio/components/experiences"
 import { GitHubContributions } from "@/features/portfolio/components/github-contributions"
 import { Hello } from "@/features/portfolio/components/hello"
+import { HeroIntro } from "@/features/portfolio/components/hero-intro"
 import {
   Insights,
   InsightsSkeleton,
 } from "@/features/portfolio/components/insights"
+import {
+  OpenSource,
+  OpenSourceSkeleton,
+} from "@/features/portfolio/components/open-source"
 import { Overview } from "@/features/portfolio/components/overview"
 import { ProfileHeader } from "@/features/portfolio/components/profile-header"
 import { Projects } from "@/features/portfolio/components/projects"
 import { Recognition } from "@/features/portfolio/components/recognition"
+import { Research } from "@/features/portfolio/components/research"
 import { SocialLinks } from "@/features/portfolio/components/social-links"
+import { Support } from "@/features/portfolio/components/support"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
+import { PROJECTS } from "@/features/portfolio/data/projects"
 import { USER } from "@/features/portfolio/data/user"
 
 export const metadata: Metadata = {
@@ -36,11 +44,13 @@ export default function HomePage() {
   return (
     <>
       <JsonLdScript data={getProfilePageJsonLd()} />
+      <JsonLdScript data={getProjectsJsonLd()} />
       {CARBON_ADS && <FloatingCarbonAds />}
 
       <div className="[--separator-height:--spacing(8)] **:data-[slot=panel]:scroll-mt-[calc(var(--header-height)+var(--separator-height))]">
         <div className="mx-auto md:max-w-3xl">
           <ProfileHeader />
+          <HeroIntro />
           <Separator />
 
           <SocialLinks />
@@ -51,16 +61,12 @@ export default function HomePage() {
           <Hello />
           <Separator />
 
-          <Components />
+          <Projects />
           <Separator />
 
-          <Blocks />
-          <Separator />
-
-          <Blog />
-          <Separator />
-
-          <TechStack />
+          <Suspense fallback={<OpenSourceSkeleton />}>
+            <OpenSource />
+          </Suspense>
           <Separator />
 
           <Experiences />
@@ -69,10 +75,25 @@ export default function HomePage() {
           <Education />
           <Separator />
 
-          <Projects />
+          <TechStack />
+          <Separator />
+
+          <Research />
           <Separator />
 
           <Recognition />
+          <Separator />
+
+          <Contact />
+          <Separator />
+
+          <Support />
+          <Separator />
+
+          <Components />
+          <Separator />
+
+          <Blocks />
           <Separator />
 
           <Suspense fallback={<InsightsSkeleton />}>
@@ -94,6 +115,24 @@ function getProfilePageJsonLd(): WithContext<ProfilePage> {
     // Reference the Person defined in the WebSite node (rendered globally in
     // the root layout) so both blocks resolve to the same entity.
     mainEntity: { "@id": JSON_LD_ID.person },
+  }
+}
+
+function getProjectsJsonLd(): WithContext<ItemList> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Featured projects",
+    itemListElement: PROJECTS.slice(0, 4).map((project, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "SoftwareSourceCode",
+        name: project.title,
+        url: project.link,
+        keywords: project.skills.join(", "),
+      },
+    })),
   }
 }
 

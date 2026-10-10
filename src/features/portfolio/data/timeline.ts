@@ -24,6 +24,7 @@ Founded ViksitHub as a student founder, leading product and full-stack engineeri
   },
   {
     year: 2026,
-    content: "Joined AskLumenAI as a Founding AI/ML Engineer.",
+    content:
+      "Joined AskLumenAI, leading product, strategy, and technology for its AI-powered learning & research assistant.",
   },
 ]

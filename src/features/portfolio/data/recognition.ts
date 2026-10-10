@@ -27,7 +27,9 @@ export const RECOGNITION_BY_DATE: RecognitionEntry[] = [
   })),
   ...CERTIFICATIONS.map((credential) => ({
     kind: "certificate" as const,
-    key: credential.credentialURL,
+    // Certifications may omit a credential URL; fall back to the title so the
+    // list key stays unique.
+    key: credential.credentialURL || credential.title,
     date: credential.issueDate,
     credential,
   })),
@@ -37,7 +39,7 @@ export const RECOGNITION_BY_DATE: RecognitionEntry[] = [
       credential.issuerIconName === "copyright"
         ? ("copyright" as const)
         : ("trademark" as const),
-    key: credential.credentialURL,
+    key: credential.credentialURL || credential.title,
     date: credential.issueDate,
     credential,
   })),

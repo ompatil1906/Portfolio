@@ -74,26 +74,11 @@ const SOCIAL_LINKS: SocialLink[] = [
   {
     icon: "https://assets.chanhdai.com/images/link-icons/github.webp",
     title: "GitHub",
-    href: "https://github.com/ncdai",
+    href: "https://github.com/ompatil1906",
   },
   {
     icon: "https://assets.chanhdai.com/images/link-icons/linkedin.webp",
     title: "LinkedIn",
-    href: "https://linkedin.com/in/ncdai",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/dailydotdev.webp",
-    title: "daily.dev",
-    href: "https://app.daily.dev/ncdai",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/discord.webp",
-    title: "Discord",
-    href: "https://discord.com/users/1186630645443739651",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/youtube.webp",
-    title: "YouTube",
-    href: "https://www.youtube.com/@ompatil",
+    href: "https://linkedin.com/in/om-patil19",
   },
 ]

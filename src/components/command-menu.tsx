@@ -18,7 +18,6 @@ import {
   MonitorIcon,
   MoonStarIcon,
   RssIcon,
-  SquareDashedIcon,
   SunMediumIcon,
   TextInitialIcon,
   TypeIcon,
@@ -49,7 +48,7 @@ import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links"
 
 import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark"
 import { getWordmarkSVG } from "./chanhdai-wordmark"
-import { GridViewIcon, NewsIcon, ReactIcon, SearchIcon } from "./icons"
+import { GridViewIcon, ReactIcon, SearchIcon } from "./icons"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
 
@@ -99,13 +98,6 @@ const MENU_LINKS: CommandLinkItem[] = [
     kind: "page",
     icon: <GridViewIcon />,
     shortcut: "GB",
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-    kind: "page",
-    icon: <NewsIcon />,
-    shortcut: "GL",
   },
   {
     title: "Bookmarks",
@@ -365,19 +357,6 @@ export function CommandMenu({
     )
   }, [blocks, handleOpenLink])
 
-  const blogLinks = useMemo(
-    () =>
-      docs
-        .filter((doc) => doc.category === "blog")
-        .map<CommandLinkItem>((doc) => ({
-          title: doc.title,
-          href: `/blog/${doc.slug}`,
-          kind: "page",
-          keywords: ["blog"],
-        })),
-    [docs]
-  )
-
   const bookmarksGroup = useMemo(() => {
     if (!bookmarks || bookmarks.length === 0) {
       return null
@@ -458,14 +437,6 @@ export function CommandMenu({
 
             {blocksGroup}
 
-            <CommandLinkGroup
-              heading="Blog"
-              links={blogLinks}
-              fallbackIcon={<NewsIcon />}
-              onLinkHighlight={handleLinkHighlight}
-              onLinkSelect={handleOpenLink}
-            />
-
             {bookmarksGroup}
 
             <CommandLinkGroup
@@ -494,26 +465,6 @@ export function CommandMenu({
               >
                 <TypeIcon />
                 Copy Logotype as SVG
-              </CommandMenuItem>
-
-              <CommandMenuItem
-                onHighlight={() => {
-                  setSelectedCommandKind("link")
-                }}
-                onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
-              >
-                <SquareDashedIcon />
-                Brand Guidelines
-              </CommandMenuItem>
-
-              <CommandMenuItem onHighlight={handleCommandHighlight} asChild>
-                <a
-                  href="https://assets.chanhdai.com/chanhdai-brand.zip"
-                  download
-                >
-                  <DownloadIcon />
-                  Download Brand Assets
-                </a>
               </CommandMenuItem>
             </CommandGroup>
 

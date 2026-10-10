@@ -22,6 +22,31 @@ export const personJsonLd: Person = {
   identifier: USER.username,
   image: USER.avatar,
   url: SITE_INFO.url,
+  jobTitle: USER.jobTitle,
+  description: SITE_INFO.description,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Pune",
+    addressRegion: "Maharashtra",
+    addressCountry: "IN",
+  },
+  worksFor: {
+    "@type": "Organization",
+    name: "AskLumenAI",
+    url: "https://asklumenai.com",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "AISSMS Institute of Information Technology",
+  },
+  knowsAbout: [
+    "Generative AI",
+    "Agentic AI",
+    "Large Language Models",
+    "Retrieval-Augmented Generation",
+    "Multi-agent systems",
+    "Full-stack development",
+  ],
   // Public profiles opt in via their `sameAs` flag (Knowledge Graph).
   sameAs: SOCIAL_LINKS.filter((link) => link.sameAs).map((link) => link.href),
 }

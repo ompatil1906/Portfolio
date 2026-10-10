@@ -24,6 +24,44 @@ export const Index: Record<string, any> = {
     categories: ["utilities"],
     meta: undefined,
   },
+  "get-github-data": {
+    name: "get-github-data",
+    description: "Fetch a GitHub user's repositories and authored pull requests, with caching and rate-limit handling.",
+    type: "registry:lib",
+    files: [{
+      path: "src/registry/lib/get-github-data/github-data.ts",
+      type: "registry:lib",
+      target: "@lib/get-github-data/github-data.ts",
+    },{
+      path: "src/registry/lib/get-github-data/get-cached-github-data.ts",
+      type: "registry:lib",
+      target: "@lib/get-github-data/get-cached-github-data.ts",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/lib/get-github-data/github-data.ts")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "get-github-data"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["data-display"],
+    meta: undefined,
+  },
+  "get-openpanel-overview": {
+    name: "get-openpanel-overview",
+    description: "Fetch OpenPanel analytics overview metrics and their period-over-period changes, with caching.",
+    type: "registry:lib",
+    files: [{
+      path: "src/registry/lib/openpanel/get-openpanel-overview.ts",
+      type: "registry:lib",
+      target: "@lib/openpanel/get-openpanel-overview.ts",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/lib/openpanel/get-openpanel-overview.ts")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "get-openpanel-overview"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["data-display"],
+    meta: undefined,
+  },
   "use-sound": {
     name: "use-sound",
     description: "Hook for playing sound effects with volume, playback rate, and interrupt controls.",
@@ -813,6 +851,40 @@ export const Index: Record<string, any> = {
     categories: ["illustrations"],
     meta: undefined,
   },
+  "github-repo-list": {
+    name: "github-repo-list",
+    description: "List GitHub repositories with language, fork origin, and star counts.",
+    type: "registry:component",
+    files: [{
+      path: "src/registry/components/github-repo-list/github-repo-list.tsx",
+      type: "registry:component",
+      target: "@components/github-repo-list.tsx",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/components/github-repo-list/github-repo-list.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "github-repo-list"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["data-display"],
+    meta: undefined,
+  },
+  "github-contribution-list": {
+    name: "github-contribution-list",
+    description: "List authored pull requests with merged, open, and closed states.",
+    type: "registry:component",
+    files: [{
+      path: "src/registry/components/github-contribution-list/github-contribution-list.tsx",
+      type: "registry:component",
+      target: "@components/github-contribution-list.tsx",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/components/github-contribution-list/github-contribution-list.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "github-contribution-list"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["data-display"],
+    meta: undefined,
+  },
   "login-01": {
     name: "login-01",
     description: "A simple login form.",
@@ -1084,6 +1156,40 @@ export const Index: Record<string, any> = {
     }),
     categories: ["application"],
     meta: {"createdAt":"2026-08-09"},
+  },
+  "open-source-01": {
+    name: "open-source-01",
+    description: "An open source section with authored pull requests and repositories.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/blocks/open-source-01/open-source-01.tsx",
+      type: "registry:component",
+      target: "@components/open-source-01.tsx",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/blocks/open-source-01/open-source-01.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "open-source-01"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["marketing"],
+    meta: {"createdAt":"2026-08-20"},
+  },
+  "support-01": {
+    name: "support-01",
+    description: "A support call-to-action with sponsor and star actions.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/blocks/support-01/support-01.tsx",
+      type: "registry:component",
+      target: "@components/support-01.tsx",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/blocks/support-01/support-01.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "support-01"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["marketing"],
+    meta: {"createdAt":"2026-08-20"},
   },
   "text-flip-demo": {
     name: "text-flip-demo",
@@ -2168,6 +2274,40 @@ export const Index: Record<string, any> = {
     component: React.lazy(async () => {
       const mod = await import("@/registry/examples/jpg-card-holder-demo.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "jpg-card-holder-demo"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: {"previewClassName":"flex min-h-svh items-center justify-center"},
+  },
+  "github-repo-list-demo": {
+    name: "github-repo-list-demo",
+    description: "",
+    type: "registry:example",
+    files: [{
+      path: "src/registry/examples/github-repo-list-demo.tsx",
+      type: "registry:example",
+      target: "",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/examples/github-repo-list-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "github-repo-list-demo"
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: {"previewClassName":"flex min-h-svh items-center justify-center"},
+  },
+  "github-contribution-list-demo": {
+    name: "github-contribution-list-demo",
+    description: "",
+    type: "registry:example",
+    files: [{
+      path: "src/registry/examples/github-contribution-list-demo.tsx",
+      type: "registry:example",
+      target: "",
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/examples/github-contribution-list-demo.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "github-contribution-list-demo"
       return { default: mod.default || mod[exportName] }
     }),
     categories: undefined,

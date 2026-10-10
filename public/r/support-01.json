@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "support-01",
+  "title": "Support 01",
+  "author": "Om Patil <patilom1906@gmail.com>",
+  "description": "A support call-to-action with sponsor and star actions.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://ompatil1906.vercel.app/r/style.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/blocks/support-01/support-01.tsx",
+      "content": "import { HeartIcon, StarIcon } from \"lucide-react\"\n\nimport { Button } from \"@/components/ui/button\"\n\nexport function Support01() {\n  return (\n    <div className=\"max-w-screen overflow-x-clip\">\n      <div className=\"mx-auto max-w-3xl px-4 py-8\">\n        <div className=\"rounded-2xl border border-line bg-card p-8 text-center\">\n          <h2 className=\"font-heading text-3xl font-medium tracking-tight\">\n            Support the work\n          </h2>\n\n          <p className=\"mx-auto mt-3 max-w-prose text-balance text-muted-foreground\">\n            Everything here is free and open source. If it saved you time, you\n            can sponsor the work or star the repositories.\n          </p>\n\n          <div className=\"mt-6 flex flex-wrap justify-center gap-2\">\n            <Button\n              nativeButton={false}\n              render={\n                <a\n                  href=\"https://github.com/sponsors/ompatil1906\"\n                  target=\"_blank\"\n                  rel=\"noopener sponsored\"\n                />\n              }\n            >\n              <HeartIcon />\n              Sponsor\n            </Button>\n\n            <Button\n              variant=\"outline\"\n              nativeButton={false}\n              render={\n                <a\n                  href=\"https://github.com/ompatil1906\"\n                  target=\"_blank\"\n                  rel=\"noopener\"\n                />\n              }\n            >\n              <StarIcon />\n              Star on GitHub\n            </Button>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": "@components/support-01.tsx"
+    }
+  ],
+  "meta": {
+    "createdAt": "2026-08-20"
+  },
+  "categories": [
+    "marketing"
+  ],
+  "type": "registry:block"
+}

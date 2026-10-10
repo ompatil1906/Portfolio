@@ -1,5 +1,19 @@
 [
   {
+    "name": "open-source-01",
+    "description": "An open source section with authored pull requests and repositories.",
+    "categories": [
+      "marketing"
+    ]
+  },
+  {
+    "name": "support-01",
+    "description": "A support call-to-action with sponsor and star actions.",
+    "categories": [
+      "marketing"
+    ]
+  },
+  {
     "name": "not-found-01",
     "description": "A 404 page with a playable brick breaker game.",
     "categories": [

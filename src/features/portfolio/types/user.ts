@@ -23,6 +23,8 @@ export type User = {
   website: string
   /** Primary/current role shown on profile */
   jobTitle: string
+  /** Short value-proposition headline shown in the hero */
+  headline: string
   /** Work history entries */
   jobs: {
     title: string
