@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "./src/scripts/**/*.ts",
+    "./src/scripts/**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}

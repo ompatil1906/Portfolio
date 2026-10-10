@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "team-01",
+  "title": "Team 01",
+  "author": "Om Patil <patilom1906@gmail.com>",
+  "description": "A team section with glowing cards.",
+  "registryDependencies": [
+    "https://ompatil1906.vercel.app/r/glow-card-grid.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/blocks/team-01/team-01.tsx",
+      "content": "import { GlowCard, GlowCardGrid } from \"@/registry/components/glow-card-grid\"\n\nexport default function Team01() {\n  return (\n    <div className=\"container px-4 py-8\">\n      <GlowCardGrid className=\"lg:grid-cols-4\">\n        {CARDS.map((card) => (\n          <GlowCard\n            key={card.name}\n            name={card.name}\n            handle={card.handle}\n            avatar={card.avatar}\n          />\n        ))}\n      </GlowCardGrid>\n    </div>\n  )\n}\n\n// Demo avatars only. Replace them with your own URLs.\nconst CARDS = [\n  {\n    name: \"shadcn\",\n    handle: \"@shadcn\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/shadcn.webp\",\n  },\n  {\n    name: \"Evil Rabbit\",\n    handle: \"@evilrabbit_\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/evilrabbit_.webp\",\n  },\n  {\n    name: \"OrcDev\",\n    handle: \"@orcdev\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/orcdev.webp\",\n  },\n  {\n    name: \"David Haz\",\n    handle: \"@davidhaz\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/davidhaz.webp\",\n  },\n  {\n    name: \"Shu\",\n    handle: \"@shuding\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/shuding.webp\",\n  },\n  {\n    name: \"Emil Kowalski\",\n    handle: \"@emilkowalski\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/emilkowalski.webp\",\n  },\n  {\n    name: \"Aaron\",\n    handle: \"@aaronmahlke\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/aaronmahlke.webp\",\n  },\n  {\n    name: \"Chánh Đại\",\n    handle: \"@Om_Patil19\",\n    avatar: \"https://assets.chanhdai.com/avatars/x/Om_Patil19.webp\",\n  },\n]\n",
+      "type": "registry:component",
+      "target": "@components/team-01.tsx"
+    }
+  ],
+  "meta": {
+    "createdAt": "2026-03-30",
+    "previewClassName": "min-h-svh place-items-center-safe content-center-safe"
+  },
+  "categories": [
+    "marketing"
+  ],
+  "type": "registry:block"
+}

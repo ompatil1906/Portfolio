@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "testimonials-marquee",
+  "title": "Testimonials Marquee",
+  "author": "Om Patil <patilom1906@gmail.com>",
+  "description": "Scrolling marquee to showcase user testimonials.",
+  "registryDependencies": [
+    "@kibo-ui/marquee",
+    "https://ompatil1906.vercel.app/r/testimonial.json"
+  ],
+  "files": [],
+  "docs": "https://ompatil1906.vercel.app/components/testimonials-marquee",
+  "categories": [
+    "marketing"
+  ],
+  "type": "registry:component"
+}
