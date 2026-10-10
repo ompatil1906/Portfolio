@@ -41,7 +41,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 max-w-screen overflow-x-clip bg-background px-2">
       <div className="screen-line-top screen-line-bottom mx-auto flex h-(--header-height) items-center gap-2 border-x screen-line-bottom-border screen-line-top-border pr-2 pl-4 group-has-data-[slot=layout-wide]/layout:container after:z-1 sm:gap-4 md:max-w-3xl">
         <BrandContextMenu>
-          <Link href="/" aria-label="Home">
+          <Link
+            href="/"
+            aria-label="Home"
+            className="inline-flex cursor-pointer items-center"
+          >
             <ChanhDaiMark className="h-6 shrink-0" />
           </Link>
         </BrandContextMenu>

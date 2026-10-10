@@ -16,12 +16,16 @@ import { toast } from "@/components/ui/toast"
 import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark"
 import { getWordmarkSVG } from "./chanhdai-wordmark"
 
-export function BrandContextMenu({ children }: { children: React.ReactNode }) {
+export function BrandContextMenu({
+  children,
+}: {
+  children: React.ReactElement
+}) {
   const { success } = useTiks()
 
   return (
     <ContextMenu>
-      <ContextMenuTrigger>{children}</ContextMenuTrigger>
+      <ContextMenuTrigger render={children} />
 
       <ContextMenuContent className="w-fit">
         <ContextMenuItem render={<a href="/" target="_blank" />}>
