@@ -19,3 +19,6 @@ export function ChanhDaiWordmark(props: React.ComponentProps<"svg">) {
 export function getWordmarkSVG() {
   return WORDMARK_SVG
 }
+
+export const OmPatilWordmark = ChanhDaiWordmark
+export const getOmPatilWordmarkSVG = getWordmarkSVG

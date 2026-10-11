@@ -1,326 +1,76 @@
-<!-- # [chanhdai.com](https://heyompatil.me) -->
+# [heyompatil.me](https://heyompatil.me)
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/grid.svg?title=chanhdai.com&amp;subtitle=A+pixel-perfect+dev+portfolio+and+shadcn+registry.&amp;logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+fill%3D%27none%27+viewBox%3D%270+0+24+24%27%3E%3Cpath+fill%3D%27%2523000%27+d%3D%27M9+18H3v-3h6zm12-9h-6v6h6v3h-9V6h9zM3+15H0V9h3zm21+0h-3V9h3zM9+9H3V6h6z%27%2F%3E%3C%2Fsvg%3E&amp;size=wide&amp;mode=dark&amp;theme=zinc&amp;font=geist" /><img alt="header" src="https://shieldcn.dev/header/grid.svg?title=chanhdai.com&amp;subtitle=A+pixel-perfect+dev+portfolio+and+shadcn+registry.&amp;logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg+xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27+fill%3D%27none%27+viewBox%3D%270+0+24+24%27%3E%3Cpath+fill%3D%27%2523000%27+d%3D%27M9+18H3v-3h6zm12-9h-6v6h6v3h-9V6h9zM3+15H0V9h3zm21+0h-3V9h3zM9+9H3V6h6z%27%2F%3E%3C%2Fsvg%3E&amp;size=wide&amp;mode=light&amp;theme=zinc&amp;font=geist" /></picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/grid.svg?title=heyompatil.me&amp;subtitle=Portfolio%2C+blog%2C+and+shadcn+registry+by+Om+Patil.&amp;logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%20701.35%20318.8%22%3E%3Cpath%20fill%3D%22%2523fff%22%20d%3D%22M%20255.05%20255.04%20L%20255.05%20318.8%20L%2063.77%20318.8%20L%2063.77%20255.04%20Z%20M%200%20255.04%20L%200%2063.77%20L%2063.77%2063.77%20L%2063.77%20255.04%20Z%20M%2063.77%2063.77%20L%2063.77%200%20L%20255.05%200%20L%20255.05%2063.77%20Z%20M%20255.05%20255.04%20L%20255.05%2063.77%20L%20318.8%2063.77%20L%20318.8%20255.04%20Z%22%2F%3E%3Cpath%20fill%3D%22%2523fff%22%20d%3D%22M%20382.55%20318.8%20L%20382.55%200%20L%20637.6%200%20L%20637.6%2063.77%20L%20446.32%2063.77%20L%20446.32%20127.52%20L%20637.6%20127.52%20L%20637.6%20191.29%20L%20446.32%20191.29%20L%20446.32%20318.8%20Z%20M%20637.6%20127.52%20L%20637.6%2063.77%20L%20701.35%2063.77%20L%20701.35%20127.52%20Z%22%2F%3E%3C%2Fsvg%3E&amp;size=wide&amp;mode=dark&amp;theme=zinc&amp;font=geist" />
+    <img alt="header" src="https://shieldcn.dev/header/grid.svg?title=heyompatil.me&amp;subtitle=Portfolio%2C+blog%2C+and+shadcn+registry+by+Om+Patil.&amp;logo=data%3Aimage%2Fsvg%2Bxml%2C%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%20701.35%20318.8%22%3E%3Cpath%20fill%3D%22%2523000%22%20d%3D%22M%20255.05%20255.04%20L%20255.05%20318.8%20L%2063.77%20318.8%20L%2063.77%20255.04%20Z%20M%200%20255.04%20L%200%2063.77%20L%2063.77%2063.77%20L%2063.77%20255.04%20Z%20M%2063.77%2063.77%20L%2063.77%200%20L%20255.05%200%20L%20255.05%2063.77%20Z%20M%20255.05%20255.04%20L%20255.05%2063.77%20L%20318.8%2063.77%20L%20318.8%20255.04%20Z%22%2F%3E%3Cpath%20fill%3D%22%2523000%22%20d%3D%22M%20382.55%20318.8%20L%20382.55%200%20L%20637.6%200%20L%20637.6%2063.77%20L%20446.32%2063.77%20L%20446.32%20127.52%20L%20637.6%20127.52%20L%20637.6%20191.29%20L%20446.32%20191.29%20L%20446.32%20318.8%20Z%20M%20637.6%20127.52%20L%20637.6%2063.77%20L%20701.35%2063.77%20L%20701.35%20127.52%20Z%22%2F%3E%3C%2Fsvg%3E&amp;size=wide&amp;mode=light&amp;theme=zinc&amp;font=geist" />
+  </picture>
 </p>
 
 <p>
   <a href="https://github.com/ompatil1906/Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/github/ompatil1906/Portfolio/license.svg?variant=outline&amp;font=geist" /><img alt="license" src="https://shieldcn.dev/github/ompatil1906/Portfolio/license.svg?variant=outline&amp;mode=light&amp;font=geist" /></picture></a>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://www.shieldcn.dev/github/stars/ompatil1906/Portfolio.svg?variant=outline&amp;mode=dark&amp;font=geist"><img alt="GitHub Stars" src="https://www.shieldcn.dev/github/stars/ompatil1906/Portfolio.svg?variant=outline&amp;mode=light&amp;font=geist"></picture>
+  <a href="https://github.com/ompatil1906/Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://www.shieldcn.dev/github/stars/ompatil1906/Portfolio.svg?variant=outline&amp;mode=dark&amp;font=geist"><img alt="GitHub Stars" src="https://www.shieldcn.dev/github/stars/ompatil1906/Portfolio.svg?variant=outline&amp;mode=light&amp;font=geist"></picture></a>
   <a href="https://github.com/ompatil1906/Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/views/repo/ompatil1906/Portfolio.svg?base=8541&amp;variant=outline&amp;font=geist" /><img alt="repo views" src="https://shieldcn.dev/views/repo/ompatil1906/Portfolio.svg?base=43218&amp;variant=outline&amp;mode=light&amp;font=geist" /></picture></a>
 </p>
 
-A pixel-perfect dev portfolio and shadcn registry showcasing my work as a Design Engineer.
+A portfolio, blog, and shadcn component registry showcasing my work as an AI Systems & Data Science Engineer.
 
-→ Live site: [chanhdai.com](https://heyompatil.me)
+→ **Live site**: [heyompatil.me](https://heyompatil.me)
 
-[![screenshot-dark](https://assets.chanhdai.com/images/screenshot-desktop-dark.webp?t=1778602757#gh-dark-mode-only)](https://heyompatil.me#gh-dark-mode-only)
-[![screenshot-light](https://assets.chanhdai.com/images/screenshot-desktop-light.webp?t=1778602757#gh-light-mode-only)](https://heyompatil.me#gh-light-mode-only)
+[![Screenshot](public/screenshots/screenshot-desktop-dark.webp)](https://heyompatil.me)
 
 ## Overview
 
 ### Stack
 
-- Next.js 16
-- Tailwind CSS v4
-- shadcn/ui
+- **Framework**: Next.js 16 (App Router, Turbopack)
+- **Styling**: Tailwind CSS v4, Lucide Icons, Hugeicons
+- **Components**: shadcn/ui, Radix UI primitives, Motion
+- **Content**: MDX, Gray Matter
+- **Package Manager**: pnpm (Bun for scripts)
+- **Deployment**: Vercel
 
 ### Featured
 
-- Clean & modern design
-- Light/Dark themes
-- vCard integration
-- SEO optimized ([JSON-LD schema](https://json-ld.org), sitemap, robots)
-- AI-ready with [/llms.txt](https://llmstxt.org)
-- Spam-protected email
-- Installable as PWA
-- Analytics with [OpenPanel](https://openpanel.dev)
-
-### Content
-
-Centralized document system powered by MDX:
-
-- Unified content layer for blog posts and component docs
-- Category-based content organization
-- Raw `.md` endpoints for AI readability
-- Syntax highlighting with code blocks
-- Dynamic OG images for rich link previews
-- RSS feed for content distribution
+- Clean, modern, responsive design with dark and light themes
+- Custom shadcn component & block registry
+- Interactive 404 Breakout game ("Daikanoid") with OP brick layout
+- SEO optimized with JSON-LD schemas, automated XML sitemap, and robots.txt
+- LLM-friendly documentation endpoints with `/llms.txt` and raw markdown access
+- vCard export with contact details
+- Progressive Web App (PWA) installable
 
 ### Registry
 
-Easily build and distribute reusable components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
+Easily build and distribute reusable components, hooks, and blocks using the shadcn registry.
 
-Each entry is well-documented and includes:
+Visit [heyompatil.me/components](https://heyompatil.me/components) or [heyompatil.me/blocks](https://heyompatil.me/blocks) to explore components and installation commands.
 
-- Live preview & code snippets
-- Beautiful, readable code blocks
-- One-click command blocks (pnpm, npm, yarn, bun)
+```bash
+# Add components directly via shadcn CLI
+npx shadcn add https://heyompatil.me/r/<component-name>.json
+```
 
 ## Development
 
-Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
+Please refer to the [Development Guide](./DEVELOPMENT.md) for local setup and commands.
+
+```bash
+pnpm dev             # Start development server
+pnpm build           # Production build
+pnpm registry:build  # Build shadcn component registry
+pnpm lint            # Run linter
+pnpm check-types     # TypeScript type check
+```
 
 ## License
 
-Everything in this repository is licensed under the [MIT license](./LICENSE), with one exception: my name and my logo, which are covered by the [trademark and brand policy](./TRADEMARK.md).
+This project is licensed under the [MIT License](./LICENSE).
 
-So the code and the writing are yours. Fork it, copy it, quote it, translate it. Just make sure to <ins>remove all my personal information</ins> and swap the branding before publishing your website. It's awesome to see my code being useful to someone!
+## Connect
 
-## Contributors
-
-<p>
-  <a href="https://github.com/ompatil1906/Portfolio/graphs/contributors"><picture><source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/contributors/ompatil1906/Portfolio.svg?title=false&amp;size=48&amp;align=left&amp;mode=dark&amp;font=geist&amp;watermark=true" /><img alt="contributors" src="https://shieldcn.dev/contributors/ompatil1906/Portfolio.svg?title=false&amp;size=48&amp;align=left&amp;mode=light&amp;font=geist&amp;watermark=true" /></picture></a>
-</p>
-
-## Sponsors
-
-This project is proudly supported by:
-
-<table>
-  <tbody>
-    <tr>
-      <td colspan="3"><strong>Open Source Program</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://claude.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/claude-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/claude.svg"
-              alt="Claude"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://openpanel.dev/open-source?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/openpanel-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/openpanel.svg"
-              alt="OpenPanel"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://posthog.com/startups?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/posthog-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/posthog.svg"
-              alt="PostHog"
-            />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Platinum Sponsors</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://www.nixtla.io?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/nixtla-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/nixtla.svg"
-              alt="Nixtla"
-            />
-          </picture>
-        </a>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Gold Sponsors</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://shadcnstudio.com?utm_source=chanhdai.com&utm_medium=banner&utm_campaign=github">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcnstudio-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcnstudio.svg"
-              alt="shadcnstudio.com"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://shadcnspace.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcnspace-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcnspace.svg"
-              alt="Shadcn Space"
-            />
-          </picture>
-        </a>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Silver Sponsors</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://shadcncraft.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcncraft-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcncraft.svg"
-              alt="shadcncraft"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://www.shadcnblocks.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shadcnblocks-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shadcnblocks.svg"
-              alt="Shadcnblocks"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://reactbits.dev?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/reactbits-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/reactbits.svg"
-              alt="React Bits"
-            />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://obelinf.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/obelinf-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/obelinf.svg"
-              alt="Obelinf"
-            />
-          </picture>
-        </a>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td colspan="3"><strong>Spark Supporters</strong></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://uirules.com?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/uirules-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/uirules.svg"
-              alt="UI Rules"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://shoogle.dev?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/shoogle-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/shoogle.svg"
-              alt="Shoogle"
-            />
-          </picture>
-        </a>
-      </td>
-      <td>
-        <a href="https://www.fonttrio.xyz?utm_source=chanhdai.com">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/fonttrio-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/fonttrio.svg"
-              alt="Fonttrio"
-            />
-          </picture>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/AnukarOP">
-          <picture>
-            <source
-              media="(prefers-color-scheme: dark)"
-              srcset="https://assets.chanhdai.com/images/sponsors/anukar-dark.svg"
-            />
-            <img
-              src="https://assets.chanhdai.com/images/sponsors/anukar.svg"
-              alt="Anukar"
-            />
-          </picture>
-        </a>
-      </td>
-      <td align="center"><a href="https://github.com/raksalim">Raksa Lim</a></td>
-      <td align="center"><a href="https://lndev.me?utm_source=chanhdai.com">Leonel Ngoya</a></td>
-    </tr>
-    <tr>
-      <td align="center"><a href="https://github.com/fadymondy">Fady Mondy</a></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-> Found this project useful? [Sponsor me](https://github.com/sponsors/ompatil1906) to help with support and maintenance.
-
-## Stats
-
-![Stats](https://repobeats.axiom.co/api/embed/583bf08fbdef57c3921d3cfda902d546df3e6ed1.svg "Repobeats analytics image")
+- Website: [heyompatil.me](https://heyompatil.me)
+- GitHub: [@ompatil1906](https://github.com/ompatil1906)
+- X / Twitter: [@Om_Patil19](https://x.com/Om_Patil19)
+- LinkedIn: [Om Patil](https://www.linkedin.com/in/om-patil-1906)
+- Email: [patilom1906@gmail.com](mailto:patilom1906@gmail.com)

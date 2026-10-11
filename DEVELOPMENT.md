@@ -49,7 +49,7 @@ Then, update the necessary environment variables inside `.env.local`.
 pnpm dev
 ```
 
-The application should now be available at https://ompatil.localhost
+The application should now be available at http://localhost:3000 (Production domain: https://heyompatil.me)
 
 ## Building for Production
 

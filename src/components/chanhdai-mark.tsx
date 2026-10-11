@@ -24,3 +24,6 @@ export function ChanhDaiMark(props: React.ComponentProps<"svg">) {
 export function getMarkSVG() {
   return MARK_SVG
 }
+
+export const OmPatilMark = ChanhDaiMark
+export const getOmPatilMarkSVG = getMarkSVG

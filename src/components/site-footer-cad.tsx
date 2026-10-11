@@ -30,8 +30,7 @@ const INSPIRED_BY = [
 const OPENPANEL_URL =
   "https://openpanel.dev?utm_source=heyompatil.me&utm_medium=referral&utm_campaign=footer"
 
-// Not derived from `SITE_INFO.url`: that follows `NEXT_PUBLIC_APP_URL` and
-// would read `ompatil.localhost` in dev.
+// Not derived from `SITE_INFO.url`: that follows `NEXT_PUBLIC_APP_URL`.
 const SITE_TITLE = "heyompatil.me"
 
 const SITE_SUBTITLE = packageJson.description

@@ -7,3 +7,5 @@ export function ChanhDaiMarkIsometric() {
     </div>
   )
 }
+
+export const OmPatilMarkIsometric = ChanhDaiMarkIsometric

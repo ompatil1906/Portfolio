@@ -17,8 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "monthly",
     priority: 0.8,
     images: [
-      post.metadata.image ||
-        `${SITE_INFO.url}/og/simple?title=${encodeURIComponent(post.metadata.title)}&description=${encodeURIComponent(post.metadata.description)}`,
+      `${SITE_INFO.url}/og/simple?title=${encodeURIComponent(post.metadata.title)}`,
     ],
   }))
 

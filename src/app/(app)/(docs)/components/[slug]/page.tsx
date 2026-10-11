@@ -59,7 +59,7 @@ export async function generateMetadata({
 
   const postUrl = `/components/${doc.slug}`
   const ogImage =
-    image ||
+    (image && !image.includes("chanhdai.com") ? image : null) ||
     `/og/simple?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`
 
   return {
@@ -99,7 +99,9 @@ function getSoftwareSourceCodeJsonLd(
     name: doc.metadata.title,
     description: doc.metadata.description,
     image:
-      doc.metadata.image ||
+      (doc.metadata.image && !doc.metadata.image.includes("chanhdai.com")
+        ? doc.metadata.image
+        : null) ||
       absoluteUrl(
         `/og/simple?title=${encodeURIComponent(doc.metadata.title)}&description=${encodeURIComponent(doc.metadata.description)}`
       ),

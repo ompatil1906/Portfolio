@@ -5,7 +5,7 @@ import puppeteer from "puppeteer"
 
 import { coverScenarios } from "./lib/cover-scenarios.mts"
 
-const baseUrl = process.env.URL || "https://ompatil.localhost"
+const baseUrl = process.env.URL || "https://heyompatil.me"
 
 // `capture:sync` uploads this as `images/blog/{slug}.webp`, the cover URL in docs.
 const outputDir = path.join(process.cwd(), ".ompatil/screenshots/blog")

@@ -3,7 +3,7 @@ import path from "node:path"
 import type { Browser } from "puppeteer"
 import puppeteer from "puppeteer"
 
-const url = process.env.URL || "https://ompatil.localhost"
+const url = process.env.URL || "https://heyompatil.me"
 const outputDir = path.join(process.cwd(), ".ompatil/screenshots")
 
 const SIZE = {
