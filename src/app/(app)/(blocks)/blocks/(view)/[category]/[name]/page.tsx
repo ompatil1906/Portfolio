@@ -266,3 +266,5 @@ function findNeighbour(blocks: string[], slug: string) {
 
   return { previous: null, next: null }
 }
+
+// Om Patil portfolio

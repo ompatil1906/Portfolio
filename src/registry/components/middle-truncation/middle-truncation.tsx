@@ -246,3 +246,5 @@ export function MiddleTruncation({
     </span>
   )
 }
+
+// Om Patil portfolio

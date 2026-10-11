@@ -43,3 +43,5 @@ const eslintConfig = defineConfig([
 ])
 
 export default eslintConfig
+
+// Om Patil portfolio

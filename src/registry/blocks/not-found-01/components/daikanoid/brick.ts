@@ -97,3 +97,5 @@ export function resetGame(p: p5, state: GameState) {
 
   state.bricks = bricks
 }
+
+// Om Patil portfolio

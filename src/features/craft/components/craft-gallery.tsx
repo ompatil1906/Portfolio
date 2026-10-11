@@ -60,3 +60,5 @@ export function CraftGallery({ images }: { images: CraftImage[] }) {
     </AppleCarouselRoot>
   )
 }
+
+// Om Patil portfolio

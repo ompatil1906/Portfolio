@@ -19,3 +19,5 @@ function CollapsibleContent({ ...props }: CollapsiblePrimitive.Panel.Props) {
 }
 
 export { Collapsible, CollapsibleContent, CollapsibleTrigger }
+
+// Om Patil portfolio

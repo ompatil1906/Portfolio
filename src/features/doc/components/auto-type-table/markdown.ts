@@ -70,3 +70,5 @@ export function markdownRenderer(options?: ShikiOptions): MarkdownRenderer {
     },
   }
 }
+
+// Om Patil portfolio

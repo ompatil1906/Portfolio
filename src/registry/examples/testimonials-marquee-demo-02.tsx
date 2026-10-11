@@ -167,3 +167,5 @@ const TESTIMONIALS_2 = [
     quote: "super clean",
   },
 ]
+
+// Om Patil portfolio

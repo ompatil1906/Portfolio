@@ -99,3 +99,5 @@ const copyText = async (text: string) => {
     return false
   }
 }
+
+// Om Patil portfolio

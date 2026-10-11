@@ -99,3 +99,5 @@ export function ArrowUpRight({ className }: { className?: string }) {
     </svg>
   )
 }
+
+// Om Patil portfolio

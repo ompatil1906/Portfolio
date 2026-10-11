@@ -79,3 +79,5 @@ export function getStack(): string[] {
     return version ? [`${dependency}@${version}`] : []
   })
 }
+
+// Om Patil portfolio

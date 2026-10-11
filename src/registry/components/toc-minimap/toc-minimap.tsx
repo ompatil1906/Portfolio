@@ -147,3 +147,5 @@ function scrollToHeading(url: string) {
     behavior: "smooth",
   })
 }
+
+// Om Patil portfolio

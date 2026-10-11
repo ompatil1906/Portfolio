@@ -3,3 +3,5 @@ import { AppleHelloEffectVietnamese } from "@/registry/components/apple-hello-ef
 export default function AppleHelloEffectVietnameseDemo() {
   return <AppleHelloEffectVietnamese />
 }
+
+// Om Patil portfolio

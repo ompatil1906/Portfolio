@@ -39,3 +39,5 @@ export function formatDuration(seconds: number): string {
 
   return parts.length > 0 ? parts.join(" ") : "0s"
 }
+
+// Om Patil portfolio

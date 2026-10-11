@@ -6,3 +6,5 @@ export type SocialProfile = {
   /** Opt-in: include this profile in JSON-LD `sameAs` (public profile page). */
   sameAs?: boolean
 }
+
+// Om Patil portfolio

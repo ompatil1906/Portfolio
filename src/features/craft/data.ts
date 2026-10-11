@@ -262,3 +262,5 @@ export const CRAFTS: Craft[] = [
     xPostUrl: "https://x.com/Om_Patil19/status/2066194589539823825",
   },
 ]
+
+// Om Patil portfolio

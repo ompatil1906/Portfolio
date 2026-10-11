@@ -30,3 +30,5 @@ const ITEMS = [
   { title: "Theme Switcher", href: "#theme-switcher" },
   { title: "TOC Minimap", href: "#toc-minimap" },
 ]
+
+// Om Patil portfolio

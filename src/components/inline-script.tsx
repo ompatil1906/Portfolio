@@ -12,3 +12,5 @@ export function InlineScript({ html }: { html: string }) {
     />
   )
 }
+
+// Om Patil portfolio

@@ -30,3 +30,5 @@ export function rehypeAddQueryParams(params: Record<string, string>) {
     })
   }
 }
+
+// Om Patil portfolio

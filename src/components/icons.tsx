@@ -752,3 +752,5 @@ export function getIconForPackageManager(manager: string) {
       return <TerminalSquareIcon />
   }
 }
+
+// Om Patil portfolio

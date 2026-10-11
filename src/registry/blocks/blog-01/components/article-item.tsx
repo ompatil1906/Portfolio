@@ -33,3 +33,5 @@ export function ArticleItem({ title, coverUrl, createdAt }: ArticleItemProps) {
     </article>
   )
 }
+
+// Om Patil portfolio

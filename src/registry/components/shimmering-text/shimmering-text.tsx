@@ -78,3 +78,5 @@ export function ShimmeringText({
     </motion.span>
   )
 }
+
+// Om Patil portfolio

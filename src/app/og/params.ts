@@ -11,3 +11,5 @@ export function clampParam(
     ? `${trimmed.slice(0, maxLength - 1)}…`
     : trimmed
 }
+
+// Om Patil portfolio

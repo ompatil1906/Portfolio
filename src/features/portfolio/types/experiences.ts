@@ -37,3 +37,5 @@ export type Experience = {
   /** Marks the company as the current employer for highlighting. */
   isCurrentEmployer?: boolean
 }
+
+// Om Patil portfolio

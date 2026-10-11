@@ -20,3 +20,5 @@ export type Testimonial = {
 
   icon?: React.ReactNode
 }
+
+// Om Patil portfolio

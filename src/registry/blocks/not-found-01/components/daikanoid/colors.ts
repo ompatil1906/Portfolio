@@ -20,3 +20,5 @@ export let Colors = {} as ReturnType<typeof initColors>
 export function loadColors() {
   Colors = initColors()
 }
+
+// Om Patil portfolio

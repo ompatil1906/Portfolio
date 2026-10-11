@@ -38,3 +38,5 @@ export type Sponsor = {
   logo: (props: React.ComponentProps<"svg">) => JSX.Element
   tier: SponsorTier
 }
+
+// Om Patil portfolio

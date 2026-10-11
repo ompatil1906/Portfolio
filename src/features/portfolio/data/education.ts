@@ -26,3 +26,5 @@ export const EDUCATION: Education[] = [
     ],
   },
 ]
+
+// Om Patil portfolio

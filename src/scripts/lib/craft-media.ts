@@ -44,3 +44,5 @@ export function formatCraftMediaSnippet({
   height: ${height},
 },`
 }
+
+// Om Patil portfolio

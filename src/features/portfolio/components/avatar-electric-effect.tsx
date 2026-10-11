@@ -55,3 +55,5 @@ export function AvatarElectricEffect({ children }: { children: JSX.Element }) {
     </ElectricBorder>
   )
 }
+
+// Om Patil portfolio

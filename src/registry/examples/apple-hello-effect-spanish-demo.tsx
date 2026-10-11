@@ -3,3 +3,5 @@ import { AppleHelloEffectSpanish } from "@/registry/components/apple-hello-effec
 export default function AppleHelloEffectSpanishDemo() {
   return <AppleHelloEffectSpanish />
 }
+
+// Om Patil portfolio

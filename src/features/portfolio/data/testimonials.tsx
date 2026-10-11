@@ -5,3 +5,5 @@ export const TESTIMONIALS_1: Testimonial[] = []
 
 // Short quotes (50 characters or fewer), ordered by date descending
 export const TESTIMONIALS_2: Testimonial[] = []
+
+// Om Patil portfolio

@@ -58,3 +58,4 @@
     "**/index.tsx": "${dirname(1)}/${dirname}"
   }
 }
+

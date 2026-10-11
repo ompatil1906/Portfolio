@@ -28,3 +28,5 @@ const renderEntry = (entry: BookmarkListEntry) => (
     {entry.card}
   </li>
 )
+
+// Om Patil portfolio

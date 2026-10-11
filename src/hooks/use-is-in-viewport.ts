@@ -22,3 +22,5 @@ export function useIsInViewport(
 
   return isIntersecting
 }
+
+// Om Patil portfolio

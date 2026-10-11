@@ -806,3 +806,5 @@ function ThemePalette({ cssVars }: { cssVars?: RegistryItem["cssVars"] }) {
     </div>
   )
 }
+
+// Om Patil portfolio

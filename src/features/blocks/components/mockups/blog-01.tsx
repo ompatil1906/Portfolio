@@ -23,3 +23,5 @@ export function Blog01Mockup() {
     </div>
   )
 }
+
+// Om Patil portfolio

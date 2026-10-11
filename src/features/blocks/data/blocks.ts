@@ -12,3 +12,5 @@ export function getBlocks(category?: string): Block[] {
     .filter((block) => !category || block.categories?.includes(category))
     .sort(compareBlocksByCreatedAtDesc)
 }
+
+// Om Patil portfolio

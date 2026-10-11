@@ -40,3 +40,5 @@ function Code({ className, ...props }: React.ComponentProps<"code">) {
 }
 
 export { Code, Prose, ProseMono }
+
+// Om Patil portfolio

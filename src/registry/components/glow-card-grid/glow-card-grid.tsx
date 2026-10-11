@@ -162,3 +162,5 @@ export function GlowCard({ name, handle, avatar, className }: GlowCardProps) {
     </div>
   )
 }
+
+// Om Patil portfolio

@@ -18,3 +18,5 @@ export interface GameState {
   ballImage: p5.Image | null
   paddleImage: p5.Image | null
 }
+
+// Om Patil portfolio

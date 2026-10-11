@@ -40,3 +40,5 @@ export function toProfileImageUrl(ogImage: string | null): string | null {
     "_400x400"
   )
 }
+
+// Om Patil portfolio

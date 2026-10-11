@@ -11,3 +11,5 @@ export const SOCIAL_ICONS: Record<SocialName, React.JSX.Element> = {
   github: <GitHubIcon />,
   linkedin: <LinkedInIcon />,
 }
+
+// Om Patil portfolio

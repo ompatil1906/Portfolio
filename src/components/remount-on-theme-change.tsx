@@ -7,3 +7,5 @@ export function RemountOnThemeChange(props: React.ComponentProps<"div">) {
 
   return <div key={resolvedTheme} {...props} />
 }
+
+// Om Patil portfolio

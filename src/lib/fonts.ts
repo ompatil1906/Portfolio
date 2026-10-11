@@ -49,3 +49,5 @@ export const fontVariables = cn(
   "[--font-sans:var(--font-geist-sans)]",
   "[--font-mono:var(--font-geist-mono)]"
 )
+
+// Om Patil portfolio

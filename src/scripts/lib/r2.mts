@@ -96,3 +96,5 @@ export async function syncDirToR2({
 
   return uploadedKeys
 }
+
+// Om Patil portfolio

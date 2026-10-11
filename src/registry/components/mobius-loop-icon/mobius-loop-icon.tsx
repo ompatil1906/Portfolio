@@ -39,3 +39,5 @@ export function MobiusLoopIcon(props: SVGMotionProps<SVGSVGElement>) {
     </motion.svg>
   )
 }
+
+// Om Patil portfolio

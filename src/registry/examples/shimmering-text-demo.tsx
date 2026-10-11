@@ -5,3 +5,5 @@ export default function ShimmeringTextDemo() {
     <ShimmeringText className="text-2xl font-medium" text="Shimmering Text" />
   )
 }
+
+// Om Patil portfolio

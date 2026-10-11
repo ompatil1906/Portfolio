@@ -44,3 +44,5 @@ export const coverScenarios: Record<string, CoverScenario> = {
     await sleep(400)
   },
 }
+
+// Om Patil portfolio

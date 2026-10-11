@@ -101,3 +101,5 @@ function toCodePoint(unicodeSurrogates: string, sep = "-") {
 function defaultSource(codePoint: string) {
   return `${TWEMOJI_CDN_URL}/${codePoint}.svg`
 }
+
+// Om Patil portfolio

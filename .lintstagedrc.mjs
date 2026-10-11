@@ -15,3 +15,5 @@ const lintStagedConfig = {
 };
 
 export default lintStagedConfig;
+
+// Om Patil portfolio

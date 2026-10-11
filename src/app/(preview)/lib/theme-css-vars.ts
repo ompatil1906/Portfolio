@@ -81,3 +81,5 @@ export function clearThemeCSSVars(doc: Document, styleId: string) {
     html.style.removeProperty(`--${key}`)
   }
 }
+
+// Om Patil portfolio

@@ -13,3 +13,5 @@ export function CarbonAds(props: Omit<CarbonAdsProps, "serve" | "placement">) {
     />
   )
 }
+
+// Om Patil portfolio

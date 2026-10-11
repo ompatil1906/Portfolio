@@ -285,3 +285,5 @@ const COMPONENT_ICONS: Record<string, React.ReactNode> = {
 export function ComponentIcon({ slug }: { slug: string }) {
   return COMPONENT_ICONS[slug] ?? <ReactIcon />
 }
+
+// Om Patil portfolio

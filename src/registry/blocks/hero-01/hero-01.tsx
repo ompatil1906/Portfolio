@@ -279,3 +279,5 @@ function TechItem({ icon, title }: { icon: JSX.Element; title: string }) {
     </div>
   )
 }
+
+// Om Patil portfolio

@@ -80,3 +80,5 @@ export function EmailItem({ emailB64 }: EmailItemProps) {
     </IntroItem>
   )
 }
+
+// Om Patil portfolio

@@ -118,3 +118,5 @@ const options: MDXRemoteProps["options"] = {
 export function MDX({ code }: { code: string }) {
   return <MDXRemote source={code} components={components} options={options} />
 }
+
+// Om Patil portfolio

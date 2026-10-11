@@ -67,3 +67,5 @@ export function GitHubStars({
     </Tooltip>
   )
 }
+
+// Om Patil portfolio

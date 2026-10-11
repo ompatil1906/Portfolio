@@ -57,3 +57,5 @@ export function springOptionsFromTransition(
     damping: Math.min(40, Math.max(12, 18 + duration * 4)),
   }
 }
+
+// Om Patil portfolio

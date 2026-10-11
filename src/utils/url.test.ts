@@ -28,3 +28,5 @@ describe("addQueryParams", () => {
     expect(addQueryParams("not a url", { a: "1" })).toBe("not a url")
   })
 })
+
+// Om Patil portfolio

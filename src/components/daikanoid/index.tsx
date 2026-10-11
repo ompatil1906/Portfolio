@@ -9,3 +9,5 @@ export const Daikanoid = dynamic(
     loading: () => <div className="h-150 w-200 ring-1 ring-border" />,
   }
 )
+
+// Om Patil portfolio

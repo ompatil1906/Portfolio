@@ -27,3 +27,5 @@ function revealEncodedText(id: string, textB64: string) {
   if (!el) return
   el.textContent = atob(textB64)
 }
+
+// Om Patil portfolio

@@ -64,3 +64,5 @@ function LogoMark({ kind }: { kind: (typeof LOGOS)[number]["mark"] }) {
       )
   }
 }
+
+// Om Patil portfolio

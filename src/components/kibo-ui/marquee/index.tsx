@@ -60,3 +60,5 @@ export type MarqueeItemProps = HTMLAttributes<HTMLDivElement>
 export const MarqueeItem = ({ className, ...props }: MarqueeItemProps) => (
   <div className={cn("mx-2 shrink-0 object-contain", className)} {...props} />
 )
+
+// Om Patil portfolio

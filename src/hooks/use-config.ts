@@ -14,3 +14,5 @@ const configAtom = atomWithStorage<Config>("config_v1", {
 export function useConfig() {
   return useAtom(configAtom)
 }
+
+// Om Patil portfolio

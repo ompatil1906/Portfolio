@@ -216,3 +216,5 @@ function distributeLogos(
 
   return columns
 }
+
+// Om Patil portfolio

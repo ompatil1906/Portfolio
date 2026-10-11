@@ -120,3 +120,5 @@ export function EducationItem({ item }: { item: Education }) {
     </div>
   )
 }
+
+// Om Patil portfolio

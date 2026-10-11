@@ -16,3 +16,5 @@ export default function FluidGradientTextDemo() {
     </div>
   )
 }
+
+// Om Patil portfolio

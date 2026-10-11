@@ -5,3 +5,5 @@ export type TechStack = {
   icon: React.ReactElement
   categories: string[]
 }
+
+// Om Patil portfolio

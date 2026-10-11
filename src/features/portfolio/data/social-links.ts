@@ -33,3 +33,5 @@ export type SocialLink = SocialProfile & { name: SocialName }
 export const SOCIAL_LINKS: SocialLink[] = (
   Object.entries(SOCIAL) as [SocialName, SocialProfile][]
 ).map(([name, profile]) => ({ name, ...profile }))
+
+// Om Patil portfolio

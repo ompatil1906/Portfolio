@@ -20,3 +20,5 @@ export type CredentialRecognition = {
 export type RecognitionEntry = AwardRecognition | CredentialRecognition
 
 export type RecognitionKind = RecognitionEntry["kind"]
+
+// Om Patil portfolio

@@ -19,3 +19,5 @@ export type Certification = {
    */
   credentialURL: string
 }
+
+// Om Patil portfolio

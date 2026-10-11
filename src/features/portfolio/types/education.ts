@@ -11,3 +11,5 @@ export type Education = {
   skills?: string[]
   isExpanded?: boolean
 }
+
+// Om Patil portfolio

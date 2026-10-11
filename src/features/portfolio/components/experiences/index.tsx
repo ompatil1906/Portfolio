@@ -76,3 +76,5 @@ function ExperienceList({ experiences }: { experiences: Experience[] }) {
     </>
   )
 }
+
+// Om Patil portfolio

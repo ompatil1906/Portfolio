@@ -6,3 +6,5 @@ import type { Certification } from "../types/certifications"
  * property rather than earned skills.
  */
 export const INTELLECTUAL_PROPERTY: Certification[] = []
+
+// Om Patil portfolio

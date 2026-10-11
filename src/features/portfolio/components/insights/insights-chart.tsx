@@ -88,3 +88,5 @@ export function InsightsChartSkeleton() {
     </div>
   )
 }
+
+// Om Patil portfolio

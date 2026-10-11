@@ -43,3 +43,5 @@ export function haptic(pattern: number | number[] = 50) {
     }
   } catch {}
 }
+
+// Om Patil portfolio

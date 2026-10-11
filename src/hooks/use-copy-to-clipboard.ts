@@ -59,3 +59,5 @@ export function useCopyToClipboard({
 
   return { state, copy } as const
 }
+
+// Om Patil portfolio

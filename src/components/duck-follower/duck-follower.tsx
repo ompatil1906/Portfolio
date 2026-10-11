@@ -34,3 +34,5 @@ export function DuckFollower() {
 
   return <DuckFollowerCore />
 }
+
+// Om Patil portfolio

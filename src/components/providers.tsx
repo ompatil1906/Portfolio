@@ -35,3 +35,5 @@ export function Providers({ children }: { children: React.ReactNode }) {
     </JotaiProvider>
   )
 }
+
+// Om Patil portfolio

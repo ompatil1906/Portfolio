@@ -67,3 +67,5 @@ function TabsContent({ className, ...props }: TabsPrimitive.Panel.Props) {
 }
 
 export { Tabs, TabsContent, TabsIndicator, TabsList, TabsTrigger }
+
+// Om Patil portfolio

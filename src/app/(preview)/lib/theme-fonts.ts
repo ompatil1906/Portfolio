@@ -114,3 +114,5 @@ function buildGoogleFontsUrl(families: string[]): string {
     .join("&")
   return `https://fonts.googleapis.com/css2?${params}&display=swap`
 }
+
+// Om Patil portfolio

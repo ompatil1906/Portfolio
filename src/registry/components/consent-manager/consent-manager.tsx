@@ -182,3 +182,5 @@ export function ConsentManager({ children }: { children: React.ReactNode }) {
     </ConsentManagerProvider>
   )
 }
+
+// Om Patil portfolio

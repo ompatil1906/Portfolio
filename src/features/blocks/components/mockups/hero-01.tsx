@@ -53,3 +53,5 @@ function GoldenSpiral({ className }: { className?: string }) {
     </svg>
   )
 }
+
+// Om Patil portfolio

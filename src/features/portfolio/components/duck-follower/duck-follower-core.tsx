@@ -385,3 +385,5 @@ export default function DuckFollowerCore() {
     </>
   )
 }
+
+// Om Patil portfolio

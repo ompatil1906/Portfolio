@@ -109,3 +109,5 @@ export function SiteFooterInteractiveLogotype() {
     </div>
   )
 }
+
+// Om Patil portfolio

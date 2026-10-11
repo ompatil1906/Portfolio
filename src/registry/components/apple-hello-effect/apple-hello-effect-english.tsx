@@ -82,3 +82,5 @@ export function AppleHelloEffectEnglish({
     </motion.svg>
   )
 }
+
+// Om Patil portfolio

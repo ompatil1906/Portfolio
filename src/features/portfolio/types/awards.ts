@@ -17,3 +17,5 @@ export type Award = {
   /** Optional URL to certificate, announcement, or reference material. */
   referenceLink?: string
 }
+
+// Om Patil portfolio

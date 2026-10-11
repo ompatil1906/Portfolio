@@ -242,3 +242,5 @@ export function DocFeedback({ category, slug }: DocFeedbackProps) {
     </>
   )
 }
+
+// Om Patil portfolio

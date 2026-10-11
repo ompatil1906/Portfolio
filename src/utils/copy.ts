@@ -16,3 +16,5 @@ export function copyToClipboardWithEvent(value: string, event?: Event) {
   }
   return copyText(value)
 }
+
+// Om Patil portfolio

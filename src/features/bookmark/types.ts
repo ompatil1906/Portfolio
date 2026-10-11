@@ -80,3 +80,5 @@ export type BookmarkListEntry = {
   category: BookmarkCategoryParam
   card: React.ReactNode
 }
+
+// Om Patil portfolio

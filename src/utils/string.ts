@@ -30,3 +30,5 @@ export function toISODateSafe(value: string | undefined | null): string | null {
   const d = new Date(value)
   return Number.isNaN(d.getTime()) ? null : d.toISOString()
 }
+
+// Om Patil portfolio

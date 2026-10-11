@@ -8,3 +8,5 @@ export default function ShimmeringTextDemo2() {
     />
   )
 }
+
+// Om Patil portfolio

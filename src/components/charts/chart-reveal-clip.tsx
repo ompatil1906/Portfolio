@@ -47,3 +47,5 @@ export function ChartRevealClip({
     </clipPath>
   )
 }
+
+// Om Patil portfolio

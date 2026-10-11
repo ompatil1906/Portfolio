@@ -32,3 +32,5 @@ export function JsonLdScript({ data }: { data: unknown }) {
     />
   )
 }
+
+// Om Patil portfolio

@@ -3,3 +3,5 @@ import { AppleHelloEffectHindi } from "@/registry/components/apple-hello-effect/
 export default function AppleHelloEffectHindiDemo() {
   return <AppleHelloEffectHindi />
 }
+
+// Om Patil portfolio

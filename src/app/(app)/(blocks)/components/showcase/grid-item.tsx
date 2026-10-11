@@ -17,3 +17,5 @@ export function GridItem({
     </div>
   )
 }
+
+// Om Patil portfolio

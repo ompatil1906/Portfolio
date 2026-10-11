@@ -10,3 +10,5 @@ export function Game() {
 
   return <Daikanoid defaultLogo={defaultLogo ?? undefined} />
 }
+
+// Om Patil portfolio

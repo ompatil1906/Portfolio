@@ -48,3 +48,5 @@ export async function Insights() {
 export function InsightsSkeleton() {
   return <Panel className="h-90.75" />
 }
+
+// Om Patil portfolio

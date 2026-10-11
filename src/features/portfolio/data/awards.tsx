@@ -20,3 +20,5 @@ export const AWARDS: Award[] = [
       "- Placed second at a national-level hackathon.\n- Built and shipped a working prototype within the time limit.",
   },
 ]
+
+// Om Patil portfolio

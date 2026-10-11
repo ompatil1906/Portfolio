@@ -18,3 +18,5 @@ export function GitHubContributions() {
     </Panel>
   )
 }
+
+// Om Patil portfolio

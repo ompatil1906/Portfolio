@@ -227,3 +227,5 @@ const nextConfig: NextConfig = {
 }
 
 export default nextConfig
+
+// Om Patil portfolio

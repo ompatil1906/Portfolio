@@ -37,3 +37,5 @@ export type Craft = {
   /** The post where it was shared, so readers can see its replies and reposts. */
   xPostUrl?: `https://x.com/${string}`
 }
+
+// Om Patil portfolio

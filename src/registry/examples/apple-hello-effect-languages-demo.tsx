@@ -34,3 +34,5 @@ export default function AppleHelloEffectLanguagesDemo() {
 
   return <AnimatePresence mode="wait">{demos[index]}</AnimatePresence>
 }
+
+// Om Patil portfolio

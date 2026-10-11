@@ -93,3 +93,5 @@ const articles: Article[] = [
     createdAt: "2024-10-29",
   },
 ]
+
+// Om Patil portfolio

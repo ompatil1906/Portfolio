@@ -1091,3 +1091,5 @@ export const THEMES: RegistryItem[] = [
 export function getShadcnThemes(): RegistryItem[] {
   return THEMES.map((theme) => withThemeSource(theme, "shadcn"))
 }
+
+// Om Patil portfolio

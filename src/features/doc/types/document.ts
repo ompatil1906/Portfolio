@@ -53,3 +53,5 @@ export type DocPreview = {
   title: string
   category?: string
 }
+
+// Om Patil portfolio

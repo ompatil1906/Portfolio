@@ -207,3 +207,5 @@ function CustomProse({ className, ...props }: ComponentProps<typeof Prose>) {
     />
   )
 }
+
+// Om Patil portfolio

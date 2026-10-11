@@ -56,3 +56,5 @@ export function GitHubStars({ repo, stargazersCount }: GitHubStarsProps) {
     </Tooltip>
   )
 }
+
+// Om Patil portfolio

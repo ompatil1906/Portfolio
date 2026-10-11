@@ -6,3 +6,5 @@ import { getCachedContributions } from "@/registry/components/github-contributio
 export function getGitHubContributions() {
   return getCachedContributions(GITHUB_USERNAME)
 }
+
+// Om Patil portfolio

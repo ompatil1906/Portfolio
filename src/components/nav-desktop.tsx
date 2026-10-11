@@ -11,3 +11,5 @@ export function NavDesktop({ items }: { items: NavItem<Route>[] }) {
 
   return <Nav className="max-sm:hidden" items={items} activeId={pathname} />
 }
+
+// Om Patil portfolio
