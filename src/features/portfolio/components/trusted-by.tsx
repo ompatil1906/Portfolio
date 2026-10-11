@@ -17,6 +17,7 @@ import { TestimonialSpotlight } from "@/registry/components/testimonial-spotligh
 import { Twemoji } from "@/registry/components/twemoji"
 import { SAMPLE_LOGOS } from "@/features/sponsor/data"
 
+import { HandwrittenArrow, HandwrittenNote } from "./handwritten-note"
 import { Panel } from "./panel"
 
 const ID = "trusted-by"
@@ -31,7 +32,15 @@ export type TestimonialType = {
 
 export function TrustedBy() {
   return (
-    <Panel id={ID} className="overflow-x-clip screen-line-bottom-none">
+    <Panel id={ID} className="screen-line-bottom-none">
+      <HandwrittenNote
+        className="top-6 right-full mr-3 hidden w-20 flex-col items-end lg:flex"
+        aria-hidden
+      >
+        <span className="-rotate-6">big thanks</span>
+        <HandwrittenArrow className="size-7 -scale-x-100 -rotate-6" />
+      </HandwrittenNote>
+
       {/* Header: Special thanks to the technologies powering this */}
       <div className="screen-line-bottom flex items-center justify-center gap-1.5 py-3 text-center text-xs font-medium tracking-wide text-muted-foreground @2xl:text-sm">
         <span>Special thanks to the technologies powering this</span>
