@@ -63,6 +63,9 @@ export default function HomePage() {
           <Hello />
           <Separator />
 
+          <TrustedBy />
+          <Separator />
+
           <Projects />
           <Separator />
 
@@ -90,9 +93,6 @@ export default function HomePage() {
           <Separator />
 
           <Support />
-          <Separator />
-
-          <TrustedBy />
           <Separator />
 
           <Components />
