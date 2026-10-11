@@ -87,4 +87,4 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-<!-- Om Patil -->
+<!-- Om Patil --> 
