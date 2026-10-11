@@ -26,7 +26,7 @@ function ScanToTryOnMobile() {
 
       <Image
         className="rounded-lg border dark:border-transparent"
-        src="https://assets.chanhdai.com/images/blog/haptic-qr-code.webp"
+        src="/images/haptic-qr-code.webp"
         alt="QR code"
         width={96}
         height={96}

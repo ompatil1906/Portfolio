@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { XIcon } from "@/components/icons"
+import { LogosCarousel } from "@/components/logos-carousel"
 import {
   Testimonial,
   TestimonialAuthor,
@@ -14,6 +15,7 @@ import {
 } from "@/registry/components/testimonial"
 import { TestimonialSpotlight } from "@/registry/components/testimonial-spotlight"
 import { Twemoji } from "@/registry/components/twemoji"
+import { SAMPLE_LOGOS } from "@/features/sponsor/data"
 
 import { Panel } from "./panel"
 
@@ -30,6 +32,32 @@ export type TestimonialType = {
 export function TrustedBy() {
   return (
     <Panel id={ID} className="overflow-x-clip screen-line-bottom-none">
+      {/* Header: Tools and technologies used to build this */}
+      <div className="screen-line-bottom flex items-center justify-center gap-1.5 py-3 text-center text-xs font-medium tracking-wide text-muted-foreground @2xl:text-sm">
+        <span>Tools and technologies used to build this</span>
+      </div>
+
+      {/* Logos carousel */}
+      <div className="screen-line-bottom relative overflow-hidden px-4 py-2">
+        <LogosCarousel className="w-full py-4 text-foreground max-sm:[--column-count:3] sm:[--column-count:4]">
+          {SAMPLE_LOGOS.map((sponsor) => (
+            <a
+              key={sponsor.name}
+              href={sponsor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center transition-opacity hover:opacity-75 focus-visible:outline-none"
+              title={sponsor.name}
+            >
+              <sponsor.logo
+                className="h-auto w-full scale-105"
+                aria-label={sponsor.name}
+              />
+            </a>
+          ))}
+        </LogosCarousel>
+      </div>
+
       {/* Header: Trusted by top builders on X */}
       <div className="screen-line-bottom flex items-center justify-center gap-1.5 py-3 text-center text-xs font-medium tracking-wide text-muted-foreground @2xl:text-sm">
         <span>Trusted by top builders on</span>

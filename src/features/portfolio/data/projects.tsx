@@ -56,7 +56,6 @@ export const PROJECTS: Project[] = [
 - Prototype scope: startup dashboard for profiles, applications, and resources; startup listing/discovery; login and registration with Firebase; responsive UI with Framer Motion animations.
 - The main product repository is private; the public site is currently a coming-soon landing page.`,
     icon: <Leaf />,
-    isExpanded: true,
   },
   {
     id: "warden",
@@ -81,7 +80,6 @@ export const PROJECTS: Project[] = [
 - Runs on Razorpay rails with signature-verified webhooks and idempotent, exactly-once execution. **Test/simulated payments only** — never real funds.
 - [Live dashboard](https://warden-ebon.vercel.app) and [API docs](https://autonomous-b2b-supply-chain-restocking.onrender.com/docs).`,
     icon: <ShoppingCart />,
-    isExpanded: true,
   },
   {
     id: "buildos",
@@ -105,7 +103,6 @@ export const PROJECTS: Project[] = [
 - **Production-style MVP** (independent project): Next.js dashboard with a multi-agent pipeline, pgvector-backed RAG memory, human-approval gates, and audit logs.
 - FastAPI backend with JWT auth, SQLAlchemy/Postgres schema, prompt-injection guard, and a Docker Compose + GitHub Actions pipeline.`,
     icon: <Wrench />,
-    isExpanded: true,
   },
   {
     id: "asklumenai",
@@ -129,7 +126,6 @@ export const PROJECTS: Project[] = [
 - A research/personalization layer (rolling memory, saved citations, past reports) so answers adapt to each user over time.
 - Academic-source integrations (arXiv, Crossref, Semantic Scholar, OpenAlex) with APA/IEEE/Harvard/BibTeX/RIS citations.`,
     icon: <Sparkles />,
-    isExpanded: true,
   },
   {
     id: "geovisionai",
