@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="14" fill="#09090b" />
-  <text x="32" y="42" font-family="Geist, Arial, sans-serif" font-size="30" font-weight="700" fill="#fafafa" text-anchor="middle">OP</text>
+  <rect width="64" height="64" rx="14" fill="#09090b"/>
+  <g transform="translate(9 21.545) scale(0.065588)" fill="#fafafa">
+    <path d="M 255.05 255.04 L 255.05 318.8 L 63.77 318.8 L 63.77 255.04 Z M 0 255.04 L 0 63.77 L 63.77 63.77 L 63.77 255.04 Z M 63.77 63.77 L 63.77 0 L 255.05 0 L 255.05 63.77 Z M 255.05 255.04 L 255.05 63.77 L 318.8 63.77 L 318.8 255.04 Z"/>
+    <path d="M 382.55 318.8 L 382.55 0 L 637.6 0 L 637.6 63.77 L 446.32 63.77 L 446.32 191.29 L 637.6 191.29 L 637.6 255.04 L 446.32 255.04 L 446.32 318.8 Z M 637.6 191.29 L 637.6 63.77 L 701.35 63.77 L 701.35 191.29 Z"/>
+  </g>
 </svg>

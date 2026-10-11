@@ -1,28 +1,28 @@
 {
-  "short_name": "Chánh Đại",
-  "name": "Chánh Đại",
-  "description": "Creating with code. Small details matter.",
+  "short_name": "Om Patil",
+  "name": "Om Patil",
+  "description": "Om Patil is an AI & Data Science engineer building GenAI and agentic systems — multi-agent research workflows, RAG, LLM triage models, and full-stack AI products.",
   "icons": [
     {
-      "src": "https://assets.chanhdai.com/images/icon-vector.svg",
+      "src": "/icon.svg",
       "type": "image/svg+xml",
       "sizes": "any",
       "purpose": "any"
     },
     {
-      "src": "https://assets.chanhdai.com/images/icon-192x192.png",
+      "src": "/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "https://assets.chanhdai.com/images/icon-512x512.png",
+      "src": "/icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "https://assets.chanhdai.com/images/maskable-icon.png",
+      "src": "/maskable-icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"

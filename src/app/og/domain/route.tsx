@@ -60,13 +60,17 @@ export async function GET(request: Request) {
       <div tw="absolute flex bottom-16 right-16">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 256"
-          width={128}
+          viewBox="0 0 701.35 318.8"
+          width={141}
           height={64}
         >
           <path
             fill="currentColor"
-            d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
+            d="M 255.05 255.04 L 255.05 318.8 L 63.77 318.8 L 63.77 255.04 Z M 0 255.04 L 0 63.77 L 63.77 63.77 L 63.77 255.04 Z M 63.77 63.77 L 63.77 0 L 255.05 0 L 255.05 63.77 Z M 255.05 255.04 L 255.05 63.77 L 318.8 63.77 L 318.8 255.04 Z"
+          />
+          <path
+            fill="currentColor"
+            d="M 382.55 318.8 L 382.55 0 L 637.6 0 L 637.6 63.77 L 446.32 63.77 L 446.32 191.29 L 637.6 191.29 L 637.6 255.04 L 446.32 255.04 L 446.32 318.8 Z M 637.6 191.29 L 637.6 63.77 L 701.35 63.77 L 701.35 191.29 Z"
           />
         </svg>
       </div>
