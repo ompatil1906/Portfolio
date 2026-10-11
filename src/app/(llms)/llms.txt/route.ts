@@ -7,6 +7,7 @@ const content = `# Om Patil
 
 > A pixel-perfect dev portfolio and shadcn registry showcasing my work as an AI/ML Engineer.
 
+- [Full Profile](${SITE_INFO.url}/llms-full.txt): Complete resume, projects, experiences, and technical bio in one file.
 - [About](${SITE_INFO.url}/about.md): A quick intro to me, my tech stack, and how to connect.
 - [Experience](${SITE_INFO.url}/experience.md): Highlights from my career and key roles I've taken on.
 - [Education](${SITE_INFO.url}/education.md): Where I studied, what I focused on, and what I built along the way.

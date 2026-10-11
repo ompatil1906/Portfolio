@@ -46,7 +46,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
       priority: 1.0,
-      images: [`${SITE_INFO.url}/screenshots/screenshot-desktop-dark.webp`],
+      images: [
+        `${SITE_INFO.url}/og.png`,
+        `${SITE_INFO.url}/screenshots/screenshot-desktop-dark.webp`,
+      ],
     },
     {
       url: `${SITE_INFO.url}/components`,

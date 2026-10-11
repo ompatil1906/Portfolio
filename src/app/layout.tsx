@@ -185,6 +185,12 @@ export default function RootLayout({
         />
         <JsonLdScript data={getWebSiteJsonLd()} />
         <meta name="thumbnail" content={`${SITE_INFO.url}/og.png`} />
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href="/llms.txt"
+          title="LLM-friendly content"
+        />
       </head>
 
       <body>
