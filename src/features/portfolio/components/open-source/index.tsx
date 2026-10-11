@@ -22,8 +22,7 @@ export async function OpenSource() {
     return null
   }
 
-  const total =
-    data.contributions.length + data.forks.length + data.owned.length
+  const total = data.contributions.length + data.forks.length
 
   if (total === 0) {
     return null
@@ -54,17 +53,6 @@ export async function OpenSource() {
         <Group title="Forked repositories" count={data.forks.length}>
           <CollapsibleList
             items={data.forks}
-            max={4}
-            keyExtractor={(repo) => String(repo.id)}
-            renderItem={(repo) => <RepoItem repo={repo} />}
-          />
-        </Group>
-      )}
-
-      {data.owned.length > 0 && (
-        <Group title="Projects" count={data.owned.length}>
-          <CollapsibleList
-            items={data.owned}
             max={4}
             keyExtractor={(repo) => String(repo.id)}
             renderItem={(repo) => <RepoItem repo={repo} />}

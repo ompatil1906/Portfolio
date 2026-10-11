@@ -8,18 +8,18 @@ export const EXPERIENCES: Experience[] = [
     companyName: "AskLumenAI",
     companyWebsite: "https://asklumenai.com",
     companyIcon: <BriefcaseBusinessIcon strokeWidth={1.8} />,
-    location: "Pune, India",
+    location: "Manchester, England, UK",
     locationType: "Remote",
     positions: [
       {
         id: "1",
-        title: "Director, Product, Strategy & Technology",
+        title: "Head of AI Technology",
         employmentPeriod: {
           start: "2025",
         },
         employmentType: "Full-time",
         icon: <CodeXmlIcon />,
-        description: `- Lead product, strategy, and technology for an AI-powered learning and research assistant.
+        description: `- Lead product strategy and technical direction for an AI research-intelligence platform for students and researchers.
 - Designed multi-agent research workflows that plan, retrieve, and synthesize findings across sources.
 - Built a research/personalization layer and rolling memory so responses adapt to each user over time.
 - Integrated academic sources (arXiv, Crossref, Semantic Scholar, OpenAlex) with citation formats like APA, IEEE, Harvard, BibTeX, and RIS.
@@ -42,43 +42,21 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "viksithub",
     companyName: "ViksitHub",
-    companyWebsite: "https://github.com/ompatil1906/viksithub-coming-soon",
+    companyWebsite: "https://viksithub.in",
     companyIcon: <BriefcaseBusinessIcon strokeWidth={1.8} />,
     location: "Pune, India",
-    locationType: "Remote",
+    locationType: "On-site",
     positions: [
-      {
-        id: "2",
-        title: "Student Founder — Product & Full-Stack Engineer",
-        employmentPeriod: {
-          start: "09.2025",
-          end: "06.2026",
-        },
-        employmentType: "Part-time",
-        icon: <CodeXmlIcon />,
-        description: `- Leading product and full-stack engineering for an early-stage education platform.
-- Designing, building, and shipping features across the stack, from UI to APIs and data.
-- Setting up the engineering foundation, tooling, and deployment workflows.`,
-        skills: [
-          "TypeScript",
-          "Next.js",
-          "React",
-          "Node.js",
-          "Tailwind CSS",
-          "PostgreSQL",
-          "Product",
-          "Full-stack",
-        ],
-      },
       {
         id: "1",
         title: "Founder",
         employmentPeriod: {
           start: "09.2025",
-          end: "06.2026",
         },
         employmentType: "Part-time",
         icon: <LightbulbIcon />,
+        description: `- Founded ViksitHub, a startup-ecosystem platform prototype helping founders discover resources, mentorship, and funding.
+- Led product direction and full-stack engineering (Next.js, React, Firebase).`,
         skills: [
           "Entrepreneurship",
           "Product Strategy",
@@ -86,12 +64,13 @@ export const EXPERIENCES: Experience[] = [
         ],
       },
     ],
+    isCurrentEmployer: true,
   },
   {
     id: "xerxez",
     companyName: "Xerxez Solutions",
     companyIcon: <BriefcaseBusinessIcon strokeWidth={1.8} />,
-    location: "Remote",
+    location: "Bangalore, India",
     locationType: "Remote",
     positions: [
       {
@@ -112,16 +91,17 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "nexyom",
     companyName: "Nexyom",
+    companyWebsite: "https://www.nexyom.com",
     companyIcon: <BriefcaseBusinessIcon strokeWidth={1.8} />,
-    location: "Remote",
+    location: "San Francisco, California, USA",
     locationType: "Remote",
     positions: [
       {
         id: "1",
         title: "Data Science Intern",
         employmentPeriod: {
-          start: "2024",
-          end: "2024",
+          start: "06.2025",
+          end: "08.2025",
         },
         employmentType: "Internship",
         icon: <CodeXmlIcon />,

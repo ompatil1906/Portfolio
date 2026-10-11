@@ -2,6 +2,7 @@ import "@/styles/globals.css"
 
 import type { Metadata, Viewport } from "next"
 import Script from "next/script"
+import { GoogleTagManager } from "@next/third-parties/google"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
 import type { WebSite, WithContext } from "schema-dts"
 
@@ -87,9 +88,24 @@ export const metadata: Metadata = {
       },
     ],
     apple: {
-      url: "https://avatars.githubusercontent.com/u/162890913?v=4",
+      url: "/apple-touch-icon.png",
       type: "image/png",
       sizes: "180x180",
+    },
+  },
+  manifest: "/manifest.webmanifest",
+  alternates: {
+    canonical: "./",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 }
@@ -110,18 +126,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
+      {GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
       <head>
-        {GTM_ID && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${GTM_ID}');`,
-            }}
-          />
-        )}
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{ __html: darkModeScript }}
@@ -157,17 +163,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
 
       <body>
-        {GTM_ID && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            />
-          </noscript>
-        )}
-
         <Providers>
           <NuqsAdapter>{children}</NuqsAdapter>
         </Providers>

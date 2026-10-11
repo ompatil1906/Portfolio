@@ -88,21 +88,19 @@ const MILESTONES: Milestone[] = [
   },
   {
     year: 2024,
-    content: `Started building and shipping AI/ML and full-stack projects.
-
-Completed a Data Science internship at Nexyom.`,
+    content: "Started building and shipping AI/ML and full-stack projects.",
   },
   {
     year: 2025,
     content: `Won the National Level AI Summit 2025 and placed runner-up at a national-level hackathon.
 
-Completed a Generative AI internship at Xerxez Solutions.
+Completed a Generative AI internship at Xerxez Solutions and a Data Science internship at Nexyom.
 
-Founded [ViksitHub](https://github.com/ompatil1906/viksithub-coming-soon) as a student founder, leading product and full-stack engineering.`,
+Founded [ViksitHub](https://viksithub.in) as a founder, leading product and full-stack engineering.`,
   },
   {
     year: 2026,
-    content: `Joined AskLumenAI, leading product, strategy, and technology for its AI-powered learning & research assistant.
+    content: `Joined AskLumenAI as Head of AI Technology for its AI research-intelligence platform.
 
 Published a review paper on hardware-level defenses against side-channel attacks in IJCRT.`,
   },

@@ -71,17 +71,27 @@ export function Daikanoid({
       sketch = p
 
       p.preload = () => {
-        font = p.loadFont(FONT_URL)
+        font = p.loadFont(FONT_URL, undefined, () => {
+          // fallback to system font
+        })
 
-        state.soundBounce = p.createAudio(SOUND_BOUNCE_URL)
-        state.soundBreak = p.createAudio(SOUND_BREAK_URL)
-        state.soundGameOver = p.createAudio(SOUND_GAME_OVER_URL)
+        try {
+          state.soundBounce = p.createAudio(SOUND_BOUNCE_URL)
+          state.soundBreak = p.createAudio(SOUND_BREAK_URL)
+          state.soundGameOver = p.createAudio(SOUND_GAME_OVER_URL)
+        } catch {
+          // audio load failure fallback
+        }
 
         state.ballImage = p.loadImage(
-          resolvedTheme === "dark" ? BALL_DARK_URL : BALL_LIGHT_URL
+          resolvedTheme === "dark" ? BALL_DARK_URL : BALL_LIGHT_URL,
+          undefined,
+          () => {}
         )
         state.paddleImage = p.loadImage(
-          resolvedTheme === "dark" ? PADDLE_DARK_URL : PADDLE_LIGHT_URL
+          resolvedTheme === "dark" ? PADDLE_DARK_URL : PADDLE_LIGHT_URL,
+          undefined,
+          () => {}
         )
       }
 
@@ -92,7 +102,11 @@ export function Daikanoid({
         ui = new UI(p, state)
 
         p.imageMode(p.CENTER)
-        p.textFont(font)
+        if (font) {
+          p.textFont(font)
+        } else {
+          p.textFont("monospace")
+        }
         p.background(Colors.background)
         p.fill(Colors.foreground)
         p.noStroke()

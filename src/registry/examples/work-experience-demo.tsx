@@ -9,50 +9,59 @@ export default function WorkExperienceDemo() {
 
 const WORK_EXPERIENCE: ExperienceItemType[] = [
   {
-    id: "quaric",
-    companyName: "Quaric",
-    companyLogo: "https://assets.chanhdai.com/images/companies/quaric.svg",
-    companyWebsite: "https://quaric.com",
+    id: "asklumenai",
+    companyName: "AskLumenAI",
+    companyWebsite: "https://asklumenai.com",
     positions: [
       {
-        id: "2",
-        title: "Design Engineer",
+        id: "1",
+        title: "Head of AI Technology",
         employmentPeriod: {
-          start: "03.2024",
+          start: "2025",
         },
-        employmentType: "Part-time",
+        employmentType: "Full-time",
         icon: <CodeXmlIcon />,
-        description: `- Integrated VNPAY-QR for secure transactions.
-- Registered the e-commerce site with [online.gov.vn](https://online.gov.vn) for compliance.
-- Developed online ordering to streamline purchases.
-- Build and maintain ZaDark.com with Docusaurus, integrating AdSense.
-- Develop and maintain the ZaDark extension for Zalo Web on Chrome, Safari, Edge, and Firefox — with 15,000+ active users via Chrome Web Store.`,
+        description: `- Lead product strategy and technical direction for an AI research-intelligence platform for students and researchers.
+- Designed multi-agent research workflows that plan, retrieve, and synthesize findings across sources.
+- Built a research/personalization layer and rolling memory so responses adapt to each user over time.
+- Integrated academic sources (arXiv, Crossref, Semantic Scholar, OpenAlex) with citation formats like APA, IEEE, Harvard, BibTeX, and RIS.
+- Own the full stack end to end, from LLM orchestration and retrieval to the shipped product surface.`,
         skills: [
-          "Next.js",
-          "Strapi",
-          "Auth0",
-          "VNPAY-QR",
-          "Docker",
-          "NGINX",
-          "Google Cloud",
-          "Docusaurus",
-          "Extension",
-          "Research",
-          "Project Management",
+          "Python",
+          "LLMs",
+          "Agentic AI",
+          "RAG",
+          "LangGraph",
+          "FastAPI",
+          "PostgreSQL",
+          "Full-stack",
         ],
         isExpanded: true,
       },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
+    id: "viksithub",
+    companyName: "ViksitHub",
+    companyWebsite: "https://viksithub.in",
+    positions: [
       {
         id: "1",
         title: "Founder",
         employmentPeriod: {
-          start: "03.2024",
+          start: "09.2025",
         },
         employmentType: "Part-time",
         icon: <LightbulbIcon />,
-        skills: ["Business Ownership", "Business Law", "Business Tax"],
+        description: `- Founded ViksitHub, a startup-ecosystem platform prototype helping founders discover resources, mentorship, and funding.
+- Led product direction and full-stack engineering (Next.js, React, Firebase).`,
+        skills: [
+          "Entrepreneurship",
+          "Product Strategy",
+          "Business Development",
+        ],
       },
     ],
-    isCurrentEmployer: true,
   },
 ]

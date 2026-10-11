@@ -7,8 +7,22 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
+        allow: "/",
+        disallow: ["/preview/", "/api/"],
+      },
+      {
+        userAgent: [
+          "GPTBot",
+          "ChatGPT-User",
+          "ClaudeBot",
+          "PerplexityBot",
+          "Applebot-Extended",
+        ],
+        allow: ["/", "/llms.txt", "/*.md"],
+        disallow: ["/preview/", "/api/"],
       },
     ],
     sitemap: `${SITE_INFO.url}/sitemap.xml`,
+    host: SITE_INFO.url,
   }
 }

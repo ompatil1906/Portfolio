@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 
 import { Bar, Button, Heading } from "./primitives"
 
-const BRICKS = [".XX.XXX.", "X...X..X", "X...X..X", ".XX.XXX."]
+const BRICKS = [".XX..XXX.", "X..X.X..X", "X..X.XXX.", ".XX..X..."]
 
 export function NotFound01Mockup() {
   return (

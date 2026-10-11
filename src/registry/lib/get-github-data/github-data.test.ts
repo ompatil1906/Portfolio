@@ -102,6 +102,22 @@ describe("mapRepo", () => {
     expect(fork.upstream).toBe("langchain-ai/langchain")
     expect(fork.stars).toBe(100000)
   })
+
+  it("prefers the fork network root when source differs from parent", () => {
+    const fork = mapRepo(
+      rawRepo({
+        fork: true,
+        parent: { full_name: "someone/langchain", stargazers_count: 5 },
+        source: {
+          full_name: "langchain-ai/langchain",
+          stargazers_count: 100000,
+        },
+      })
+    )
+
+    expect(fork.upstream).toBe("langchain-ai/langchain")
+    expect(fork.stars).toBe(100000)
+  })
 })
 
 describe("mapContribution", () => {
@@ -158,6 +174,39 @@ describe("groupGitHubData", () => {
     expect(data.owned.map((repo) => repo.name)).toEqual(["owned"])
     expect(data.contributions.map((item) => item.repo)).toEqual([
       "langchain-ai/langchain",
+    ])
+  })
+
+  it("ranks forks by the original repo's stars, then name", () => {
+    const data = groupGitHubData(
+      [
+        rawRepo({
+          id: 1,
+          name: "small",
+          fork: true,
+          parent: { full_name: "a/small", stargazers_count: 10 },
+        }),
+        rawRepo({
+          id: 2,
+          name: "big",
+          fork: true,
+          parent: { full_name: "a/big", stargazers_count: 5000 },
+        }),
+        rawRepo({
+          id: 3,
+          name: "bigger",
+          fork: true,
+          parent: { full_name: "a/bigger", stargazers_count: 5000 },
+        }),
+      ],
+      [],
+      "ompatil1906"
+    )
+
+    expect(data.forks.map((repo) => repo.name)).toEqual([
+      "big",
+      "bigger",
+      "small",
     ])
   })
 })

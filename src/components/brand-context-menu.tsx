@@ -60,9 +60,7 @@ export function BrandContextMenu({
         <ContextMenuSeparator />
 
         <ContextMenuItem
-          render={
-            <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download />
-          }
+          render={<a href="/icon.svg" download="om-patil-brand.svg" />}
         >
           <Download />
           Download Brand Assets

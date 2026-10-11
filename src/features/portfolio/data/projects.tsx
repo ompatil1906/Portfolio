@@ -1,11 +1,7 @@
 import {
   Bot,
   Brain,
-  CloudSun,
   Code2,
-  DollarSign,
-  Film,
-  LayoutGrid,
   Leaf,
   MessagesSquare,
   Satellite,
@@ -18,9 +14,10 @@ import {
 import type { Project } from "../types/projects"
 
 /**
- * Featured projects first (SupportLM, Warden, BuildOS, AskLumenAI), followed by
- * an archive tier. The projects panel expands the first four and collapses the
- * rest, so keep the strongest work at the top.
+ * Priority projects first (SupportLM, ViksitHub, Warden), followed by the
+ * featured group and an archive tier. The projects panel shows the first four
+ * and expands those flagged with `isExpanded`, so keep the strongest work at
+ * the top.
  */
 export const PROJECTS: Project[] = [
   {
@@ -42,8 +39,23 @@ export const PROJECTS: Project[] = [
 
 - Reported on a 600-ticket synthetic holdout: emotion **55.7% → 99.0%**, urgency **19.8% → 94.8%**, emotion+urgency exact match **94.5%**, valid structured output **99.8%**.
 - Honest scope: the reply field can invent amounts (~59%) and next-action accuracy is **56.3%**, so it is a triage aid with a human in the loop, not automated replies.
-- Adapter (~10.6M params) and the reproducible [triage dataset](https://huggingface.co/datasets/Ompatil19/SupportLM-triage-dataset) are public on Hugging Face.`,
+- Adapter (~10.6M params) trained with LoRA/PEFT via MLX on a 16 GB Apple Silicon MacBook Air, with the reproducible [triage dataset](https://huggingface.co/datasets/Ompatil19/SupportLM-triage-dataset) public on Hugging Face.`,
     icon: <Bot />,
+    isExpanded: true,
+  },
+  {
+    id: "viksithub-coming-soon",
+    title: "ViksitHub",
+    period: {
+      start: "2025",
+    },
+    link: "https://viksithub.in",
+    skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase"],
+    description: `A founder-built startup-ecosystem platform prototype that helps founders discover resources, mentorship, and funding.
+
+- Prototype scope: startup dashboard for profiles, applications, and resources; startup listing/discovery; login and registration with Firebase; responsive UI with Framer Motion animations.
+- The main product repository is private; the public site is currently a coming-soon landing page.`,
+    icon: <Leaf />,
     isExpanded: true,
   },
   {
@@ -59,6 +71,7 @@ export const PROJECTS: Project[] = [
       "LangGraph",
       "Razorpay",
       "Ed25519",
+      "WebSockets",
       "React",
       "TypeScript",
     ],
@@ -89,7 +102,7 @@ export const PROJECTS: Project[] = [
     ],
     description: `An AI software-building operating system that turns a product idea into a PRD, architecture, task breakdown, generated full-stack starter code, a GitHub PR plan, CI/CD workflow, build report, and security review.
 
-- **Production-style MVP** (independent project): Next.js dashboard with an agent pipeline, pgvector-backed RAG memory, human-approval gates, and audit logs.
+- **Production-style MVP** (independent project): Next.js dashboard with a multi-agent pipeline, pgvector-backed RAG memory, human-approval gates, and audit logs.
 - FastAPI backend with JWT auth, SQLAlchemy/Postgres schema, prompt-injection guard, and a Docker Compose + GitHub Actions pipeline.`,
     icon: <Wrench />,
     isExpanded: true,
@@ -106,13 +119,14 @@ export const PROJECTS: Project[] = [
       "RAG",
       "LLMs",
       "Personalization",
+      "Product Strategy",
       "FastAPI",
       "Full-stack",
     ],
-    description: `An AI-powered learning and research assistant. As **Director, Product, Strategy & Technology**, I lead product and the technical direction.
+    description: `An AI research-intelligence platform for students and researchers. As **Head of AI Technology**, I lead product strategy and technical direction.
 
 - Multi-agent research workflows that plan, retrieve, and synthesize across sources.
-- A research/personalization layer with rolling memory so answers adapt to each user over time.
+- A research/personalization layer (rolling memory, saved citations, past reports) so answers adapt to each user over time.
 - Academic-source integrations (arXiv, Crossref, Semantic Scholar, OpenAlex) with APA/IEEE/Harvard/BibTeX/RIS citations.`,
     icon: <Sparkles />,
     isExpanded: true,
@@ -124,30 +138,21 @@ export const PROJECTS: Project[] = [
       start: "2026",
     },
     link: "https://github.com/ompatil1906/GeoVisionAI",
-    skills: ["Python", "FastAPI", "PyTorch", "OpenCV", "Geospatial", "Next.js"],
-    description: `A satellite-based multi-hazard monitoring platform: upload imagery and run land-cover classification, flood detection, burned-area detection, and before/after change detection with map overlays and PDF reports.
-
-- **Honest scope:** a portfolio demo using classical computer-vision fallbacks — trained production weights are not bundled.`,
-    icon: <Satellite />,
-  },
-  {
-    id: "portfolio",
-    title: "Portfolio",
-    period: {
-      start: "2026",
-    },
-    link: "https://github.com/ompatil1906/Portfolio",
     skills: [
-      "Open Source",
+      "Python",
+      "FastAPI",
+      "PyTorch",
+      "OpenCV",
+      "GeoPandas",
+      "Rasterio",
+      "Leaflet",
       "Next.js",
-      "React",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "MDX",
-      "Vercel",
     ],
-    description: "A personal portfolio and shadcn registry built with Next.js.",
-    icon: <LayoutGrid />,
+    description: `A full-stack satellite-image analysis platform for land-cover screening, flood detection, burned-area detection, and before/after change detection.
+
+- Upload JPG/PNG/TIF imagery and inspect masks, overlays, heatmaps, and summary metrics on an interactive Leaflet dashboard; export a PDF report with imagery, metrics, and a timestamp.
+- Flood and burn-scar detection use RGB fallbacks; the land-cover model is inference-ready but trained production weights are not bundled, so outputs are demo-grade — not scientific-accuracy claims.`,
+    icon: <Satellite />,
   },
   {
     id: "sales-agent-app",
@@ -156,22 +161,11 @@ export const PROJECTS: Project[] = [
       start: "2025",
     },
     link: "https://sales-agent-app-iota.vercel.app",
-    skills: ["TypeScript", "Next.js", "LLMs", "Agentic AI"],
-    description:
-      "An agentic sales assistant that automates outreach and lead qualification.",
+    skills: ["TypeScript", "Next.js", "Tailwind CSS", "LLMs"],
+    description: `A Next.js AI sales-assistant prototype for conversational lead qualification and inquiry handling.
+
+- Aimed at tracking leads and conversation history with real-time UI updates; the README is early-stage and does not confirm the model provider integration.`,
     icon: <MessagesSquare />,
-  },
-  {
-    id: "hr-automation",
-    title: "HR Automation",
-    period: {
-      start: "2025",
-    },
-    link: "https://coldmailos.vercel.app",
-    skills: ["TypeScript", "Next.js", "LLMs", "Automation"],
-    description:
-      "Automates cold outreach and HR communication workflows. Live at [coldmailos.vercel.app](https://coldmailos.vercel.app).",
-    icon: <Server />,
   },
   {
     id: "codemate",
@@ -181,8 +175,9 @@ export const PROJECTS: Project[] = [
     },
     link: "https://github.com/ompatil1906/CodeMate",
     skills: ["TypeScript", "Next.js", "LLMs", "Developer Tools"],
-    description:
-      "An AI pair-programming assistant for code generation and review.",
+    description: `A coding-companion concept with code completion, real-time analysis, a snippet library, and multi-language support.
+
+- Early-stage: the repository README is high-level and does not document the completion model, analysis engine, or any benchmark.`,
     icon: <Code2 />,
   },
   {
@@ -192,21 +187,20 @@ export const PROJECTS: Project[] = [
       start: "2025",
     },
     link: "https://github.com/ompatil1906/SERG-System",
-    skills: ["TypeScript", "Next.js", "PostgreSQL", "Tailwind CSS"],
-    description: "A full-stack management system for operations and reporting.",
+    skills: [
+      "ESP32",
+      "C++",
+      "Node.js",
+      "Express",
+      "Firebase",
+      "Next.js",
+      "IoT",
+    ],
+    description: `A real-time accident-detection and emergency-alert system built around ESP32 hardware.
+
+- An ESP32 with an MPU6050 motion sensor and GPS streams to a Node.js/Express API that runs the detection logic and triggers alerts.
+- Alerts flow through Firebase to a real-time Next.js monitoring dashboard.`,
     icon: <Server />,
-  },
-  {
-    id: "consultantai",
-    title: "ConsultantAI",
-    period: {
-      start: "2024",
-    },
-    link: "https://github.com/ompatil1906/ConsultantAI",
-    skills: ["JavaScript", "LLMs", "RAG"],
-    description:
-      "An AI consultant that answers domain questions using retrieved context.",
-    icon: <Brain />,
   },
   {
     id: "cortexai",
@@ -215,57 +209,19 @@ export const PROJECTS: Project[] = [
       start: "2024",
     },
     link: "https://github.com/ompatil1906/CortexAI",
-    skills: ["Python", "LLMs", "Machine Learning"],
-    description:
-      "An AI platform exploring model orchestration and LLM pipelines.",
+    skills: [
+      "Python",
+      "LoRA",
+      "PEFT",
+      "MLX",
+      "Qwen2.5-1.5B",
+      "NLP",
+      "Evaluation",
+    ],
+    description: `The training and evaluation repository behind SupportLM — LoRA fine-tuning of Qwen2.5-1.5B-Instruct with MLX on Apple Silicon.
+
+- Covers the data, training, evaluation, and demo pipeline, with baseline-vs-fine-tuned metrics and conversion verification.
+- The published SupportLM adapter and triage dataset are linked from its model card.`,
     icon: <Brain />,
-  },
-  {
-    id: "movie-recommendation-system",
-    title: "Movie Recommendation System",
-    period: {
-      start: "2025",
-    },
-    link: "https://github.com/ompatil1906/Movie-Recommendation-System-using-ML",
-    skills: ["Python", "scikit-learn", "Cosine similarity", "Streamlit"],
-    description:
-      "A Streamlit app that recommends similar movies using content-based filtering (cosine similarity over a public TMDB dataset) — a learning project.",
-    icon: <Film />,
-  },
-  {
-    id: "weather-prediction-project",
-    title: "Weather Prediction",
-    period: {
-      start: "2024",
-    },
-    link: "https://github.com/ompatil1906/Wether-Prediction-Project",
-    skills: ["Python", "scikit-learn", "Ridge Regression", "Pandas"],
-    description:
-      "Predicts weather features (temperature and precipitation) from historical data with Ridge Regression.",
-    icon: <CloudSun />,
-  },
-  {
-    id: "salary-prediction",
-    title: "Salary Prediction",
-    period: {
-      start: "2024",
-    },
-    link: "https://github.com/ompatil1906/Salary-Prediction",
-    skills: ["Python", "scikit-learn", "Pandas", "Streamlit"],
-    description:
-      "A Streamlit web app that predicts salary from years of experience using a scikit-learn model.",
-    icon: <DollarSign />,
-  },
-  {
-    id: "viksithub-coming-soon",
-    title: "ViksitHub (Coming Soon)",
-    period: {
-      start: "2025",
-    },
-    link: "https://github.com/ompatil1906/viksithub-coming-soon",
-    skills: ["React", "Vite", "TypeScript"],
-    description:
-      "A placeholder landing site for ViksitHub while the product is being built.",
-    icon: <Leaf />,
   },
 ]

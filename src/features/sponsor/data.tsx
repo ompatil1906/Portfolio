@@ -1,6 +1,17 @@
 import type { Sponsor } from "./types"
 
-export const SPONSORS: Sponsor[] = [
+/**
+ * The site's sponsors. Empty until real sponsorships exist, so the sponsors
+ * page, the homepage panel, and the docs block all fall back to a "become a
+ * sponsor" call to action. Add entries using the tiers in {@link SPONSOR_TIERS}.
+ */
+export const SPONSORS: Sponsor[] = []
+
+/**
+ * Example marks for the `logos-carousel` and `logos-flip` component demos.
+ * These are illustrative logos only — they are not sponsors of this site.
+ */
+export const SAMPLE_LOGOS: Sponsor[] = [
   {
     name: "Vercel",
     url: "https://vercel.com/blog/summer-2025-oss-program#react-wheel-picker",

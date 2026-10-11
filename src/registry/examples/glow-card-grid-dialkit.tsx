@@ -93,8 +93,8 @@ const CARDS = [
     avatar: "https://assets.chanhdai.com/avatars/x/aaronmahlke.webp",
   },
   {
-    name: "Chánh Đại",
+    name: "Om Patil",
     handle: "@Om_Patil19",
-    avatar: "https://assets.chanhdai.com/avatars/x/Om_Patil19.webp",
+    avatar: "https://avatars.githubusercontent.com/u/162890913?v=4",
   },
 ]

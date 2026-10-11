@@ -4,10 +4,18 @@ import { useState } from "react"
 import { addQueryParams } from "@/utils/url"
 import { XIcon } from "lucide-react"
 
-import { UTM_PARAMS } from "@/config/site"
+import { SPONSORSHIP_URL, UTM_PARAMS } from "@/config/site"
 import { trackEvent } from "@/lib/events"
 import { Button } from "@/components/ui/button"
+import { PlusIcon } from "@/components/animated-icons/plus-icon"
 import { SPONSORS } from "@/features/sponsor/data"
+
+const FEATURED_SPONSORS = SPONSORS.filter(
+  (sponsor) =>
+    sponsor.tier === "platinum" ||
+    sponsor.tier === "gold" ||
+    sponsor.tier === "silver"
+)
 
 export function DocSponsors() {
   const [visible, setVisible] = useState(true)
@@ -50,24 +58,34 @@ export function DocSponsors() {
           </div>
 
           <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2">
-            {SPONSORS.filter(
-              (sponsor) =>
-                sponsor.tier === "platinum" ||
-                sponsor.tier === "gold" ||
-                sponsor.tier === "silver"
-            ).map((item) => (
-              <li key={item.name}>
+            {FEATURED_SPONSORS.length > 0 ? (
+              FEATURED_SPONSORS.map((item) => (
+                <li key={item.name}>
+                  <a
+                    className="flex items-center justify-center rounded-[9px] border bg-background text-foreground [&_svg]:w-full [&_svg]:max-w-75 [&_svg]:shrink-0"
+                    href={addQueryParams(item.url, UTM_PARAMS)}
+                    target="_blank"
+                    rel="noopener sponsored"
+                    aria-label={`${item.name} logo`}
+                  >
+                    <item.logo aria-hidden />
+                  </a>
+                </li>
+              ))
+            ) : (
+              <li>
                 <a
-                  className="flex items-center justify-center rounded-[9px] border bg-background text-foreground [&_svg]:w-full [&_svg]:max-w-75 [&_svg]:shrink-0"
-                  href={addQueryParams(item.url, UTM_PARAMS)}
+                  className="flex min-h-11 items-center justify-center gap-1.5 rounded-[9px] border bg-background text-sm font-medium text-muted-foreground transition-[background-color,color] ease-out hover:bg-accent-muted hover:text-foreground"
+                  href={addQueryParams(SPONSORSHIP_URL, UTM_PARAMS)}
                   target="_blank"
                   rel="noopener sponsored"
-                  aria-label={`${item.name} logo`}
+                  aria-label="Become a sponsor"
                 >
-                  <item.logo aria-hidden />
+                  <PlusIcon size={16} aria-hidden />
+                  Become a sponsor
                 </a>
               </li>
-            ))}
+            )}
           </ul>
         </aside>
       </div>

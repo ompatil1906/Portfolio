@@ -32,7 +32,7 @@ export type GitHubContribution = {
 export type GitHubData = {
   /** Authored pull requests against repositories the viewer does not own. */
   contributions: GitHubContribution[]
-  /** Repositories the viewer forked. */
+  /** Repositories the viewer forked, ranked by the original repo's stars. */
   forks: GitHubRepo[]
   /** Repositories the viewer owns (non-forks). */
   owned: GitHubRepo[]
@@ -48,7 +48,10 @@ export type RawGitHubRepo = {
   stargazers_count: number
   fork: boolean
   pushed_at: string
+  /** Immediate upstream repo. Only returned by single-repo endpoints. */
   parent?: { full_name: string; stargazers_count: number } | null
+  /** Root repo of the fork network. Only returned by single-repo endpoints. */
+  source?: { full_name: string; stargazers_count: number } | null
 }
 
 export type RawGitHubIssue = {
@@ -90,7 +93,9 @@ export function getNextLink(link: string | null | undefined): string | null {
 }
 
 export function mapRepo(raw: RawGitHubRepo): GitHubRepo {
-  const upstream = raw.fork ? (raw.parent ?? null) : null
+  // Prefer the fork network's root (`source`) so the label and star count point
+  // at the original project rather than an intermediate fork.
+  const upstream = raw.fork ? (raw.source ?? raw.parent ?? null) : null
 
   return {
     id: raw.id,
@@ -141,10 +146,6 @@ export function mapContribution(
   }
 }
 
-function byName(a: GitHubRepo, b: GitHubRepo): number {
-  return a.name.localeCompare(b.name)
-}
-
 function byStarsThenName(a: GitHubRepo, b: GitHubRepo): number {
   return b.stars - a.stars || a.name.localeCompare(b.name)
 }
@@ -161,7 +162,7 @@ export function groupGitHubData(
       .map((issue) => mapContribution(issue, viewer))
       .filter((item): item is GitHubContribution => item !== null)
       .sort((a, b) => b.createdAt.localeCompare(a.createdAt)),
-    forks: mapped.filter((repo) => repo.isFork).sort(byName),
+    forks: mapped.filter((repo) => repo.isFork).sort(byStarsThenName),
     owned: mapped.filter((repo) => !repo.isFork).sort(byStarsThenName),
   }
 }

@@ -15,8 +15,10 @@ const geistMonoRegular = readFileSync(
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
 
-  const title = clampParam(searchParams.get("title"), 160)
-  const description = clampParam(searchParams.get("description"), 320)
+  const title = clampParam(searchParams.get("title"), 160) || "Om Patil"
+  const description =
+    clampParam(searchParams.get("description"), 320) ||
+    "Building AI Systems That Go Beyond the Demo."
 
   return new ImageResponse(
     <div tw="flex h-full w-full bg-black text-zinc-50">
@@ -38,7 +40,7 @@ export async function GET(request: Request) {
           />
           <path
             fill="currentColor"
-            d="M 382.55 318.8 L 382.55 0 L 637.6 0 L 637.6 63.77 L 446.32 63.77 L 446.32 191.29 L 637.6 191.29 L 637.6 255.04 L 446.32 255.04 L 446.32 318.8 Z M 637.6 191.29 L 637.6 63.77 L 701.35 63.77 L 701.35 191.29 Z"
+            d="M 382.55 318.8 L 382.55 0 L 637.6 0 L 637.6 63.77 L 446.32 63.77 L 446.32 127.52 L 637.6 127.52 L 637.6 191.29 L 446.32 191.29 L 446.32 318.8 Z M 637.6 127.52 L 637.6 63.77 L 701.35 63.77 L 701.35 127.52 Z"
           />
         </svg>
       </div>

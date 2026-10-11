@@ -29,6 +29,7 @@ import { Projects } from "@/features/portfolio/components/projects"
 import { Recognition } from "@/features/portfolio/components/recognition"
 import { Research } from "@/features/portfolio/components/research"
 import { SocialLinks } from "@/features/portfolio/components/social-links"
+import { Sponsors } from "@/features/portfolio/components/sponsors"
 import { Support } from "@/features/portfolio/components/support"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
 import { PROJECTS } from "@/features/portfolio/data/projects"
@@ -99,6 +100,9 @@ export default function HomePage() {
           <Suspense fallback={<InsightsSkeleton />}>
             <Insights />
           </Suspense>
+          <Separator />
+
+          <Sponsors />
         </div>
       </div>
     </>

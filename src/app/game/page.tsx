@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: "/game",
     type: "website",
     images: {
-      url: "https://assets.chanhdai.com/images/blog/daikanoid.webp",
+      url: "/og.png",
       width: 1200,
       height: 630,
       alt: "Daikanoid",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: X_HANDLE,
     creator: X_HANDLE,
-    images: ["https://assets.chanhdai.com/images/blog/daikanoid.webp"],
+    images: ["/og.png"],
   },
 }
 

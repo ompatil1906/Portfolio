@@ -53,6 +53,63 @@ async function fetchAllPages<T>(
 }
 
 /**
+ * Number of per-fork upstream requests to run at once, to stay clear of
+ * GitHub's secondary (burst) rate limits.
+ */
+const UPSTREAM_FETCH_CONCURRENCY = 8
+
+/**
+ * The user-repos list endpoint omits `parent`/`source`, so forks arrive with no
+ * upstream. Fetch each fork's own record to recover the original project (the
+ * network root, `source`) so forks can be labelled and ranked by the original
+ * repo's stars. Failures leave the fork unenriched rather than failing the run.
+ */
+async function withUpstreamRepos(
+  repos: RawGitHubRepo[]
+): Promise<RawGitHubRepo[]> {
+  const forks = repos.filter(
+    (repo) => repo.fork && !repo.parent && !repo.source
+  )
+
+  if (forks.length === 0) {
+    return repos
+  }
+
+  const upstreamByFullName = new Map<
+    string,
+    RawGitHubRepo["parent"] | undefined
+  >()
+
+  for (let i = 0; i < forks.length; i += UPSTREAM_FETCH_CONCURRENCY) {
+    const chunk = forks.slice(i, i + UPSTREAM_FETCH_CONCURRENCY)
+
+    await Promise.all(
+      chunk.map(async (repo) => {
+        try {
+          const res = await fetch(`${GITHUB_API}/repos/${repo.full_name}`, {
+            headers: getHeaders(),
+          })
+
+          if (!res.ok) {
+            return
+          }
+
+          const data = (await res.json()) as RawGitHubRepo
+          upstreamByFullName.set(repo.full_name, data.source ?? data.parent)
+        } catch {
+          // Ignore; the fork renders without upstream metadata.
+        }
+      })
+    )
+  }
+
+  return repos.map((repo) => {
+    const upstream = upstreamByFullName.get(repo.full_name)
+    return upstream ? { ...repo, parent: upstream } : repo
+  })
+}
+
+/**
  * Fetches a user's repositories (owned + forks) and their authored pull
  * requests. Throws on failure so the cache layer never stores an error result;
  * callers of `getCachedGithubData` receive `null` instead.
@@ -71,7 +128,7 @@ async function fetchGithubData(username: string): Promise<GitHubData> {
     ),
   ])
 
-  return groupGitHubData(repos, issues, username)
+  return groupGitHubData(await withUpstreamRepos(repos), issues, username)
 }
 
 const getCachedGithubDataUncached = unstable_cache(

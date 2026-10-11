@@ -24,21 +24,21 @@ export const USER: User = {
   jobTitle: "AI Engineer, GenAI & Agentic Systems",
   jobs: [
     {
-      title: "Director, Product, Strategy & Technology",
+      title: "Head of AI Technology",
       company: "AskLumenAI",
       website: "https://asklumenai.com",
       experienceId: "asklumenai",
     },
     {
-      title: "Student Founder — Product & Full-Stack Engineer",
+      title: "Founder",
       company: "ViksitHub",
-      website: "https://github.com/ompatil1906/viksithub-coming-soon",
+      website: "https://viksithub.in",
       experienceId: "viksithub",
     },
   ],
   about: `- I'm Om Patil — an AI & Data Science engineer focused on Generative AI, Agentic Systems, and full-stack AI product engineering.
 - I build practical AI systems that connect LLMs, autonomous agents, APIs, and data to solve real problems — from multi-agent research workflows to LLM triage models.
-- Director, Product, Strategy & Technology at [AskLumenAI](https://asklumenai.com), student founder at ViksitHub, and Winner of the National Level AI Summit 2025.
+- Head of AI Technology at [AskLumenAI](https://asklumenai.com), founder at ViksitHub, and Winner of the National Level AI Summit 2025.
 `,
   avatar: GITHUB_AVATAR,
   avatarSketch: GITHUB_AVATAR,
@@ -48,7 +48,7 @@ export const USER: User = {
     darkOff: GITHUB_AVATAR,
     darkOn: GITHUB_AVATAR,
   },
-  ogImage: GITHUB_AVATAR,
+  ogImage: "/og.png",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: [

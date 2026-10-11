@@ -55,7 +55,7 @@ const TESTIMONIALS_1: TestimonialType[] = [
     authorName: "shadcncraft",
     authorTagline: "shadcncraft.com",
     url: "https://x.com/shadcncraft/status/2017091317244055988",
-    quote: "Love your work Dai! You’re a great talent :-)",
+    quote: "Love your work Om! You’re a great talent :-)",
   },
   {
     authorAvatar: "https://assets.chanhdai.com/avatars/x/khushiirl.webp",
