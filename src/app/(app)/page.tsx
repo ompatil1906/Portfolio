@@ -32,6 +32,7 @@ import { SocialLinks } from "@/features/portfolio/components/social-links"
 import { Sponsors } from "@/features/portfolio/components/sponsors"
 import { Support } from "@/features/portfolio/components/support"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
+import { TrustedBy } from "@/features/portfolio/components/trusted-by"
 import { PROJECTS } from "@/features/portfolio/data/projects"
 import { USER } from "@/features/portfolio/data/user"
 
@@ -89,6 +90,9 @@ export default function HomePage() {
           <Separator />
 
           <Support />
+          <Separator />
+
+          <TrustedBy />
           <Separator />
 
           <Components />
