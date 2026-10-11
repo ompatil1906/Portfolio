@@ -32,9 +32,9 @@ export type TestimonialType = {
 export function TrustedBy() {
   return (
     <Panel id={ID} className="overflow-x-clip screen-line-bottom-none">
-      {/* Header: Tools and technologies used to build this */}
+      {/* Header: Special thanks to the technologies powering this */}
       <div className="screen-line-bottom flex items-center justify-center gap-1.5 py-3 text-center text-xs font-medium tracking-wide text-muted-foreground @2xl:text-sm">
-        <span>Tools and technologies used to build this</span>
+        <span>Special thanks to the technologies powering this</span>
       </div>
 
       {/* Logos carousel */}
