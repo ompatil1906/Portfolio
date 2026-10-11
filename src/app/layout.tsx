@@ -21,7 +21,9 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
     "@id": JSON_LD_ID.website,
     name: SITE_INFO.name,
     url: SITE_INFO.url,
+    image: `${SITE_INFO.url}/og.png`,
     author: personJsonLd,
+    publisher: personJsonLd,
   }
 }
 
@@ -82,16 +84,38 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.svg",
+        url: "/favicon.ico",
         sizes: "any",
+      },
+      {
+        url: "/favicon-48x48.png",
+        type: "image/png",
+        sizes: "48x48",
+      },
+      {
+        url: "/favicon-32x32.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+      {
+        url: "/favicon-16x16.png",
+        type: "image/png",
+        sizes: "16x16",
+      },
+      {
+        url: "/favicon.svg",
         type: "image/svg+xml",
+        sizes: "any",
       },
     ],
-    apple: {
-      url: "/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
+    shortcut: "/favicon.ico",
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        type: "image/png",
+        sizes: "180x180",
+      },
+    ],
   },
   manifest: "/manifest.webmanifest",
   alternates: {
@@ -160,6 +184,7 @@ export default function RootLayout({
           }}
         />
         <JsonLdScript data={getWebSiteJsonLd()} />
+        <meta name="thumbnail" content={`${SITE_INFO.url}/og.png`} />
       </head>
 
       <body>
