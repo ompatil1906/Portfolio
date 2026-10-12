@@ -1,7 +1,8 @@
 import { ArrowRight } from "lucide-react"
 
+import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { XIcon } from "@/components/icons"
+import { LinkedInIcon, XIcon } from "@/components/icons"
 import { LogosCarousel } from "@/components/logos-carousel"
 import {
   Testimonial,
@@ -67,21 +68,27 @@ export function TrustedBy() {
         </LogosCarousel>
       </div>
 
-      {/* Header: Trusted by top builders on X */}
+      {/* Header: Trusted by people on X & LinkedIn */}
       <div className="screen-line-bottom flex items-center justify-center gap-1.5 py-3 text-center text-xs font-medium tracking-wide text-muted-foreground @2xl:text-sm">
-        <span>Trusted by top builders on</span>
+        <span>Trusted by people on</span>
         <XIcon className="inline size-3.5 text-foreground" />
+        <span className="text-muted-foreground/60">&</span>
+        <LinkedInIcon className="inline size-3.5 text-foreground" />
       </div>
 
-      {/* 3 unique testimonial cards without repetition */}
+      {/* Testimonial cards */}
       <div className="grid grid-cols-1 gap-3 p-4 sm:grid-cols-3">
-        {TESTIMONIALS.map((item) => (
+        {TESTIMONIALS.map((item, index) => (
           <a
             key={item.url}
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/card block h-full focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+            className={cn(
+              "group/card block h-full focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+              index === 0 && "sm:col-start-2",
+              index === 1 && "sm:col-start-1"
+            )}
           >
             <TestimonialSpotlight className="h-full">
               <Testimonial>
@@ -151,6 +158,13 @@ function renderQuoteText(quote: string) {
 
 const TESTIMONIALS: TestimonialType[] = [
   {
+    authorAvatar: "/images/avatars/atharvachitambar.jpg",
+    authorName: "Atharva Chitambar",
+    authorTagline: "on LinkedIn",
+    url: "https://www.linkedin.com/posts/om-patil19_om-patil-ai-engineer-genai-agentic-systems-activity-7515069808468582400-h10O",
+    quote: "Keep up the good work Om!!",
+  },
+  {
     authorAvatar: "/images/avatars/shridhar9700.jpg",
     authorName: "Shridhar Patil",
     authorTagline: "@shridhar9700 on X",
@@ -170,6 +184,27 @@ const TESTIMONIALS: TestimonialType[] = [
     authorTagline: "@swarooppatilx on X",
     url: "https://x.com/swarooppatilx/status/2109268585105490253",
     quote: "@Om_Patil19 great work!",
+  },
+  {
+    authorAvatar: "/images/avatars/rohittmore.jpg",
+    authorName: "rσнιт ☘️",
+    authorTagline: "@rohittmore on X",
+    url: "https://x.com/rohittmore/status/2109396177993306330",
+    quote: "@Om_Patil19 Clean work.",
+  },
+  {
+    authorAvatar: "/images/avatars/vedantkolte.png",
+    authorName: "Vedant Kolte",
+    authorTagline: "@VedantKolt80806 on X",
+    url: "https://x.com/VedantKolt80806/status/2109511306277711909",
+    quote: "@Om_Patil19 Impressive work!",
+  },
+  {
+    authorAvatar: "/images/avatars/rajlaxmi1905.jpg",
+    authorName: "Rajlaxmi",
+    authorTagline: "@Rajlaxmi1905 on X",
+    url: "https://x.com/Rajlaxmi1905/status/2109391273333522740",
+    quote: "@Om_Patil19 Nice work om👏",
   },
 ]
 

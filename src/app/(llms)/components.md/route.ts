@@ -14,7 +14,7 @@ const content = `# Components
 
 > Pixel-perfect, uniquely crafted components for React, Next.js, Tailwind CSS, and shadcn/ui.
 
-Install a component with the shadcn CLI: \`npx shadcn@latest add ${registryConfig.namespace}/<name>\`.
+Install a component with the shadcn CLI: \`npx shadcn@latest add ${registryConfig.namespace}/<name>\`, or install the complete package from npm: \`npm install @heyompatil/ui\` (or alias \`npm install @heyompatil/components\`).
 
 Each link below returns the full documentation as Markdown. Drop the \`.md\` extension for the web page.
 

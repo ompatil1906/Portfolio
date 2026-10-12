@@ -20,7 +20,19 @@ updatedAt: 2026-03-30
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/glow-card-grid
+npx shadcn@latest add @heyompatil/glow-card-grid
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { GlowCard, GlowCardGrid } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -61,6 +73,10 @@ npm install cn
 ## Usage
 
 ```tsx
+// Using @heyompatil/ui package
+import { GlowCard, GlowCardGrid } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { GlowCard, GlowCardGrid } from "@/components/glow-card-grid"
 ```
 
@@ -111,9 +127,8 @@ Follow the [DialKit installation guide](https://joshpuckett.me/dialkit#installat
 Use the hook to define parameter ranges and pass them to your component as props.
 
 ```tsx
+import { GlowCard, GlowCardGrid } from "@heyompatil/glow-card-grid"
 import { useDialKit } from "dialkit"
-
-import { GlowCard, GlowCardGrid } from "@/components/glow-card-grid"
 ```
 
 ```tsx

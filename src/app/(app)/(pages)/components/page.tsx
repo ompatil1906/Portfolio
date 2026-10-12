@@ -17,9 +17,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { CarbonAds } from "@/components/carbon-ads"
-import { TrustedRegistryIcon } from "@/components/icons"
+import { NpmIcon, TrustedRegistryIcon } from "@/components/icons"
 import {
   PageHeading,
+  PageHeadingDescription,
   PageHeadingTagline,
   PageHeadingTitle,
 } from "@/components/page-heading"
@@ -137,6 +138,20 @@ export default function Page() {
         <PageHeading>
           <PageHeadingTagline>Components</PageHeadingTagline>
           <PageHeadingTitle>Pixel-perfect, uniquely crafted.</PageHeadingTitle>
+          <PageHeadingDescription>
+            A collection of {allComponents.length} crafted UI components,
+            micro-interactions, and visual effects for React and Next.js.
+            Install individually via shadcn CLI or as the complete{" "}
+            <a
+              href="https://www.npmjs.com/package/@heyompatil/ui"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono font-medium text-foreground underline underline-offset-2 transition-colors hover:text-primary"
+            >
+              @heyompatil/ui
+            </a>{" "}
+            package from npm.
+          </PageHeadingDescription>
         </PageHeading>
 
         <div className="h-4" />
@@ -211,7 +226,20 @@ export default function Page() {
 
         <ComponentList items={allComponents} showAds />
 
-        <div className="screen-line-top flex flex-wrap justify-center gap-2 p-4 before:-top-px">
+        <div className="screen-line-top flex flex-wrap items-center justify-center gap-2 p-4 before:-top-px">
+          <a
+            className="flex h-7 items-center gap-1.5 rounded-full border border-line bg-secondary/80 px-2.5 text-sm font-medium text-secondary-foreground transition-colors select-none hover:bg-secondary"
+            href="https://www.npmjs.com/package/@heyompatil/ui"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <NpmIcon className="size-3.5 fill-[#cb3837]" />
+            <span>@heyompatil/ui</span>
+            <span className="font-mono text-xs text-muted-foreground">
+              v0.1.0
+            </span>
+          </a>
+
           <a
             className="flex h-7 items-center gap-1 rounded-full border border-transparent bg-primary bg-clip-padding pr-2.5 pl-2 text-sm font-medium whitespace-nowrap text-primary-foreground select-none [&>svg]:pointer-events-none [&>svg]:size-4 [&>svg]:shrink-0"
             href={trustedRegistryUrl}

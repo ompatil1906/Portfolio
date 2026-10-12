@@ -27,7 +27,19 @@ updatedAt: 2026-03-28
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/work-experience
+npx shadcn@latest add @heyompatil/work-experience
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { WorkExperience } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -104,8 +116,11 @@ npm install -D @tailwindcss/typography
 ## Usage
 
 ```tsx
+// Using @heyompatil/ui package
+import { WorkExperience } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { WorkExperience } from "@/components/work-experience"
-import type { ExperienceItemType } from "@/components/work-experience"
 ```
 
 ```tsx

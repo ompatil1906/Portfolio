@@ -25,6 +25,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@heyompatil/ui": [
+        "./packages/ui/src/index.ts"
       ]
     }
   },

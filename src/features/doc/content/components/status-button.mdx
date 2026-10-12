@@ -27,7 +27,19 @@ updatedAt: 2026-08-23
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/status-button
+npx shadcn@latest add @heyompatil/status-button
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { StatusButton } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -92,6 +104,10 @@ npm install cn class-variance-authority lucide-react motion @base-ui/react
 ## Usage
 
 ```tsx
+// Using @heyompatil/ui package
+import { StatusButton } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { StatusButton } from "@/components/status-button"
 ```
 
@@ -108,7 +124,7 @@ Return a promise from `onClick`. The button shows a spinner while the promise is
 When a form owns the submission, pass `status` and `onStatusChange` instead of `onClick`. The button still returns to idle on its own, and `onStatusChange` receives `"idle"` when that happens.
 
 ```tsx
-import { StatusButton, type ButtonStatus } from "@/components/status-button"
+import { StatusButton, type ButtonStatus } from "@heyompatil/status-button"
 
 const [status, setStatus] = useState<ButtonStatus>("idle")
 ```

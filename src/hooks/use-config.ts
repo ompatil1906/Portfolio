@@ -1,7 +1,7 @@
 import { useAtom } from "jotai"
 import { atomWithStorage } from "jotai/utils"
 
-export type InstallationType = "cli" | "manual"
+export type InstallationType = "cli" | "npm" | "pkg" | "manual"
 
 type Config = {
   installationType: InstallationType

@@ -40,15 +40,30 @@ A portfolio, blog, and shadcn component registry showcasing my work as an AI Sys
 - vCard export with contact details
 - Progressive Web App (PWA) installable
 
-### Registry
+### NPM Packages
 
-Easily build and distribute reusable components, hooks, and blocks using the shadcn registry.
-
-Visit [heyompatil.me/components](https://heyompatil.me/components) or [heyompatil.me/blocks](https://heyompatil.me/blocks) to explore components and installation commands.
+Install the components directly as an npm package:
 
 ```bash
-# Add components directly via shadcn CLI
+npm install @heyompatil/ui
+# or
+npm install @heyompatil/components
+```
+
+```tsx
+import { TextFlip, ThemeSwitcher, WheelPicker } from "@heyompatil/ui"
+```
+
+### Shadcn Registry
+
+Alternatively, add individual components directly into your project's codebase via the shadcn CLI:
+
+```bash
+# Add components directly via URL
 npx shadcn add https://heyompatil.me/r/<component-name>.json
+
+# Or install using the registry namespace
+npx shadcn add @heyompatil/<component-name>
 ```
 
 ## Development
@@ -59,6 +74,8 @@ Please refer to the [Development Guide](./DEVELOPMENT.md) for local setup and co
 pnpm dev             # Start development server
 pnpm build           # Production build
 pnpm registry:build  # Build shadcn component registry
+pnpm package:build   # Build @heyompatil/ui and @heyompatil/components
+pnpm package:publish # Publish both packages to npm
 pnpm lint            # Run linter
 pnpm check-types     # TypeScript type check
 ```

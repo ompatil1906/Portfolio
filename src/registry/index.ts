@@ -8,7 +8,7 @@ import { lib } from "./lib/_registry"
 import { styles } from "./styles/_registry"
 
 export const registry = {
-  name: "ompatil",
+  name: "heyompatil",
   homepage: "https://heyompatil.me/components",
   items: [
     ...lib,

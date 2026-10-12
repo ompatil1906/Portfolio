@@ -30,7 +30,25 @@ Built on top of [React Swipe Actions](https://react-primitives.chanhdai.com/swip
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/swipe-actions
+npx shadcn@latest add @heyompatil/swipe-actions
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import {
+  SwipeAction,
+  SwipeActions,
+  SwipeContent,
+  SwipeItem,
+  SwipeRoot,
+} from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -68,6 +86,16 @@ npm install @ncdai/react-swipe-actions motion cn
 ## Usage
 
 ```tsx
+// Using @heyompatil/ui package
+import {
+  SwipeAction,
+  SwipeActions,
+  SwipeContent,
+  SwipeItem,
+  SwipeRoot,
+} from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import {
   SwipeAction,
   SwipeActions,

@@ -35,7 +35,23 @@ Built on top of [React Wheel Picker](https://react-wheel-picker.chanhdai.com) â€
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/wheel-picker
+npx shadcn@latest add @heyompatil/wheel-picker
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import {
+  WheelPicker,
+  WheelPickerWrapper,
+  type WheelPickerOption,
+} from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -73,6 +89,14 @@ npm install @ncdai/react-wheel-picker cn
 ## Usage
 
 ```tsx
+// Using @heyompatil/ui package
+import {
+  WheelPicker,
+  WheelPickerWrapper,
+  type WheelPickerOption,
+} from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import {
   WheelPicker,
   WheelPickerWrapper,

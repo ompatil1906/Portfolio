@@ -19,7 +19,22 @@ updatedAt: 2026-06-02
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/chevrons-up-down-icon
+npx shadcn@latest add @heyompatil/chevrons-up-down-icon
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import {
+  ChevronsUpDownIcon,
+  type ChevronsUpDownIconHandle,
+} from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -52,11 +67,16 @@ npm install motion
 ## Usage
 
 ```tsx
-import { useRef } from "react"
-
+// Using @heyompatil/ui package
 import {
   ChevronsUpDownIcon,
-  ChevronsUpDownIconHandle,
+  type ChevronsUpDownIconHandle,
+} from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
+import {
+  ChevronsUpDownIcon,
+  type ChevronsUpDownIconHandle,
 } from "@/components/chevrons-up-down-icon"
 ```
 

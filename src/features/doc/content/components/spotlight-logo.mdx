@@ -31,7 +31,19 @@ updatedAt: 2026-06-29
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/spotlight-logo
+npx shadcn@latest add @heyompatil/spotlight-logo
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { SpotlightLogo } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -67,6 +79,10 @@ npm install motion
 The mark renders its own SVG, so bring your own artwork by replacing the paths inside the component. Wrap it in a sized container to control the layout.
 
 ```tsx
+// Using @heyompatil/ui package
+import { SpotlightLogo } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { SpotlightLogo } from "@/components/spotlight-logo"
 ```
 

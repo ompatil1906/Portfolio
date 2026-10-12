@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/tooltip"
 import { Prose } from "@/components/ui/typography"
 import { CarbonAds } from "@/components/carbon-ads"
+import { NpmIcon } from "@/components/icons"
 import { MDX } from "@/components/mdx"
 import { TOCInline } from "@/components/toc-inline"
 import { TOCMinimap } from "@/components/toc-minimap"
@@ -195,6 +196,32 @@ export default async function Page({
           />
 
           <div className="flex items-center gap-2">
+            <Tooltip>
+              <TooltipTrigger
+                render={
+                  <Button
+                    className="size-7 border-none text-muted-foreground hover:text-foreground"
+                    variant="ghost"
+                    size="icon-sm"
+                    nativeButton={false}
+                    render={
+                      <a
+                        href="https://www.npmjs.com/package/@heyompatil/ui"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View @heyompatil/ui on npm"
+                      >
+                        <NpmIcon className="size-3.5 fill-current" />
+                      </a>
+                    }
+                  />
+                }
+              />
+              <TooltipContent>
+                <p>View @heyompatil/ui on npm</p>
+              </TooltipContent>
+            </Tooltip>
+
             <LLMCopyButtonWithViewOptions
               markdownUrl={`/components/${doc.slug}.md`}
               isComponent

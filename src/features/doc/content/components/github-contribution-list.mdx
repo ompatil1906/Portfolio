@@ -26,7 +26,19 @@ updatedAt: 2026-08-20
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/github-contribution-list
+npx shadcn@latest add @heyompatil/github-contribution-list
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { GitHubContributionList } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -73,12 +85,9 @@ npx shadcn@latest add @ompatil/github-contribution-list
 Pair the list with the `get-github-data` library to fetch authored pull requests. The mapper drops pull requests against repositories the viewer owns, so only outside contributions are shown:
 
 ```tsx
-import { getCachedGithubData } from "@/lib/get-github-data/get-cached-github-data"
+// Using @heyompatil/ui package
+import { GitHubContributionList } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { GitHubContributionList } from "@/components/github-contribution-list"
-
-export async function Contributions() {
-  const data = await getCachedGithubData("vercel")
-
-  return <GitHubContributionList contributions={data?.contributions ?? []} />
-}
 ```

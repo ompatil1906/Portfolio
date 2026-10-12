@@ -40,7 +40,24 @@ updatedAt: 2026-02-20
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/slide-to-unlock
+npx shadcn@latest add @heyompatil/slide-to-unlock
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import {
+  SlideToUnlock,
+  SlideToUnlockHandle,
+  SlideToUnlockText,
+  SlideToUnlockTrack,
+} from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -86,7 +103,15 @@ npm install motion cn
 ## Usage
 
 ```tsx
-import { ShimmeringText } from "@/components/shimmering-text"
+// Using @heyompatil/ui package
+import {
+  SlideToUnlock,
+  SlideToUnlockHandle,
+  SlideToUnlockText,
+  SlideToUnlockTrack,
+} from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import {
   SlideToUnlock,
   SlideToUnlockHandle,

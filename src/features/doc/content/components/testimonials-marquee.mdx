@@ -26,7 +26,29 @@ updatedAt: 2025-03-27
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/testimonials-marquee
+npx shadcn@latest add @heyompatil/testimonials-marquee
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import {
+  Testimonial,
+  TestimonialAuthor,
+  TestimonialAuthorName,
+  TestimonialAuthorTagline,
+  TestimonialAvatar,
+  TestimonialAvatarImg,
+  TestimonialAvatarRing,
+  TestimonialQuote,
+  TestimonialVerifiedBadge,
+} from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -69,16 +91,23 @@ npm install cn react-fast-marquee
 ## Usage
 
 ```tsx
-import {
-  Marquee,
-  MarqueeContent,
-  MarqueeFade,
-  MarqueeItem,
-} from "@/components/kibo-ui/marquee"
+// Using @heyompatil/ui package
 import {
   Testimonial,
   TestimonialAuthor,
-  TestimonialAuthorInfo,
+  TestimonialAuthorName,
+  TestimonialAuthorTagline,
+  TestimonialAvatar,
+  TestimonialAvatarImg,
+  TestimonialAvatarRing,
+  TestimonialQuote,
+  TestimonialVerifiedBadge,
+} from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
+import {
+  Testimonial,
+  TestimonialAuthor,
   TestimonialAuthorName,
   TestimonialAuthorTagline,
   TestimonialAvatar,

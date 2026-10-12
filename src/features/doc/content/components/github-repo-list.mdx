@@ -26,7 +26,19 @@ updatedAt: 2026-08-20
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/github-repo-list
+npx shadcn@latest add @heyompatil/github-repo-list
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { GitHubRepoList } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -73,12 +85,9 @@ npx shadcn@latest add @ompatil/github-repo-list
 Pair the list with the [`get-github-data`](https://heyompatil.me/components/get-github-data) library to fetch live repositories:
 
 ```tsx
-import { getCachedGithubData } from "@/lib/get-github-data/get-cached-github-data"
+// Using @heyompatil/ui package
+import { GitHubRepoList } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { GitHubRepoList } from "@/components/github-repo-list"
-
-export async function Repositories() {
-  const data = await getCachedGithubData("vercel")
-
-  return <GitHubRepoList repos={data?.owned ?? []} />
-}
 ```

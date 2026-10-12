@@ -16,7 +16,19 @@ updatedAt: 2026-05-23
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/testimonial-spotlight
+npx shadcn@latest add @heyompatil/testimonial-spotlight
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { TestimonialSpotlight } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -59,18 +71,10 @@ npm install cn
 ## Usage
 
 ```tsx
-import {
-  Testimonial,
-  TestimonialAuthor,
-  TestimonialAuthorInfo,
-  TestimonialAuthorName,
-  TestimonialAuthorTagline,
-  TestimonialAvatar,
-  TestimonialAvatarImg,
-  TestimonialAvatarRing,
-  TestimonialQuote,
-  TestimonialVerifiedBadge,
-} from "@/components/testimonial"
+// Using @heyompatil/ui package
+import { TestimonialSpotlight } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import { TestimonialSpotlight } from "@/components/testimonial-spotlight"
 ```
 

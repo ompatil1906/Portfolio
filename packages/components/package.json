@@ -1,0 +1,61 @@
+{
+  "name": "@heyompatil/components",
+  "version": "0.1.0",
+  "description": "Official alias package for @heyompatil/ui — crafted React & Next.js components and micro-interactions by Om Patil.",
+  "author": {
+    "name": "Om Patil",
+    "email": "patilom1906@gmail.com",
+    "url": "https://heyompatil.me"
+  },
+  "homepage": "https://heyompatil.me/components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ompatil1906/Portfolio.git",
+    "directory": "packages/components"
+  },
+  "bugs": {
+    "url": "https://github.com/ompatil1906/Portfolio/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-components",
+    "components",
+    "ui",
+    "ui-components",
+    "nextjs",
+    "shadcn",
+    "tailwind",
+    "motion",
+    "animations",
+    "micro-interactions",
+    "heyompatil",
+    "ompatil"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@heyompatil/ui": "^0.1.0"
+  }
+}

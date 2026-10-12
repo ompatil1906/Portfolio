@@ -4,6 +4,8 @@ import { useRef } from "react"
 import { motion } from "motion/react"
 
 import { registryConfig } from "@/config/registry"
+import { cn } from "@/lib/utils"
+import { useConfig } from "@/hooks/use-config"
 import type { PackageManager } from "@/hooks/use-package-manager"
 import { usePackageManager } from "@/hooks/use-package-manager"
 import {
@@ -18,13 +20,20 @@ import { IconSwap, IconSwapItem } from "@/registry/components/icon-swap"
 import { TextFlip } from "@/registry/components/text-flip"
 
 import { CopyButton } from "./copy-button"
-import { getIconForPackageManager } from "./icons"
+import { getIconForPackageManager, NpmIcon } from "./icons"
 
 const pmCommands = {
   pnpm: "pnpm dlx",
   yarn: "yarn",
   npm: "npx",
   bun: "bunx --bun",
+}
+
+const pkgCommands: Record<PackageManager, string> = {
+  pnpm: "pnpm add @heyompatil/ui",
+  yarn: "yarn add @heyompatil/ui",
+  npm: "npm install @heyompatil/ui",
+  bun: "bun add @heyompatil/ui",
 }
 
 const registryItemNames = components
@@ -37,6 +46,8 @@ const registryItemNames = components
 
 export function RegistryCommandAnimated() {
   const [packageManager, setPackageManager] = usePackageManager()
+  const [config, setConfig] = useConfig()
+  const installType = config.installationType === "pkg" ? "pkg" : "cli"
 
   const currentItemRef = useRef(registryItemNames[0])
 
@@ -49,7 +60,7 @@ export function RegistryCommandAnimated() {
           setPackageManager(value as PackageManager)
         }}
       >
-        <div className="px-4 shadow-[inset_0_-1px_0_0] shadow-line">
+        <div className="flex items-center justify-between px-4 shadow-[inset_0_-1px_0_0] shadow-line">
           <TabsList className="h-10 rounded-none bg-transparent p-0 inset-ring-0 dark:bg-transparent [&_svg]:size-4 [&_svg]:text-muted-foreground">
             <IconSwap>
               <IconSwapItem className="mr-2" key={packageManager}>
@@ -71,41 +82,109 @@ export function RegistryCommandAnimated() {
 
             <TabsIndicator className="h-0.5 translate-y-0 rounded-none bg-foreground ring-0 dark:bg-foreground" />
           </TabsList>
+
+          <div className="flex items-center gap-1 pr-9">
+            <button
+              type="button"
+              onClick={() =>
+                setConfig((prev) => ({ ...prev, installationType: "cli" }))
+              }
+              className={cn(
+                "cursor-pointer rounded px-2 py-0.5 font-mono text-xs font-medium transition-colors",
+                installType === "cli"
+                  ? "bg-muted font-semibold text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              CLI
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                setConfig((prev) => ({ ...prev, installationType: "pkg" }))
+              }
+              className={cn(
+                "flex cursor-pointer items-center gap-1 rounded px-2 py-0.5 font-mono text-xs font-medium transition-colors",
+                installType === "pkg"
+                  ? "bg-muted font-semibold text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              <NpmIcon className="size-3 fill-current" />
+              <span>@heyompatil/ui</span>
+            </button>
+          </div>
         </div>
 
-        <pre className="-translate-y-px p-4">
-          <code
-            data-language="bash"
-            className="block font-mono text-sm text-muted-foreground max-sm:leading-6"
-          >
-            {Object.entries(pmCommands).map(([key, command]) => {
-              return (
-                <TabsContent
-                  key={key}
-                  value={key}
-                  render={<span className="block sm:inline-block" />}
-                >
-                  {command} shadcn add{" "}
-                  <span className="select-none sm:hidden" aria-hidden="true">
-                    \
-                  </span>
-                </TabsContent>
-              )
-            })}
-
-            <span>{registryConfig.namespace}/</span>
-
-            <TextFlip
-              className="text-foreground"
-              as={motion.span}
-              onIndexChange={(index: number) => {
-                currentItemRef.current = registryItemNames[index]
-              }}
+        {installType === "cli" ? (
+          <pre className="-translate-y-px p-4">
+            <code
+              data-language="bash"
+              className="block font-mono text-sm text-muted-foreground max-sm:leading-6"
             >
-              {registryItemNames}
-            </TextFlip>
-          </code>
-        </pre>
+              {Object.entries(pmCommands).map(([key, command]) => {
+                return (
+                  <TabsContent
+                    key={key}
+                    value={key}
+                    render={<span className="block sm:inline-block" />}
+                  >
+                    {command} shadcn add{" "}
+                    <span className="select-none sm:hidden" aria-hidden="true">
+                      \
+                    </span>
+                  </TabsContent>
+                )
+              })}
+
+              <span>{registryConfig.namespace}/</span>
+
+              <TextFlip
+                className="text-foreground"
+                as={motion.span}
+                onIndexChange={(index: number) => {
+                  currentItemRef.current = registryItemNames[index]
+                }}
+              >
+                {registryItemNames}
+              </TextFlip>
+            </code>
+          </pre>
+        ) : (
+          <pre className="-translate-y-px p-4">
+            <code
+              data-language="bash"
+              className="block font-mono text-sm text-foreground max-sm:leading-6"
+            >
+              {Object.entries(pkgCommands).map(([key, command]) => {
+                return (
+                  <TabsContent
+                    key={key}
+                    value={key}
+                    render={<span className="block sm:inline-block" />}
+                  >
+                    {command}
+                  </TabsContent>
+                )
+              })}
+            </code>
+          </pre>
+        )}
+
+        {installType === "pkg" && (
+          <div className="-mt-2 flex items-center gap-2 px-4 pb-3 text-xs text-muted-foreground">
+            <span>Includes all 42 components &amp; utilities</span>
+            <span>•</span>
+            <a
+              href="https://www.npmjs.com/package/@heyompatil/ui"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 underline underline-offset-2 hover:text-foreground"
+            >
+              npmjs.com/package/@heyompatil/ui ↗
+            </a>
+          </div>
+        )}
       </Tabs>
 
       <CopyButton
@@ -113,6 +192,9 @@ export function RegistryCommandAnimated() {
         variant="ghost"
         size="icon-sm"
         text={() => {
+          if (installType === "pkg") {
+            return pkgCommands[packageManager] || pkgCommands["pnpm"]
+          }
           const baseCommand = pmCommands[packageManager] || pmCommands["pnpm"]
           return `${baseCommand} shadcn@latest add ${registryConfig.namespace}/${currentItemRef.current}`
         }}

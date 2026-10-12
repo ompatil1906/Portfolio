@@ -82,7 +82,7 @@ export const Index: Record<string, any> = {`
   const registryJSON = JSON.stringify(
     {
       $schema: "https://ui.shadcn.com/schema/registry.json",
-      name: "ompatil",
+      name: "heyompatil",
       homepage: "https://heyompatil.me/components",
       items: publishedItems.map((item) => {
         return {

@@ -101,6 +101,15 @@ pnpm registry:build
 
 When running the `npx shadcn add <registry-url>` command, the selected component will be automatically downloaded and integrated into your project.
 
+### NPM Packages
+
+To build and publish `@heyompatil/ui` and its alias `@heyompatil/components`:
+
+```bash
+pnpm package:build   # Build ESM, CJS, and TypeScript definitions into packages/*/dist
+pnpm package:publish # Build and publish both packages to the public npm registry
+```
+
 ## Screenshots
 
 The site screenshots are captured locally, then published to Cloudflare R2.

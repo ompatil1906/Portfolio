@@ -33,7 +33,19 @@ updatedAt: 2026-03-01
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/consent-manager
+npx shadcn@latest add @heyompatil/consent-manager
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { ConsentManager } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -80,7 +92,7 @@ npm install cn @c15t/nextjs
 Wrap your app with the `ConsentManager` component:
 
 ```tsx title="app/layout.tsx" {1,7}
-import { ConsentManager } from "@/components/consent-manager"
+import { ConsentManager } from "@heyompatil/consent-manager"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

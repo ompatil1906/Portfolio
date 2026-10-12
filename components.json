@@ -22,6 +22,7 @@
     "hooks": "@/hooks"
   },
   "registries": {
+    "@heyompatil": "https://heyompatil.me/r/{name}.json",
     "@ompatil": "https://heyompatil.me/r/{name}.json",
     "@shadcncraft": {
       "url": "https://shadcncraft.com/r/{style}/{name}",

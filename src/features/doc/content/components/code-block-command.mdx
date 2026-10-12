@@ -28,7 +28,19 @@ updatedAt: 2026-04-06
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @ompatil/code-block-command
+npx shadcn@latest add @heyompatil/code-block-command
+```
+
+</TabsContent>
+
+<TabsContent value="npm">
+
+```bash
+npm install @heyompatil/ui
+```
+
+```tsx
+import { CodeBlockCommand, convertNpmCommand } from "@heyompatil/ui"
 ```
 
 </TabsContent>
@@ -75,6 +87,10 @@ npm install cn class-variance-authority lucide-react motion jotai @base-ui/react
 ## Usage
 
 ```tsx
+// Using @heyompatil/ui package
+import { CodeBlockCommand, convertNpmCommand } from "@heyompatil/ui"
+
+// Or using shadcn CLI / manual import
 import {
   CodeBlockCommand,
   convertNpmCommand,

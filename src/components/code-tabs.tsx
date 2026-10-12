@@ -11,7 +11,8 @@ export function CodeTabs({
 }: React.ComponentProps<typeof Tabs>) {
   const [config, setConfig] = useConfig()
 
-  const installationType = config.installationType || "cli"
+  const rawType = config.installationType || "cli"
+  const installationType = rawType === "pkg" ? "npm" : rawType
 
   return (
     <Tabs
