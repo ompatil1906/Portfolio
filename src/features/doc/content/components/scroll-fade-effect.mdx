@@ -33,7 +33,7 @@ This component uses CSS `animation-timeline: scroll()`. Check the latest [browse
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/scroll-fade-effect
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -54,33 +54,17 @@ import { ScrollFadeEffect } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Add Tailwind CSS utilities and animations</Step>
-
-<ComponentSource src="src/styles/scroll-fade-effect.css" title="globals.css" />
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  name="scroll-fade-effect"
-  title="components/scroll-fade-effect.tsx"
-  collapsible="false"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { ScrollFadeEffect } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -91,11 +75,7 @@ npm install cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { ScrollFadeEffect } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { ScrollFadeEffect } from "@/components/scroll-fade-effect"
 ```
 
 ```tsx

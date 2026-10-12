@@ -30,7 +30,7 @@ Built on top of [React Swipe Actions](https://react-primitives.chanhdai.com/swip
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/swipe-actions
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -57,25 +57,23 @@ import {
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install @ncdai/react-swipe-actions motion cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="swipe-actions" title="components/swipe-actions.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import {
+  SwipeAction,
+  SwipeActions,
+  SwipeContent,
+  SwipeItem,
+  SwipeRoot,
+} from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -86,7 +84,6 @@ npm install @ncdai/react-swipe-actions motion cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import {
   SwipeAction,
   SwipeActions,
@@ -94,15 +91,6 @@ import {
   SwipeItem,
   SwipeRoot,
 } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import {
-  SwipeAction,
-  SwipeActions,
-  SwipeContent,
-  SwipeItem,
-  SwipeRoot,
-} from "@/components/swipe-actions"
 ```
 
 ```tsx

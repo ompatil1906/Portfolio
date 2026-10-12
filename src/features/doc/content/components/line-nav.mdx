@@ -38,7 +38,7 @@ updatedAt: 2026-06-26
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/line-nav
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -59,25 +59,17 @@ import { LineNav } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install motion cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="line-nav" title="components/line-nav.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { LineNav } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -88,11 +80,7 @@ npm install motion cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { LineNav } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { LineNav } from "@/components/line-nav"
 ```
 
 ```tsx

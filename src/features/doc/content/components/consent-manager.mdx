@@ -33,7 +33,7 @@ updatedAt: 2026-03-01
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/consent-manager
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -54,32 +54,17 @@ import { ConsentManager } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn @c15t/nextjs
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Install the required components</Step>
-
-- [Button](https://ui.shadcn.com/docs/components/base/button)
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  name="consent-manager"
-  title="components/consent-manager.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { ConsentManager } from "@heyompatil/ui"
+```
 
 </Steps>
 

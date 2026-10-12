@@ -26,7 +26,7 @@ updatedAt: 2026-05-30
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/mobius-loop-icon
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -47,20 +47,17 @@ import { MobiusLoopIcon } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install motion
+npm install @heyompatil/ui
 ```
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  name="mobius-loop-icon"
-  title="components/mobius-loop-icon.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { MobiusLoopIcon } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -71,11 +68,7 @@ npm install motion
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { MobiusLoopIcon } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { MobiusLoopIcon } from "@/components/mobius-loop-icon"
 ```
 
 ```tsx

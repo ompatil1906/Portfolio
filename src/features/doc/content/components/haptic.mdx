@@ -22,7 +22,7 @@ updatedAt: 2026-03-03
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/haptic
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -43,11 +43,17 @@ import { haptic } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Install @heyompatil/ui</Step>
 
-<ComponentSource name="haptic" title="lib/haptic.ts" />
+```bash
+npm install @heyompatil/ui
+```
 
-<Step>Update the import paths to match your project setup</Step>
+<Step>Import the component into your project</Step>
+
+```tsx
+import { haptic } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -58,11 +64,7 @@ import { haptic } from "@heyompatil/ui"
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { haptic } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { haptic } from "@/lib/haptic"
 ```
 
 ```tsx

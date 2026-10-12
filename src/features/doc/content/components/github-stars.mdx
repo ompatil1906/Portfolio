@@ -27,7 +27,7 @@ updatedAt: 2026-03-28
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/github-stars
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -48,16 +48,17 @@ import { GithubStars } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the required shadcn/ui components</Step>
+<Step>Install @heyompatil/ui</Step>
 
-- [Button](https://ui.shadcn.com/docs/components/base/button)
-- [Tooltip](https://ui.shadcn.com/docs/components/base/tooltip)
+```bash
+npm install @heyompatil/ui
+```
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource name="github-stars" title="components/github-stars.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { GithubStars } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -68,11 +69,7 @@ import { GithubStars } from "@heyompatil/ui"
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { GithubStars } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { GithubStars } from "@/components/github-stars"
 ```
 
 ```tsx

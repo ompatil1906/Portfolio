@@ -28,7 +28,7 @@ updatedAt: 2026-05-18
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/copy-button
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -49,36 +49,17 @@ import { CopyButton } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn class-variance-authority lucide-react motion @base-ui/react
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Install the required components</Step>
-
-- [Button](https://ui.shadcn.com/docs/components/base/button)
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  src="src/hooks/use-copy-to-clipboard.ts"
-  title="hooks/use-copy-to-clipboard.ts"
-/>
-
-<ComponentSource name="icon-swap" title="components/icon-swap.tsx" />
-
-<ComponentSource name="copy-button" title="components/copy-button.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { CopyButton } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -89,11 +70,7 @@ npm install cn class-variance-authority lucide-react motion @base-ui/react
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { CopyButton } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { CopyButton } from "@/components/copy-button"
 ```
 
 ```tsx

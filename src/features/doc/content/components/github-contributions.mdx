@@ -27,7 +27,7 @@ updatedAt: 2026-08-22
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/github-contributions
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -48,29 +48,17 @@ import { GithubContributions } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the required shadcn/ui components</Step>
+<Step>Install @heyompatil/ui</Step>
 
-- [Spinner](https://ui.shadcn.com/docs/components/base/spinner)
-- [Tooltip](https://ui.shadcn.com/docs/components/base/tooltip)
+```bash
+npm install @heyompatil/ui
+```
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  name="contribution-graph"
-  title="components/contribution-graph.tsx"
-/>
-
-<ComponentSource
-  name="github-contributions"
-  title="components/github-contributions.tsx"
-/>
-
-<ComponentSource
-  src="src/registry/components/github-contributions/lib/get-cached-contributions.ts"
-  title="lib/get-cached-contributions.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { GithubContributions } from "@heyompatil/ui"
+```
 
 </Steps>
 

@@ -27,7 +27,7 @@ updatedAt: 2026-08-23
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/status-button
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -48,52 +48,17 @@ import { StatusButton } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn class-variance-authority lucide-react motion @base-ui/react
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Install the required components</Step>
-
-- [Button](https://ui.shadcn.com/docs/components/base/button)
-
-<Step>Add the spinner animation to your global CSS</Step>
-
-```css title="globals.css"
-@theme inline {
-  --animate-spinner-opacity: spinner-opacity
-    var(--tw-animation-duration, var(--tw-duration, 1s)) linear infinite;
-
-  @keyframes spinner-opacity {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0.15;
-    }
-  }
-}
+```tsx
+import { StatusButton } from "@heyompatil/ui"
 ```
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  name="use-controllable-state"
-  title="hooks/use-controllable-state.tsx"
-/>
-
-<ComponentSource name="status-button" title="components/status-button.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
 
 </Steps>
 
@@ -104,11 +69,7 @@ npm install cn class-variance-authority lucide-react motion @base-ui/react
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { StatusButton } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { StatusButton } from "@/components/status-button"
 ```
 
 ```tsx

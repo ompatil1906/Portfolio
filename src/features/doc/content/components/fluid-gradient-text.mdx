@@ -27,7 +27,7 @@ updatedAt: 2026-05-03
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/fluid-gradient-text
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -48,20 +48,17 @@ import { FluidGradientText } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install motion
+npm install @heyompatil/ui
 ```
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  name="fluid-gradient-text"
-  title="components/fluid-gradient-text.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { FluidGradientText } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -72,11 +69,7 @@ npm install motion
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { FluidGradientText } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { FluidGradientText } from "@/components/fluid-gradient-text"
 ```
 
 ```tsx

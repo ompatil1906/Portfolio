@@ -26,7 +26,7 @@ updatedAt: 2026-08-20
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/github-contribution-list
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -47,19 +47,17 @@ import { GitHubContributionList } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Install @heyompatil/ui</Step>
 
-<ComponentSource
-  name="github-contribution-list"
-  title="components/github-contribution-list.tsx"
-/>
+```bash
+npm install @heyompatil/ui
+```
 
-<ComponentSource
-  src="src/registry/lib/get-github-data/github-data.ts"
-  title="lib/get-github-data/github-data.ts"
-/>
+<Step>Import the component into your project</Step>
 
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { GitHubContributionList } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -85,9 +83,5 @@ import { GitHubContributionList } from "@heyompatil/ui"
 Pair the list with the `get-github-data` library to fetch authored pull requests. The mapper drops pull requests against repositories the viewer owns, so only outside contributions are shown:
 
 ```tsx
-// Using @heyompatil/ui package
 import { GitHubContributionList } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { GitHubContributionList } from "@/components/github-contribution-list"
 ```

@@ -25,7 +25,7 @@ updatedAt: 2026-04-07
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/twemoji
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -46,41 +46,17 @@ import { Twemoji } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Add the following CSS to your global styles</Step>
-
-```css
-.twemoji {
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  margin: 0 0.05em 0 0.1em;
-  vertical-align: -0.1em;
-}
+```tsx
+import { Twemoji } from "@heyompatil/ui"
 ```
-
-<Step>Copy the twemoji-regex file into your project</Step>
-
-[lib/twemoji-regex.ts](https://github.com/ompatil1906/Portfolio/blob/main/src/registry/components/twemoji/lib/twemoji-regex.ts)
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="twemoji" title="components/twemoji.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
 
 </Steps>
 
@@ -91,11 +67,7 @@ npm install cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { Twemoji } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { Twemoji } from "@/components/twemoji"
 ```
 
 ```tsx

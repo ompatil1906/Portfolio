@@ -19,7 +19,7 @@ updatedAt: 2026-05-22
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/dot-grid-spotlight
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -40,14 +40,17 @@ import { DotGridSpotlight } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Install @heyompatil/ui</Step>
 
-<ComponentSource
-  name="dot-grid-spotlight"
-  title="components/dot-grid-spotlight.tsx"
-/>
+```bash
+npm install @heyompatil/ui
+```
 
-<Step>Update the import paths to match your project setup</Step>
+<Step>Import the component into your project</Step>
+
+```tsx
+import { DotGridSpotlight } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -58,11 +61,7 @@ import { DotGridSpotlight } from "@heyompatil/ui"
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { DotGridSpotlight } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { DotGridSpotlight } from "@/components/dot-grid-spotlight"
 ```
 
 ```tsx

@@ -40,7 +40,7 @@ updatedAt: 2026-02-20
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/slide-to-unlock
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -66,33 +66,22 @@ import {
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install motion cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  name="shimmering-text"
-  title="components/shimmering-text.tsx"
-/>
-
-<ComponentSource
-  name="slide-to-unlock"
-  title="components/slide-to-unlock.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import {
+  SlideToUnlock,
+  SlideToUnlockHandle,
+  SlideToUnlockText,
+  SlideToUnlockTrack,
+} from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -103,21 +92,12 @@ npm install motion cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import {
   SlideToUnlock,
   SlideToUnlockHandle,
   SlideToUnlockText,
   SlideToUnlockTrack,
 } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import {
-  SlideToUnlock,
-  SlideToUnlockHandle,
-  SlideToUnlockText,
-  SlideToUnlockTrack,
-} from "@/components/slide-to-unlock"
 ```
 
 ```tsx

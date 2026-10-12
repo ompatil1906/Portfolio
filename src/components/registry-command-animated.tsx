@@ -1,8 +1,5 @@
 "use client"
 
-import { useRef } from "react"
-import { motion } from "motion/react"
-
 import { registryConfig } from "@/config/registry"
 import { cn } from "@/lib/utils"
 import { useConfig } from "@/hooks/use-config"
@@ -15,9 +12,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { components } from "@/registry/components/_registry"
 import { IconSwap, IconSwapItem } from "@/registry/components/icon-swap"
-import { TextFlip } from "@/registry/components/text-flip"
 
 import { CopyButton } from "./copy-button"
 import { getIconForPackageManager, NpmIcon } from "./icons"
@@ -36,20 +31,10 @@ const pkgCommands: Record<PackageManager, string> = {
   bun: "bun add @heyompatil/ui",
 }
 
-const registryItemNames = components
-  .map((component) => component.name)
-  .sort((a, b) =>
-    a.localeCompare(b, "en", {
-      sensitivity: "base",
-    })
-  )
-
 export function RegistryCommandAnimated() {
   const [packageManager, setPackageManager] = usePackageManager()
   const [config, setConfig] = useConfig()
   const installType = config.installationType === "pkg" ? "pkg" : "cli"
-
-  const currentItemRef = useRef(registryItemNames[0])
 
   return (
     <div className="relative overflow-hidden">
@@ -120,7 +105,7 @@ export function RegistryCommandAnimated() {
           <pre className="-translate-y-px p-4">
             <code
               data-language="bash"
-              className="block font-mono text-sm text-muted-foreground max-sm:leading-6"
+              className="block font-mono text-sm text-foreground max-sm:leading-6"
             >
               {Object.entries(pmCommands).map(([key, command]) => {
                 return (
@@ -137,17 +122,9 @@ export function RegistryCommandAnimated() {
                 )
               })}
 
-              <span>{registryConfig.namespace}/</span>
-
-              <TextFlip
-                className="text-foreground"
-                as={motion.span}
-                onIndexChange={(index: number) => {
-                  currentItemRef.current = registryItemNames[index]
-                }}
-              >
-                {registryItemNames}
-              </TextFlip>
+              <span className="text-foreground">
+                {registryConfig.namespace}/ui
+              </span>
             </code>
           </pre>
         ) : (
@@ -171,20 +148,18 @@ export function RegistryCommandAnimated() {
           </pre>
         )}
 
-        {installType === "pkg" && (
-          <div className="-mt-2 flex items-center gap-2 px-4 pb-3 text-xs text-muted-foreground">
-            <span>Includes all 42 components &amp; utilities</span>
-            <span>•</span>
-            <a
-              href="https://www.npmjs.com/package/@heyompatil/ui"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 underline underline-offset-2 hover:text-foreground"
-            >
-              npmjs.com/package/@heyompatil/ui ↗
-            </a>
-          </div>
-        )}
+        <div className="-mt-2 flex items-center gap-2 px-4 pb-3 text-xs text-muted-foreground">
+          <span>Includes all 42 components &amp; utilities</span>
+          <span>•</span>
+          <a
+            href="https://www.npmjs.com/package/@heyompatil/ui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 underline underline-offset-2 hover:text-foreground"
+          >
+            npmjs.com/package/@heyompatil/ui ↗
+          </a>
+        </div>
       </Tabs>
 
       <CopyButton
@@ -196,7 +171,7 @@ export function RegistryCommandAnimated() {
             return pkgCommands[packageManager] || pkgCommands["pnpm"]
           }
           const baseCommand = pmCommands[packageManager] || pmCommands["pnpm"]
-          return `${baseCommand} shadcn@latest add ${registryConfig.namespace}/${currentItemRef.current}`
+          return `${baseCommand} shadcn add ${registryConfig.namespace}/ui`
         }}
         event="copy_npm_command"
       />

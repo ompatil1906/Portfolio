@@ -21,7 +21,7 @@ updatedAt: 2026-07-25
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/timescale
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -54,36 +54,15 @@ import {
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
-
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="timescale" title="components/timescale.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
-
-</Steps>
-
-</TabsContent>
-
-</CodeTabs>
-
-## Usage
+<Step>Import the component into your project</Step>
 
 ```tsx
-// Using @heyompatil/ui package
 import {
   TimescaleAge,
   TimescaleContent,
@@ -97,8 +76,17 @@ import {
   TimescaleViewport,
   TimescaleYear,
 } from "@heyompatil/ui"
+```
 
-// Or using shadcn CLI / manual import
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
 import {
   TimescaleAge,
   TimescaleContent,
@@ -111,7 +99,7 @@ import {
   TimescaleTrack,
   TimescaleViewport,
   TimescaleYear,
-} from "@/components/timescale"
+} from "@heyompatil/ui"
 ```
 
 ```tsx

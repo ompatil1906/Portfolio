@@ -24,7 +24,7 @@ updatedAt: 2026-09-05
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/carbon-ads
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -45,41 +45,17 @@ import { CarbonAds } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Add the ad theme styles to your global CSS</Step>
-
-```css title="globals.css"
-#carbonads #carbon-responsive {
-  --carbon-padding: calc(var(--spacing) * 3);
-  --carbon-bg-primary: color-mix(in oklab, var(--muted) 50%, var(--background));
-  --carbon-bg-secondary: var(--border);
-  --carbon-text-color: var(--foreground);
-  @apply gap-2 font-sans;
-}
-
-#carbonads #carbon-responsive .carbon-poweredby {
-  @apply text-xs text-muted-foreground/80 opacity-100;
-}
+```tsx
+import { CarbonAds } from "@heyompatil/ui"
 ```
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="carbon-ads" title="components/carbon-ads.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
 
 </Steps>
 
@@ -90,11 +66,7 @@ npm install cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { CarbonAds } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { CarbonAds } from "@/components/carbon-ads"
 ```
 
 ```tsx

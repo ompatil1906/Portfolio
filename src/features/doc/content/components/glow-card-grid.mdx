@@ -20,7 +20,7 @@ updatedAt: 2026-03-30
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/glow-card-grid
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -41,28 +41,17 @@ import { GlowCard, GlowCardGrid } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  src="src/registry/components/glow-card-grid/glow-card-grid.tsx"
-  title="components/glow-card-grid.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { GlowCard, GlowCardGrid } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -73,11 +62,7 @@ npm install cn
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { GlowCard, GlowCardGrid } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { GlowCard, GlowCardGrid } from "@/components/glow-card-grid"
 ```
 
 ```tsx

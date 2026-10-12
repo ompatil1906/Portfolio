@@ -192,19 +192,20 @@ const TESTIMONIALS: TestimonialType[] = [
     url: "https://x.com/rohittmore/status/2109396177993306330",
     quote: "@Om_Patil19 Clean work.",
   },
-  {
-    authorAvatar: "/images/avatars/vedantkolte.png",
-    authorName: "Vedant Kolte",
-    authorTagline: "@VedantKolt80806 on X",
-    url: "https://x.com/VedantKolt80806/status/2109511306277711909",
-    quote: "@Om_Patil19 Impressive work!",
-  },
+
   {
     authorAvatar: "/images/avatars/rajlaxmi1905.jpg",
     authorName: "Rajlaxmi",
     authorTagline: "@Rajlaxmi1905 on X",
     url: "https://x.com/Rajlaxmi1905/status/2109391273333522740",
     quote: "@Om_Patil19 Nice work om👏",
+  },
+  {
+    authorAvatar: "/images/avatars/vedantkolte.png",
+    authorName: "Vedant Kolte",
+    authorTagline: "@VedantKolt80806 on X",
+    url: "https://x.com/VedantKolt80806/status/2109511306277711909",
+    quote: "@Om_Patil19 Impressive work!",
   },
 ]
 

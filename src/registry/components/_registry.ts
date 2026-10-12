@@ -3,6 +3,17 @@ import type { Registry } from "shadcn/schema"
 
 export const components: Registry["items"] = [
   {
+    name: "ui",
+    type: "registry:component",
+    title: "@heyompatil/ui",
+    description:
+      "A collection of crafted UI components, micro-interactions, and visual effects for React and Next.js.",
+    dependencies: ["@heyompatil/ui"],
+    files: [],
+    categories: ["controls"],
+    docs: "https://heyompatil.me/components",
+  },
+  {
     name: "theme-switcher",
     type: "registry:component",
     title: "Theme Switcher",

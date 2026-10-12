@@ -26,7 +26,7 @@ updatedAt: 2026-08-20
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/github-repo-list
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -47,19 +47,17 @@ import { GitHubRepoList } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Install @heyompatil/ui</Step>
 
-<ComponentSource
-  name="github-repo-list"
-  title="components/github-repo-list.tsx"
-/>
+```bash
+npm install @heyompatil/ui
+```
 
-<ComponentSource
-  src="src/registry/lib/get-github-data/github-data.ts"
-  title="lib/get-github-data/github-data.ts"
-/>
+<Step>Import the component into your project</Step>
 
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { GitHubRepoList } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -85,9 +83,5 @@ import { GitHubRepoList } from "@heyompatil/ui"
 Pair the list with the [`get-github-data`](https://heyompatil.me/components/get-github-data) library to fetch live repositories:
 
 ```tsx
-// Using @heyompatil/ui package
 import { GitHubRepoList } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { GitHubRepoList } from "@/components/github-repo-list"
 ```

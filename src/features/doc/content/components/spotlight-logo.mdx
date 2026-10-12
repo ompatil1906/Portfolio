@@ -31,7 +31,7 @@ updatedAt: 2026-06-29
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/spotlight-logo
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -52,21 +52,17 @@ import { SpotlightLogo } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install motion
+npm install @heyompatil/ui
 ```
 
-<Step>Install the required components</Step>
+<Step>Import the component into your project</Step>
 
-- [@soundcn/metal-click](https://www.soundcn.xyz/?sound=metal-click)
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="spotlight-logo" title="components/spotlight-logo.tsx" />
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import { SpotlightLogo } from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -79,11 +75,7 @@ npm install motion
 The mark renders its own SVG, so bring your own artwork by replacing the paths inside the component. Wrap it in a sized container to control the layout.
 
 ```tsx
-// Using @heyompatil/ui package
 import { SpotlightLogo } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { SpotlightLogo } from "@/components/spotlight-logo"
 ```
 
 ```tsx

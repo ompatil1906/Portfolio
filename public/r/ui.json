@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ui",
+  "title": "@heyompatil/ui",
+  "author": "Om Patil <patilom1906@gmail.com>",
+  "description": "A collection of crafted UI components, micro-interactions, and visual effects for React and Next.js.",
+  "dependencies": [
+    "@heyompatil/ui"
+  ],
+  "files": [],
+  "docs": "https://heyompatil.me/components",
+  "categories": [
+    "controls"
+  ],
+  "type": "registry:component"
+}

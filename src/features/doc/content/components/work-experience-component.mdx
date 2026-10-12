@@ -27,7 +27,7 @@ updatedAt: 2026-03-28
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/work-experience
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -48,64 +48,17 @@ import { WorkExperience } from "@heyompatil/ui"
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn react-markdown lucide-react motion
+npm install @heyompatil/ui
 ```
 
-```bash
-npm install -D @tailwindcss/typography
+<Step>Import the component into your project</Step>
+
+```tsx
+import { WorkExperience } from "@heyompatil/ui"
 ```
-
-<Step>Add a cn helper</Step>
-
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Add a Tailwind CSS plugin and utility</Step>
-
-```css title="globals.css"
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
-
-@utility link {
-  @apply decoration-1 underline-offset-3 hover:underline;
-}
-
-@utility link-underline {
-  @apply underline decoration-current/30 decoration-1 underline-offset-3 transition-colors hover:decoration-current;
-}
-
-@utility prose-ncdai {
-  @apply prose-headings:tracking-tight prose-headings:text-balance prose-h2:font-semibold;
-  @apply prose-a:font-normal prose-a:wrap-break-word prose-a:text-foreground prose-a:link-underline;
-  @apply prose-code:rounded-md prose-code:border prose-code:bg-muted/50 prose-code:px-[0.3rem] prose-code:py-[0.2rem] prose-code:text-sm prose-code:font-normal prose-code:before:content-none prose-code:after:content-none;
-  @apply prose-strong:font-medium;
-}
-```
-
-<Step>Install the required shadcn/ui components</Step>
-
-- [Collapsible](https://ui.shadcn.com/docs/components/base/collapsible)
-- [Separator](https://ui.shadcn.com/docs/components/base/separator)
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource
-  name="chevrons-up-down-icon"
-  title="components/chevrons-up-down-icon.tsx"
-/>
-
-<ComponentSource
-  name="work-experience"
-  title="components/work-experience.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
 
 </Steps>
 
@@ -116,11 +69,7 @@ npm install -D @tailwindcss/typography
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import { WorkExperience } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import { WorkExperience } from "@/components/work-experience"
 ```
 
 ```tsx

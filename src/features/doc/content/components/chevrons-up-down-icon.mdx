@@ -19,7 +19,7 @@ updatedAt: 2026-06-02
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/chevrons-up-down-icon
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -43,20 +43,20 @@ import {
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install motion
+npm install @heyompatil/ui
 ```
 
-<Step>Copy and paste the following code into your project</Step>
+<Step>Import the component into your project</Step>
 
-<ComponentSource
-  name="chevrons-up-down-icon"
-  title="components/chevrons-up-down-icon.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
+```tsx
+import {
+  ChevronsUpDownIcon,
+  type ChevronsUpDownIconHandle,
+} from "@heyompatil/ui"
+```
 
 </Steps>
 
@@ -67,17 +67,10 @@ npm install motion
 ## Usage
 
 ```tsx
-// Using @heyompatil/ui package
 import {
   ChevronsUpDownIcon,
   type ChevronsUpDownIconHandle,
 } from "@heyompatil/ui"
-
-// Or using shadcn CLI / manual import
-import {
-  ChevronsUpDownIcon,
-  type ChevronsUpDownIconHandle,
-} from "@/components/chevrons-up-down-icon"
 ```
 
 ```tsx

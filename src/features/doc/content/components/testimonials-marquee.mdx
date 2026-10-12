@@ -26,7 +26,7 @@ updatedAt: 2025-03-27
 <TabsContent value="cli">
 
 ```bash
-npx shadcn@latest add @heyompatil/testimonials-marquee
+npm install @heyompatil/ui
 ```
 
 </TabsContent>
@@ -57,41 +57,15 @@ import {
 
 <Steps>
 
-<Step>Install the following dependencies</Step>
+<Step>Install @heyompatil/ui</Step>
 
 ```bash
-npm install cn react-fast-marquee
+npm install @heyompatil/ui
 ```
 
-<Step>Add a cn helper</Step>
-
-<ComponentSource
-  src="src/registry/lib/utils.ts"
-  title="lib/utils.ts"
-  collapsible="false"
-/>
-
-<Step>Copy and paste the following code into your project</Step>
-
-<ComponentSource name="testimonial" title="components/testimonial.tsx" />
-
-<ComponentSource
-  src="src/components/kibo-ui/marquee/index.tsx"
-  title="components/kibo-ui/marquee/index.tsx"
-/>
-
-<Step>Update the import paths to match your project setup</Step>
-
-</Steps>
-
-</TabsContent>
-
-</CodeTabs>
-
-## Usage
+<Step>Import the component into your project</Step>
 
 ```tsx
-// Using @heyompatil/ui package
 import {
   Testimonial,
   TestimonialAuthor,
@@ -103,8 +77,17 @@ import {
   TestimonialQuote,
   TestimonialVerifiedBadge,
 } from "@heyompatil/ui"
+```
 
-// Or using shadcn CLI / manual import
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
 import {
   Testimonial,
   TestimonialAuthor,
@@ -115,7 +98,7 @@ import {
   TestimonialAvatarRing,
   TestimonialQuote,
   TestimonialVerifiedBadge,
-} from "@/components/testimonial"
+} from "@heyompatil/ui"
 ```
 
 ```tsx
