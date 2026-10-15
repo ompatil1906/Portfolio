@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -77,7 +80,7 @@ export function TrustedBy() {
       </div>
 
       {/* Testimonial cards */}
-      <div className="grid grid-cols-1 gap-3 p-4 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 p-4 sm:grid-cols-6">
         {TESTIMONIALS.map((item, index) => (
           <a
             key={item.url}
@@ -86,14 +89,13 @@ export function TrustedBy() {
             rel="noopener noreferrer"
             className={cn(
               "group/card block h-full focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
-              index === 0 && "sm:col-start-2",
-              index === 1 && "sm:col-start-1"
+              index < 2 ? "sm:col-span-3" : "sm:col-span-2"
             )}
           >
             <TestimonialSpotlight className="h-full">
               <Testimonial>
                 <TestimonialQuote className="min-h-12 font-sans text-sm">
-                  <p>{renderQuoteText(item.quote)}</p>
+                  <ExpandableQuote quote={item.quote} />
                 </TestimonialQuote>
 
                 <TestimonialAuthor>
@@ -141,6 +143,61 @@ export function TrustedBy() {
   )
 }
 
+function getTruncatedText(text: string, maxLength: number) {
+  if (text.length <= maxLength) return text
+  const sliced = text.slice(0, maxLength)
+  const lastSpace = sliced.lastIndexOf(" ")
+  const trimmed = (lastSpace > 0 ? sliced.slice(0, lastSpace) : sliced).trim()
+  return trimmed.replace(/[,;:]+$/, "")
+}
+
+function ExpandableQuote({
+  quote,
+  maxLength = 35,
+}: {
+  quote: string
+  maxLength?: number
+}) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  if (quote.length <= maxLength) {
+    return <p>{renderQuoteText(quote)}</p>
+  }
+
+  const truncatedText = getTruncatedText(quote, maxLength)
+
+  const handleToggle = (e: React.MouseEvent | React.KeyboardEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsExpanded((prev) => !prev)
+  }
+
+  return (
+    <p>
+      {renderQuoteText(isExpanded ? quote : truncatedText)}
+      {!isExpanded && (
+        <span className="text-muted-foreground/70 select-none"> ... </span>
+      )}
+      <span
+        role="button"
+        tabIndex={0}
+        onClick={handleToggle}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            handleToggle(e)
+          }
+        }}
+        className={cn(
+          "inline-block cursor-pointer font-medium text-primary select-none hover:underline focus-visible:outline-none",
+          isExpanded ? "ml-1.5" : ""
+        )}
+      >
+        {isExpanded ? "less" : "more"}
+      </span>
+    </p>
+  )
+}
+
 function renderQuoteText(quote: string) {
   const parts = quote.split(/(@\w+)/g)
   return parts.map((part, i) =>
@@ -158,9 +215,17 @@ function renderQuoteText(quote: string) {
 
 const TESTIMONIALS: TestimonialType[] = [
   {
+    authorAvatar: "/images/avatars/krupapatil.png",
+    authorName: "Krupa Patil",
+    authorTagline: "Technology Lead at Infosys",
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7515069808468582400/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287516006988640575488%2Curn%3Ali%3Aactivity%3A7515069808468582400%29",
+    quote:
+      "Congrats on the launch, Om! \u{1F680} It’s refreshing to see a portfolio focused on shipping practical AI products rather than just building quick demos. The inclusion of the 40+ free UI components and blocks is an awesome addition for the dev community. Looking forward to checking out the agentic workflows!",
+  },
+  {
     authorAvatar: "/images/avatars/atharvachitambar.jpg",
     authorName: "Atharva Chitambar",
-    authorTagline: "on LinkedIn",
+    authorTagline: "Marketing Analyst at DeltaX",
     url: "https://www.linkedin.com/posts/om-patil19_om-patil-ai-engineer-genai-agentic-systems-activity-7515069808468582400-h10O",
     quote: "Keep up the good work Om!!",
   },
@@ -192,20 +257,19 @@ const TESTIMONIALS: TestimonialType[] = [
     url: "https://x.com/rohittmore/status/2109396177993306330",
     quote: "@Om_Patil19 Clean work.",
   },
-
-  {
-    authorAvatar: "/images/avatars/rajlaxmi1905.jpg",
-    authorName: "Rajlaxmi",
-    authorTagline: "@Rajlaxmi1905 on X",
-    url: "https://x.com/Rajlaxmi1905/status/2109391273333522740",
-    quote: "@Om_Patil19 Nice work om👏",
-  },
   {
     authorAvatar: "/images/avatars/vedantkolte.png",
     authorName: "Vedant Kolte",
     authorTagline: "@VedantKolt80806 on X",
     url: "https://x.com/VedantKolt80806/status/2109511306277711909",
     quote: "@Om_Patil19 Impressive work!",
+  },
+  {
+    authorAvatar: "/images/avatars/rajlaxmi1905.jpg",
+    authorName: "Rajlaxmi",
+    authorTagline: "@Rajlaxmi1905 on X",
+    url: "https://x.com/Rajlaxmi1905/status/2109391273333522740",
+    quote: "@Om_Patil19 Nice work om👏",
   },
 ]
 

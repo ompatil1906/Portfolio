@@ -2,9 +2,18 @@ import type { Testimonial } from "../types/testimonials"
 
 export const TESTIMONIALS: Testimonial[] = [
   {
+    authorAvatar: "/images/avatars/krupapatil.png",
+    authorName: "Krupa Patil",
+    authorTagline: "Technology Lead at Infosys",
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7515069808468582400/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287516006988640575488%2Curn%3Ali%3Aactivity%3A7515069808468582400%29",
+    quote:
+      "Congrats on the launch, Om! \u{1F680} It’s refreshing to see a portfolio focused on shipping practical AI products rather than just building quick demos. The inclusion of the 40+ free UI components and blocks is an awesome addition for the dev community. Looking forward to checking out the agentic workflows!",
+    date: "2026-10-14",
+  },
+  {
     authorAvatar: "/images/avatars/atharvachitambar.jpg",
     authorName: "Atharva Chitambar",
-    authorTagline: "on LinkedIn",
+    authorTagline: "Marketing Analyst at DeltaX",
     url: "https://www.linkedin.com/posts/om-patil19_om-patil-ai-engineer-genai-agentic-systems-activity-7515069808468582400-h10O",
     quote: "Keep up the good work Om!!",
     date: "2026-10-11",
